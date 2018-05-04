@@ -1,0 +1,62 @@
+#include "/home/daniel/.cache/freshcoat/x_colors"
+!-------------------------------------------------------------------------------
+! URxvt settings
+!-------------------------------------------------------------------------------
+
+URxvt.geometry:             92x21
+URxvt.transparent:          false
+URxvt.fading:               0
+URxvt.loginShell:           true
+URxvt.saveLines:            400
+URxvt.lineSpace:            2
+
+! Fonts
+URxvt.allow_bold:           false
+URxvt*font:-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1, \
+xft:ShureTechMono Nerd Font:pixelsize=14, \
+-gbdfed-creep-regular-r-normal-*-16-120-96-96-m-4-iso10646-1
+URxvt*boldFont:-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1
+ 
+
+! Fix font space
+URxvt*letterSpace:-1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Add padding
+URxvt.internalBorder: 14
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          firefox
+
+URxvt.config-reload:        C-Down-Up 
+
+! Cursor
+URxvt.cursorBlink:          false
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+rofi.modi: run,drun,window,keys
+rofi.terminal: urxvt
+rofi.kb-cancel: Escape,Control+c
+rofi.fuzzy: true
+rofi.lines: 15
+rofi.columns: 1
+rofi.font: Screen 13px
+rofi.bw: 2
+rofi.padding: 12
+rofi.hide-scrollbar: false
+rofi.scrollbar-width: 2
+rofi.kb-row-up: Up,Control+p,ISO_Left_Tab
+! "Select next entry" Set from: Default
+rofi.kb-row-down: Down,Control+n
+rofi.cycle:true
+rofi.color: enabled
+
