@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Inspired by NerdyPepper
+# github.com/NerdyPepper
+echo "
+#!/bin/bash
+
+bg=$(grep background: ~/clrs | awk '{ print $2 }')
+fg=$(grep foreground: ~/clrs | awk 'NR==1 { print $2 }')
+
+blk=$(grep color0: ~/clrs | awk '{ print $2 }')
+red=$(grep color1: ~/clrs | awk '{ print $2 }')
+grn=$(grep color2: ~/clrs | awk '{ print $2 }')
+ylw=$(grep color3: ~/clrs | awk '{ print $2 }')
+blu=$(grep color4: ~/clrs | awk '{ print $2 }')
+mag=$(grep color5: ~/clrs | awk '{ print $2 }')
+cyn=$(grep color6: ~/clrs | awk '{ print $2 }')
+wht=$(grep color7: ~/clrs | awk '{ print $2 }')
+
+bblk=$(grep color8: ~/clrs | awk '{ print $2 }')
+bred=$(grep color9: ~/clrs | awk '{ print $2 }')
+bgrn=$(grep color10: ~/clrs | awk '{ print $2 }')
+bylw=$(grep color11: ~/clrs | awk '{ print $2 }')
+bblu=$(grep color12: ~/clrs | awk '{ print $2 }')
+bmag=$(grep color13: ~/clrs | awk '{ print $2 }')
+bcyn=$(grep color14: ~/clrs | awk '{ print $2 }')
+bwht=$(grep color15: ~/clrs | awk '{ print $2 }')
+
+acc=$(grep color6: ~/clrs | awk '{ print $2 }')
+"
