@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/daniel/Downloads/solid_by_greentoadmx-d6jpi3m.rar" added="2018-05-01T00:10:31Z" modified="2018-05-01T00:10:31Z" visited="2018-05-01T00:10:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-01T00:10:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Pictures/valentino-funghi-276010.jpg" added="2018-05-01T07:06:50Z" modified="2018-05-01T07:06:50Z" visited="2018-05-01T07:06:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-01T07:06:50Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Documents/startpage.html" added="2018-05-01T07:14:32Z" modified="2018-05-01T07:14:32Z" visited="2018-05-01T07:14:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2018-05-01T07:14:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/cesar-couto-423267-unsplash.jpg" added="2018-05-01T07:24:15Z" modified="2018-05-01T07:24:15Z" visited="2018-05-01T07:24:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-01T07:24:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Pictures/sarah.jpg" added="2018-05-01T20:21:59Z" modified="2018-05-01T20:22:00Z" visited="2018-05-01T20:22:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-01T20:22:00Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/config" added="2018-05-02T21:44:30Z" modified="2018-05-02T21:44:30Z" visited="2018-05-02T21:44:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-02T21:44:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/linux-image-4.15.0-3-amd64_4.15.17-1_amd64.deb" added="2018-05-03T07:56:01Z" modified="2018-05-03T07:56:01Z" visited="2018-05-03T07:56:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-03T07:56:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Documents/HiFi.conf" added="2018-05-03T08:35:02Z" modified="2018-05-03T08:35:02Z" visited="2018-05-03T08:35:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-03T08:35:02Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Documents/byt-max98090.conf" added="2018-05-03T08:37:51Z" modified="2018-05-03T08:37:51Z" visited="2018-05-03T08:37:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2018-05-03T08:37:51Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/dGhI8.gif" added="2018-05-04T06:16:15Z" modified="2018-05-04T06:16:15Z" visited="2018-05-04T06:16:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:16:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/MgxzT.jpg" added="2018-05-04T06:24:51Z" modified="2018-05-04T06:24:51Z" visited="2018-05-04T06:24:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:24:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/tiled_wallpaper_19.gif" added="2018-05-04T06:33:03Z" modified="2018-05-04T06:33:03Z" visited="2018-05-04T06:33:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:33:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/beige_vintage.gif" added="2018-05-04T06:34:58Z" modified="2018-05-04T06:34:58Z" visited="2018-05-04T06:34:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:34:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/black_floral_vintage.gif" added="2018-05-04T06:35:41Z" modified="2018-05-04T06:35:41Z" visited="2018-05-04T06:35:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:35:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/floral_black_vintage.gif" added="2018-05-04T06:36:49Z" modified="2018-05-04T06:36:49Z" visited="2018-05-04T06:36:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:36:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/vintage_black_wallpaper.gif" added="2018-05-04T06:37:36Z" modified="2018-05-04T06:37:36Z" visited="2018-05-04T06:37:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:37:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/vintage_white_wallpaper.gif" added="2018-05-04T06:38:00Z" modified="2018-05-04T06:38:00Z" visited="2018-05-04T06:38:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:38:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/white_pattern.gif" added="2018-05-04T06:38:41Z" modified="2018-05-04T06:38:41Z" visited="2018-05-04T06:38:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:38:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/grey_floral_paisely.png" added="2018-05-04T06:39:30Z" modified="2018-05-04T06:39:30Z" visited="2018-05-04T06:39:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:39:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/blue_floral_paisely.png" added="2018-05-04T06:39:42Z" modified="2018-05-04T06:39:42Z" visited="2018-05-04T06:39:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:39:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/plain_loral_roses_pattern.png" added="2018-05-04T06:40:09Z" modified="2018-05-04T06:40:09Z" visited="2018-05-04T06:40:10.268766Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-04T06:40:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
