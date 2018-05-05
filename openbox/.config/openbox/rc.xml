@@ -219,7 +219,7 @@
     </keybind>
     <keybind key="W-d">
       <action name="Execute">
-        <command>rofi -show run</command>
+        <command>rofi -fn "Ctrld 13px" -show run</command>
       </action>
     </keybind>
     <keybind key="A-F5">
