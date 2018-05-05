@@ -1,0 +1,99 @@
+#!/usr/bin/env bash
+
+active=$(xrdb -query | grep 'color4' | awk 'NR==1 { print $2 }')
+inactive=$(xrdb -query | grep 'color8' | awk '{ print $2 }')
+
+printf "
+
+# Windows 
+
+border.width:2
+window.active.border.color: $active 
+window.inactive.border.color: $inactive
+padding.height: 6
+
+# Menu
+menu.items.active.bg: Solid Flat
+menu.items.active.bg.color: #333333
+menu.items.active.text.color: #eeeeee
+menu.items.bg: Flat Solid
+menu.items.bg.color: #eeeeee
+menu.items.disabled.text.color: #777777
+menu.items.font: shadow=n
+menu.items.text.color: #333333
+menu.border.width: 10
+menu.border.color: #eeeeee
+menu.separator.color: #eeeeee
+menu.title.bg: Solid Flat
+menu.title.bg.color: #eeeeee
+menu.title.text.color: #333333
+menu.title.text.font: shadow=n
+menu.title.text.justify: Center
+
+# OSD
+osd.bg: Solid Flat
+osd.bg.color: #eeeeee
+osd.label.bg: parentrelative
+osd.label.text.color: #222222
+osd.hilight.bg.color: #333333
+osd.unhilight.bg.color: #333333
+
+# Window - Active
+window.active.button.disabled.bg: Solid Flat
+window.active.button.disabled.bg.color: $active
+window.active.button.disabled.image.color: #373737
+window.active.button.hover.bg: Solid Flat
+window.active.button.hover.bg.color: #EEEEEE
+window.active.button.hover.image.color: #505050
+window.active.button.pressed.bg: Solid Flat
+window.active.button.pressed.bg.color: $active
+window.active.button.pressed.image.color: #101010
+Window.active.button.toggled.bg: Solid Flat
+window.active.button.toggled.bg.color: $active
+window.active.button.toggled.image.color: #ffffff
+window.active.button.unpressed.bg: Solid Flat
+window.active.button.unpressed.bg.color: $active
+window.active.button.unpressed.image.color: #ffffff
+window.active.client.color: $active
+window.active.grip.bg: Solid Flat
+window.active.grip.bg.color: $active
+window.active.handle.bg: Solid Flat
+window.active.handle.bg.color: $active
+window.active.label.bg: Parentrelative
+window.active.label.text.color: $active
+window.active.label.text.font: shadow=n
+window.active.title.bg: Solid Flat
+window.active.title.bg.color: $active
+
+# Window - Inactive
+window.client.padding.width: 0
+window.handle.width: 0
+window.inactive.button.disabled.bg: Solid Flat
+window.inactive.button.disabled.bg.color: $inactive
+window.inactive.button.disabled.image.color: #202020
+window.inactive.button.hover.bg: Solid Flat
+window.inactive.button.hover.bg.color: #aaafb2
+#window.inactive.button.hover.image.color: #505050
+window.inactive.button.hover.image.color: $inactive
+window.inactive.button.pressed.bg: Solid Flat
+window.inactive.button.pressed.bg.color: #3d3d3d
+window.inactive.button.pressed.image.color: #3d3d3d
+window.inactive.button.toggled.bg: Solid Flat
+window.inactive.button.toggled.bg.color: $inactive
+window.inactive.button.toggled.image.color: #3d3d3d
+window.inactive.button.unpressed.bg: Solid Flat
+window.inactive.button.unpressed.bg.color: $inactive
+window.inactive.button.unpressed.image.color: #aaafb2
+window.inactive.client.color: $inactive
+window.inactive.grip.bg: Solid Flat
+window.inactive.grip.bg.color: $inactive
+window.inactive.handle.bg: Solid Flat
+window.inactive.handle.bg.color: $inactive
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: $inactive
+window.inactive.label.text.font: shadow=n
+window.inactive.title.bg: Solid Flat
+window.inactive.title.bg.color: $inactive
+window.label.text.justify: Center " > /home/daniel/.themes/panic/openbox-3/themerc &
+openbox --reconfigure
+
