@@ -11,11 +11,16 @@ setopt appendhistory autocd beep extendedglob nomatch notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
+
+
+
 zstyle :compinstall filename '/home/daniel/.zshrc'
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+nplayer () (nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo & trap "kill $!" EXIT; ncmpcpp)
+
 source /home/daniel/.antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.

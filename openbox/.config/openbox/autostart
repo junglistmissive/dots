@@ -40,7 +40,7 @@ xrdb -merge ~/.Xresources
 
 # Alias Super key to Super+Space for single-key menu.
 # See 'man xcape' for other possibilities.
-xcape -e 'Super_L=Super_L|space'
+#xcape -e 'Super_L=Super_L|space'
 
 ### TOUCHPAD: comment out the next two entries if you don't have one
 
@@ -56,7 +56,7 @@ syndaemon -i .5 -K -t -R -d &
 ### SETTINGS END
 
 ## GNOME PolicyKit authentication
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 ## Set a wallpaper
 . ~/.fehbg &

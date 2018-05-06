@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-echo
-
-for f in {0..7}; do
-		echo -en "\033[$((f+30))m〓\033[0m" 
-	done 
-echo
