@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Reddify for reddit
-Exec=/usr/bin/chromium --profile-directory=Default --app-id=npcnmmcopaknmdojlnpdlcfffcgfdmpg
+Exec=chromium --profile-directory=Default --app-id=npcnmmcopaknmdojlnpdlcfffcgfdmpg
 Icon=chrome-npcnmmcopaknmdojlnpdlcfffcgfdmpg-Default
 StartupWMClass=crx_npcnmmcopaknmdojlnpdlcfffcgfdmpg

@@ -15,5 +15,6 @@ xset fp+ ~/.local/share/fonts &
 xset fp rehash &
 fc-cache &
 xrdb ~/.Xresources
+urxvtd -q -f -o &
 exec openbox --startup /home/daniel/.config/openbox/autostart
 #exec herbstluftwm

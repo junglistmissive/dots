@@ -4,6 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Chromebook Recovery Utility
-Exec=/usr/bin/chromium --profile-directory=Default --app-id=jndclpdbaamdhonoechobihbbiimdgai
+Exec=chromium --profile-directory=Default --app-id=jndclpdbaamdhonoechobihbbiimdgai
 Icon=chrome-jndclpdbaamdhonoechobihbbiimdgai-Default
 StartupWMClass=crx_jndclpdbaamdhonoechobihbbiimdgai
