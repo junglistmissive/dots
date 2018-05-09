@@ -1,2 +1,2 @@
 # dots
-dots managed with homeshick
+dotfiles
