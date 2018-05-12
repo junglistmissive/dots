@@ -124,10 +124,10 @@ colorscheme nord
 let g:limelight_conceal_ctermfg = 1
 
 set shiftwidth=4     " indent = 4 spaces
-set noexpandtab      " tabs are tabs
-set tabstop=4        " tab = 4 spaces
-set softtabstop=4    " backspace through spaces
-
+set expandtab      " tabs are tabs
+set tabstop=8        " tab = 4 spaces
+set softtabstop=0    " backspace through spaces
+set smarttab
 " }}}
 
 
