@@ -178,7 +178,6 @@ content()
     echo -n "$output"
 }
 
-content
 
 # Formatting options
 fonts=" -f -ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1  -f -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1 -f -lucy-tewi-medium-r-normal-*-11-90-75-75-p-58-iso10646-1"
