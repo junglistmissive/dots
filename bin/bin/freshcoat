@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ARGS
-COLORSCHEME="$(ls ~/.config/freshcoat | fzf)"
+COLORSCHEME="$(ls /home/daniel/.config/freshcoat | fzf)"
 
 # CACHE & THEME DIRS
 CACHEDIR=$HOME/.cache/freshcoat
@@ -125,6 +125,9 @@ setwall() {
 obcolor() {
 	obsquash &
 }
+bspfresh() {
+    ~/.config/bspwm/bspwmrc &
+}
 
 roficolor() {
 	exec $HOME/bin/rofisquash &
@@ -156,6 +159,7 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
 	reload_bar
 	roficolor
 	obcolor
+        bspfresh
 	setwall
 
 else
