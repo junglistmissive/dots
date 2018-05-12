@@ -1,56 +1,54 @@
-##### connection settings #####
+[mpd]
 mpd_host = "127.0.0.1"
 mpd_port = "6600"
 mpd_music_dir = "/home/daniel/Music/"
-
-##### timeouts and delays #####
-#mpd_connection_timeout = "5"
 mpd_crossfade_time = "2"
 playlist_disable_highlight_delay = "1"
 message_delay_time = "2"
 
 
-# Playlist look
-playlist_display_mode = "classic"
-song_status_format = "$8%t$9 - $8%a$9"
-#song_list_format = "$2{%A}|{%a}$8 $4::$8 $5%t$8 {$R%b $8}"
-# song_list_format = "$2{%A}|{%a}$8 $4::$8 $5%t$8 {$R%b $8}"
-# song_list_format = "$6{%A}|{%a}$8 $4::$8 $3%t$8 {$R%b $4}"
-# song_list_format = "$2{%A}|{%a}$8 $4::$8 $5%t$8 {$R%l $8}"
-#song_list_format = "{$5%t $7%a }{$R$7[$5%l$7] $5%b}"
-song_list_format = "{$3[%l]$9} {$6%t$9}  {$R$5%20a$9}"
-#song_list_format = "$2{%A}|{%a}$8 $4::$8 $R$5%t $8"
-# song_status_format = "$1%t $0%a"
-now_playing_prefix = "$2>>> "
-now_playing_suffix = "$2$/u$2"
-#current_item_prefix = "$b$6> "
-#current_item_suffix = "$/b$9"
-selected_item_prefix = "$b$6> "
-selected_item_suffix = "$/b$9"
+#selected_item_prefix = "$b$6> "
+#selected_item_suffix = "$/b$9"
 
+[playlist]
+playlist_display_mode = classic
+song_list_format = "{{%a - %t}|{%f}}{$R%l}"
+now_playing_prefix = "$b$5"
+now_playing_suffix = "$/b$9"
+
+[header]
 header_visibility = "no"
 autocenter_mode = "yes"
-statusbar_visibility = "no"
-#main_window_highlight_color = "white"
-discard_colors_if_item_is_selected = "yes"
+header_window_color = "default"
+volume_color = "default"
+state_line_color = "black"
 
-# Progressbar look
-#progressbar_look = "···"
+[library]
+song_library_format = "{{%a - %t}|{%f}}{$R%l}"
+empty_tag_color = "black"
+
+[statusbar]
 progressbar_look = "▁▁▁"
 progressbar_color = "black"
 progressbar_elapsed_color = "white"
-#progressbar_boldness = "yes"
-
-# Misc
+statusbar_visibility = "no"
+statusbar_color = "default"
+song_status_format = "{{%a{ - %t}}|{ - %f}{ - %b{ (%y)}}}"
 display_bitrate = "no"
-enable_window_title = "no"
+
+[global]
+enable_window_title = "yes"
+main_window_color = "default"
+centered_cursor = "yes"
 follow_now_playing_lyrics = "yes"
 ignore_leading_the = "yes"
+external_editor = "nvim"
 
+[visualizer]
 visualizer_fifo_path = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "30"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
-visualizer_look = "+|"
+visualizer_look = "●┃"
 
