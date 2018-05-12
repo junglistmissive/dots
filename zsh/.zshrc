@@ -45,6 +45,7 @@ antigen apply
 
 alias fresh='freshcoat'
 alias squish='squash $(ls ~/.config/squash/themes | fzf ) > /dev/null 2&>1'
+#alias wallsplash='wallsplash -r -s && feh --bg-fill ~/.current_wallpaper &  rofisquash & openbox --reconfigure'
 alias OMZ='antigen theme $(ls ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes | fzf)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
