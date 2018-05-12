@@ -1,5 +1,5 @@
 #-- START ZCACHE GENERATED FILE
-#-- GENERATED: Mon May  7 23:25:16 PDT 2018
+#-- GENERATED: Fri May 11 13:40:15 PDT 2018
 #-- ANTIGEN v2.2.2
 _antigen () {
 	local -a _1st_arguments
@@ -71,6 +71,7 @@ source '/home/daniel/dots/antigen/.antigen/bundles/robbyrussell/oh-my-zsh/plugin
 source '/home/daniel/dots/antigen/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/lein/lein.plugin.zsh';
 source '/home/daniel/dots/antigen/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh';
 source '/home/daniel/dots/antigen/.antigen/bundles/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh';
+source '/home/daniel/dots/antigen/.antigen/bundles/holman/spark/spark-test.sh';
 source '/home/daniel/dots/antigen/.antigen/bundles/robbyrussell/oh-my-zsh/themes/cypher.zsh-theme.antigen-compat';
 
 #--- BUNDLES END
