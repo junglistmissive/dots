@@ -3,14 +3,26 @@ color8=$(xrdb -query | grep 'color8:' | awk '{ print $2 }')
 color6=$(xrdb -query | grep 'color6:' | awk 'NR==1 { print $2 }')
 
 #/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-sxhkd &
-synclient TapButton1=1 TapButton2=3 TapButton3=2 &
+if ! pgrep -x "sxhkd" > /dev/null
+then
+    sxhkd &
+fi
+#synclient TapButton1=1 TapButton2=3 TapButton3=2 &
 xrdb -merge ~/.Xresources
 ~/bin/hashwall -f "#3b4457" -b "#232731" -s 4  -r 7 &
-compton &
+
+if ! pgrep -x "compton" > /dev/null 
+then
+    compton &
+fi
+
 xset fp+ ~/.local/share/fonts &
 xset fp rehash &
-~/bin/bar &
+
+if ! pgrep -x "lemonbar" > /dev/null
+then
+    ~/bin/bar &
+fi
 
 
 bspc monitor eDP1 -d  I II III IV 
