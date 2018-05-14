@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ARGS
-COLORSCHEME="$(ls /home/daniel/.config/freshcoat | fzf)"
+COLORSCHEME="$(ls /home/daniel/.config/freshcoat | sort --reverse | fzf --cycle)"
 
 # CACHE & THEME DIRS
 CACHEDIR=$HOME/.cache/freshcoat
@@ -125,9 +125,16 @@ setwall() {
 obcolor() {
 	obsquash &
 }
+
 bspfresh() {
+if  ! pgrep -x "openbox" > /dev/null ; 
+then
     ~/.config/bspwm/bspwmrc &
+fi
 }
+
+
+
 
 roficolor() {
 	exec $HOME/bin/rofisquash &
@@ -160,7 +167,7 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
 	roficolor
 	obcolor
         bspfresh
-	setwall
+	#setwall
 
 else
 	printf "YOU DID IT WRONG"

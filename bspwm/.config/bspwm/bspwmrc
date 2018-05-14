@@ -9,7 +9,7 @@ then
 fi
 #synclient TapButton1=1 TapButton2=3 TapButton3=2 &
 xrdb -merge ~/.Xresources
-~/bin/hashwall -f "#3b4457" -b "#232731" -s 4  -r 7 &
+ 
 
 if ! pgrep -x "compton" > /dev/null 
 then
@@ -24,6 +24,9 @@ then
     ~/bin/bar &
 fi
 
+feh --bg-fill ~/wall.jpg &
+
+urxvtd &
 
 bspc monitor eDP1 -d  I II III IV 
 

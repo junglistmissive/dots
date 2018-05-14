@@ -36,13 +36,16 @@ glybar=$(echo -e "\u2581")
 glywin=$(echo -e "\ue1d8")
 
 # Create template for colors
-good="%{B$grn}%{F$bg}"
-warn="%{B$ylw}%{F$bg}"
-bad="%{B$red}%{F$bg}"
-win="%{B$blu}%{F$bg}"
+good="%{B$grn}%{F$bg}%{+u}%{U$bg}"
+warn="%{B$ylw}%{F$bg}%{+u}%{U$bg}"
+bad="%{B$red}%{F$bg}%{+u}%{U$bg}"
+goodu="%{B$bg}%{F$fg}%{+u}%{U$bg}"
+warnu="%{B$bg}%{F$fg}%{+u}%{U$bg}"
+badu="%{B$bg}%{F$fg}%{+u}%{U$bg}"
+win="%{B$blu}%{F$bg}%{+u}%{U$bg}"
 gend="%{B$blu}%{F$bg}"
 acc="%{B$bg}%{F$fg}"
-clr="%{B-}%{F-}"
+clr="%{B-}%{F-}%{-u}"
 gen="%{B$bg}%{F$fg}"
 acc2="%{B$bg}%{F$bblk}"
 volacc="%{B$bg}%{F$grn}"
@@ -124,13 +127,15 @@ content()
 
         if [[ "$cap" -ge "90" ]] || [[ $state == "Charging" ]]; then
             label="$good$SEP$glybatmax$SEP$clr"
+            cap="$goodu$SEP$cap$SEP$clr"
         elif [[ "$cap" -ge "20" ]]; then
             label="$warn$SEP$glybat$SEP$clr"
+            cap="$warnu$SEP$cap$SEP$clr"
         else
             label="$bad$SEP$glybatlow$SEP$clr"
+            cap="$badu$SEP$cap$SEP$clr"
         fi
 
-        cap=$gen$SEP$cap$SEP$clr
         echo $label$cap
     }
 
@@ -187,7 +192,7 @@ height=24
 xoff=0
 yoff=0
 # Border width
-brdr=5
+brdr=2
 # Border color
 brdrc=${bg}
 # Bar background color
@@ -196,7 +201,7 @@ bbg=${bg}
 bfg=${fg}
 
 # Final output formatting
-options=" ${fonts} -g ${width}x${height}+${xoff}+${yoff} -B ${bbg} -F ${bfg}" 
+options=" ${fonts} -g ${width}x${height}+${xoff}+${yoff} -B ${bbg} -F ${bfg} -u ${brdr}"
 
 # Main loop
 while true; do

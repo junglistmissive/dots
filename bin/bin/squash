@@ -4,8 +4,8 @@
 COLOR_SCHEME="$1"
 
 # Define location of cache and themes
-CACHE_DIR=$HOME/.cache/squash
-THEME_DIR=$HOME/.config/squash/themes
+CACHE_DIR=$HOME/.cache/freshcoat
+THEME_DIR=$HOME/.config/freshcoat
 WM=$(head -n 1 $CACHE_DIR/wm)
 
 # Make newlines easier, and define sequence
@@ -246,7 +246,7 @@ if [ -f $THEME_DIR/$COLOR_SCHEME ]; then
 	obcol
 
     # Set wallpaper
-    h_wall
+   # h_wall
 else
     printf "ERROR : THEME FILE NOT FOUND"
 fi
