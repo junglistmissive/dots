@@ -118,6 +118,12 @@ write_x_define() {
 	printf "${xd_output}" > "$CACHEDIR/xd_colors"
 }
 
+write_name() {
+        name_output="$THEME"
+
+        printf "${name_output}" > "$CACHEDIR/current"
+}
+
 setwall() {
 	. ~/.fehbg &
 }
@@ -160,6 +166,7 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
 	write_all
 	write_sh
 	write_x_define
+        write_name
 
 	# MERGE X
 	mergex
@@ -174,4 +181,4 @@ else
 fi
 }
 
-fresh > /dev/null 2&>1
+fresh > /dev/null 2&>1 

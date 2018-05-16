@@ -36,13 +36,13 @@ glybar=$(echo -e "\u2581")
 glywin=$(echo -e "\ue1d8")
 
 # Create template for colors
-good="%{B$grn}%{F$bg}%{+u}%{U$bg}"
-warn="%{B$ylw}%{F$bg}%{+u}%{U$bg}"
-bad="%{B$red}%{F$bg}%{+u}%{U$bg}"
-goodu="%{B$bg}%{F$fg}%{+u}%{U$bg}"
-warnu="%{B$bg}%{F$fg}%{+u}%{U$bg}"
-badu="%{B$bg}%{F$fg}%{+u}%{U$bg}"
-win="%{B$blu}%{F$bg}%{+u}%{U$bg}"
+good="%{B$grn}%{F$bg}%{-u}%{U$bg}"
+warn="%{B$ylw}%{F$bg}%{-u}%{U$bg}"
+bad="%{B$red}%{F$bg}%{-u}%{U$bg}"
+goodu="%{B$bg}%{F$fg}%{-u}%{U$bg}"
+warnu="%{B$bg}%{F$fg}%{-u}%{U$bg}"
+badu="%{B$bg}%{F$fg}%{-u}%{U$bg}"
+win="%{B$blu}%{F$bg}%{-u}%{U$bg}"
 gend="%{B$blu}%{F$bg}"
 acc="%{B$bg}%{F$fg}"
 clr="%{B-}%{F-}%{-u}"
