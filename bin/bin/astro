@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+imgsrc=$(cat ~/2017.txt | shuf -n 1)
+
+fetch_source() {
+    curl --silent $imgsrc > ~/.cache/astro17/apod.json 
+}
+
+set_wall() {
+    img=$(grep "hdurl" ~/.cache/astro17/apod.json | awk -F\" '{print $4}')
+    feh --bg-fill $img 
+}
+
+caption() {
+    cap=$(grep "explanation" ~/.cache/astro17/apod.json | awk -F\" '{print $4}')
+    notify-send Summary: "$cap" 
+}
+
+cosmic() {
+    fetch_source &&
+    set_wall 
+    caption
+}
+
+cosmic 

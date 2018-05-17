@@ -36,7 +36,6 @@ antigen bundle command-not-found
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle Goles/battery
-antigen bundle holman/spark
 # Load the theme.
 antigen theme cypher
 
@@ -48,6 +47,7 @@ alias squish='squash $(ls ~/.config/squash/themes | fzf ) > /dev/null 2&>1'
 alias OMZ='antigen theme $(ls ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes | fzf)'
 alias stellar='feh --bg-fill $(cat ~/stellar.txt | shuf -n 1)'
 alias earthly='feh --bg-fill $(cat ~/prettyearth.txt | shuf -n 1)'
+alias apod='feh --bg-fill $(cat ~/apod.txt | shuf -n 1)'
 alias gfetch='neofetch --clean & neofetch --w3m $(curl $(cat ~/prettyearth.txt | shuf -n 1) > ~/wall.jpg && echo ~/wall.jpg)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
