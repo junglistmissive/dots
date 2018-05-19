@@ -59,7 +59,8 @@ syndaemon -i .5 -K -t -R -d &
 #/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 ## Set a wallpaper
-hsetroot -fill ~/startwall.jpg &
+feh --bg-fill ~/wall.jpg &
+
 urxvtd &
 ## Compton
 ## NOTE: composition must be started before tint2

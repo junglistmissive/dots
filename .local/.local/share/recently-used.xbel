@@ -546,12 +546,25 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/Downloads/The%20Black%20Album/14%20My%201st%20Song.m4a" added="2018-05-05T20:28:37Z" modified="2018-05-05T20:28:37Z" visited="2018-05-05T20:28:37.696025Z">
+  <bookmark href="file:///home/daniel/Downloads/The%20Black%20Album/14%20My%201st%20Song.m4a" added="2018-05-05T20:28:37Z" modified="2018-05-05T20:28:37Z" visited="2018-05-05T20:28:37Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="audio/mp4"/>
         <bookmark:applications>
           <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-05T20:28:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/.zcompdump" added="2018-05-18T01:41:56Z" modified="2018-05-18T01:41:56Z" visited="2018-05-18T01:41:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2018-05-18T01:41:56Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

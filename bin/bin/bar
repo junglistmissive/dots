@@ -205,7 +205,7 @@ options=" ${fonts} -g ${width}x${height}+${xoff}+${yoff} -B ${bbg} -F ${bfg} -u 
 
 # Main loop
 while true; do
-	echo $(content)
+    echo $(content)
     sleep .5
 done | lemonbar ${options}
 

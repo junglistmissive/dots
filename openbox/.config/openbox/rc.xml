@@ -52,6 +52,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
+    <cornerRadius>0</cornerRadius>
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
@@ -314,7 +315,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>chromium</command>
+        <command>google-chrome-stable</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Web Browser</name>
