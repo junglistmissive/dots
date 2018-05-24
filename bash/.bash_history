@@ -56,3 +56,76 @@ fc-cache
 sudo chsh daniel
 homeshick generate dotfiles
 exit
+dots
+cd dots
+sudo pacman -S zsh
+wpa_cli -i wlp1s0
+wpa_supplicant -B -i wlp1s0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+sudo wpa_supplicant -B -i wlp1s0 -c /etc/wpa_supplicant/wpa_supplicant.conf 
+wpa_cli
+sudo wpa_cli
+sudo wpa_cli -i wlp1s0
+ping archlinux.org
+dhcpcd wlp1s0
+sudo dhcpcd wlp1s0
+sudo pacman -S zsh
+sudo pacman -S w3m
+sudo pacman -S ImageMagick
+sudo pacman -S imagemagick
+ls
+stow bin
+sudo pacman -S stow
+stow bin
+stow antigen
+stow bash
+rm ~/.bashrc ~/.bash_logout ~/.bash_history
+stow bash
+stow bspwm
+stow compton
+stow freshcoat
+stow fzf
+stow mopidy
+stow ncmpcpp
+stow neofetch
+stow neovim
+stow newsboat
+stow rofi
+stow sxhkd
+stow xconfs
+stow zsh
+stow .local
+cd
+ls -a
+mv share ~/.local
+.local
+cd .local
+ls
+cd share
+ls
+cd
+dots
+cd dots
+cp -r .themes ~/
+ls -a
+..
+cd
+ls -a
+cd .local
+cd share
+ls
+..
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+sudo pacman -S base-devel
+sudo pacman -S go
+makepkg -si
+yay lemonbar
+sudo pacman -S neovim
+sudo nvim /etc/pacman.conf
+yay lemonbar
+sudo pacman -Syyu
+..
+cd
+sudo chsh daniel
+logout

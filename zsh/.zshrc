@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-PATH=$PATH:/home/daniel/bin
+PATH=$PATH:/home/daniel/bin:/home/daniel/.gem/ruby/2.5.0/bin:
 export PATH
 GOPATH=/home/daniel/gocode
 export GOPATH
@@ -20,6 +20,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 nplayer () (nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo & trap "kill $!" EXIT; ncmpcpp)
+dtop() (feh --bg-scale $(http --pretty=format https://api.desktoppr.co/1/wallpapers/random | grep jpg | awk -F\" 'NR >=3{ print $4}' ))
 
 source /home/daniel/.antigen/antigen.zsh
 
@@ -43,11 +44,13 @@ antigen theme cypher
 antigen apply
 
 alias fresh='freshcoat'
-alias squish='squash $(ls ~/.config/squash/themes | fzf ) > /dev/null 2&>1'
 alias OMZ='antigen theme $(ls ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes | fzf)'
-alias stellar='feh --bg-fill $(cat ~/stellar.txt | shuf -n 1)'
-alias earthly='feh --bg-fill $(cat ~/prettyearth.txt | shuf -n 1)'
-alias apod='feh --bg-fill $(cat ~/apod.txt | shuf -n 1)'
-alias gfetch='neofetch --clean & neofetch --w3m $(curl $(cat ~/prettyearth.txt | shuf -n 1) > ~/wall.jpg && echo ~/wall.jpg)'
+alias stellar='feh --bg-fill $(shuf -n 1 ~/bin/stellar.txt)'
+alias earthly='feh --bg-fill $(shuf -n 1 ~/bin/prettyearth.txt)'
+alias apod='feh --bg-fill $(shuf -n 1 ~/bin/apod.txt)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+if ! pgrep -x "bspwm" > /dev/null ;
+then
+    [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+fi

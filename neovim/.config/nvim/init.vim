@@ -122,6 +122,12 @@ set wildignore+=*.swp,.lock,.DS_Store,._*
 
 colorscheme nord
 let g:limelight_conceal_ctermfg = 1
+let g:startify_padding_left = 5
+let g:startify_bookmarks = [ '~/.config'  ]
+let g:startify_lists = [
+    \ { 'type': 'files',        'header': [     'Recent']        },
+    \ { 'type': 'bookmarks',    'header': [     'Bookmarks']     },
+    \]
 
 set shiftwidth=4     " indent = 4 spaces
 set expandtab      " tabs are tabs

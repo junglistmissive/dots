@@ -24,7 +24,7 @@ super + Escape
 
 ## chrome ##
 super + w
-	google-chrome-stable
+	chromium
 
 ## gmrun ##
 super + z
@@ -37,6 +37,9 @@ super + l
 ## xrdb merge ##
 super + a
 	xrdb -merge ~/.Xresources
+
+super + s
+        /home/daniel/bin/simple
 	
 ┌──────────────────────────────────────┐
 │░█▀▄░█▀▀░█▀█░█░█░█▄█░░░█░█░█▀▀░█░█░█▀▀│

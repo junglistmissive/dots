@@ -315,7 +315,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>google-chrome-stable</command>
+        <command>chromium</command>
         <startupnotify>
           <enabled>yes</enabled>
           <name>Web Browser</name>

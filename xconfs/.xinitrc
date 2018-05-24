@@ -11,10 +11,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+xinput set-prop 11 273 1 &
 xset fp+ ~/.local/share/fonts &
 xset fp rehash &
 fc-cache &
 xrdb ~/.Xresources
 urxvtd -q -f -o &
-exec openbox --startup /home/daniel/.config/openbox/autostart
-#exec herbstluftwm
+#exec openbox
+exec bspwm

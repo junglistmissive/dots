@@ -569,4 +569,34 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/daniel/wall.jpg" added="2018-05-21T08:53:40Z" modified="2018-05-21T09:01:00Z" visited="2018-05-21T08:53:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="wpg" exec="&apos;wpg %u&apos;" modified="2018-05-21T09:01:00Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/skull.jpg" added="2018-05-22T10:41:43Z" modified="2018-05-22T10:41:43Z" visited="2018-05-22T10:41:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-22T10:41:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/vexel.png" added="2018-05-22T10:53:16Z" modified="2018-05-22T10:53:16Z" visited="2018-05-22T10:53:17.261939Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-22T10:53:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

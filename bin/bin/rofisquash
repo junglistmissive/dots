@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-bg=$( xrdb -query | grep background: | awk 'NR==1 { print $2 }' )
+bg=$( xrdb -query | grep background: | awk -F\# 'NR==1 { print "#"$2 }' )
 bg1=$( xrdb -query | grep color0 | awk 'NR==1 { print $2 }' )
 sepclr=$( xrdb -query | grep color8 | awk 'NR==1 { print $2 }' )
 scroll=$( xrdb -query | grep color8 | awk 'NR==1 { print $2 }' )
@@ -33,11 +33,12 @@ printf "
     margin: 0;
     margin-bottom: 0;
     margin-top: 0;
-    spacing: 0;
+    spacing: 10;
 }
 
 #listview {
-    spacing: 0;
+    spacing: 10px;
+    padding: 10 10 ;
     scrollbar: true;
     margin: 0;
     dynamic: true;
@@ -53,12 +54,12 @@ printf "
 
 #mainbox {
     border: 0;
-    padding: 0;
+    padding: 20 ;
     background-color: @backgroundcoloralternate;
 }
 
 #element {
-    padding: 16;
+    padding: 10 10 10;
     border: 0 0 1 0;
     border-color: @separatorcolor;
     background-color: @backgroundcoloralternate;
@@ -98,6 +99,7 @@ printf "
     border: 0 solid 0 solid 1 solid 0 solid;
     margin: 0;
     spacing: 0;
+    padding: 1px ;
     border-color: @separatorcolor;
 }
 

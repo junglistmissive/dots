@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bg=$(xrdb -query | grep background | awk 'NR==1 { print $2 }')
-fg=$(xrdb -query | grep color8 | awk 'NR==1 { print $2 }')
+bg=$(xrdb -query | grep background | awk -F\# 'NR==1 { print "#"$2 }')
+fg=$(xrdb -query | grep color2 | awk 'NR==1 { print $2 }')
 
 exec hashwall -r 7 -s 4 -b "$bg" -f "$fg"

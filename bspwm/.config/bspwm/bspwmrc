@@ -1,6 +1,6 @@
 #!/bin/sh
-color8=$(xrdb -query | grep 'color8:' | awk '{ print $2 }')
-color6=$(xrdb -query | grep 'color6:' | awk 'NR==1 { print $2 }')
+inactive=$(xrdb -query | grep 'color8:' | awk '{ print $2 }')
+active=$(xrdb -query | grep 'color4:' | awk 'NR==1 { print $2 }')
 
 #/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 if ! pgrep -x "sxhkd" > /dev/null
@@ -24,7 +24,7 @@ then
     ~/bin/bar &
 fi
 
-feh --bg-fill ~/wall.jpg &
+feh --bg-fill ~/wall.png &
 
 urxvtd &
 
@@ -39,8 +39,8 @@ bspc config auto_cancel             true
 bspc config focus_follows_pointer   true
 bspc config auto_alternate          true
 bspc config center_pseudo_tiled 	true
-bspc config normal_border_color		"$color8"
-bspc config focused_border_color	"$color6"
+bspc config normal_border_color		"$inactive"
+bspc config focused_border_color	"$active"
 bspc rule -a imv state=floating border=off rectangle=250x250+8+36
 
 

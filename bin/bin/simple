@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+img=$(shuf -n1 ~/bin/simple.txt)
+
+feh --bg-scale $img
+

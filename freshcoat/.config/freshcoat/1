@@ -1,2 +1,59 @@
-*.foreground: #d6dbe0 *.background: #070c0f *.cursorColor: #d6dbe0 *.color0: #070c0f *.color1: #f93a2b *.color2: #1cce28 *.color3: #ffd816 *.color4: #0089af *.color5: #f7027c *.color6: #00a087 *.color7: #919693 *.color8: #1c2630 *.color9: #f95951 *.color10: #60dd49 *.color11: #ffed38 *.color12: #00aacc *.color13: #ff0093 *.color14: #00b59b *.color15: #d6dbe0 rofi.color-enabled: true rofi.color-window: #070c0f, #070c0f, #070c0f rofi.color-normal: #070c0f, #d6dbe0, #070c0f, #070c0f, #00a087
-Could not load font "-lucy-tewi-medium-r-normal-*-11-90-75-75-p-58-iso10646-1"
+*.foreground: #ffffff *.background: [95]#04284a *.cursorColor: #ffffff *.color0: #14464a *.color1: #ff294c *.color2: #afffcc *.color3: #ffe600 *.color4: #4745d1 *.color5: #7d3c9e *.color6: #b2ebf2 *.color7: #b7bfbb *.color8: #14464a *.color9: #ff294c *.color10: #afffcc *.color11: #ffe600 *.color12: #4745d1 *.color13: #7d3c9e *.color14: #b2ebf2 *.color15: #ffffff rofi.color-enabled: true rofi.color-window: #04284a, #04284a, #14464a rofi.color-normal: #04284a, #ffffff, #04284a, #14464a, #b2ebf2
+monitor: Invalid descriptor found in 'eDP1'.
+rxvt-unicode daemon listening on /home/daniel/.urxvt/urxvtd-xxx.
+config: Unknown setting: 'auto_cancel'.
+config: Unknown setting: 'auto_alternate'.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.
+xprop: error: Invalid window id format: 0x0.

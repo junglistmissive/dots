@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+src=$(shuf -n1 /home/daniel/bin/simple.txt)
+img=$(echo "/home/daniel/wall.png")
+
+clear_cache() {
+    rm ~/.cache/thumbnails/neofetch/*.png &
+}
+
+display() {
+    exec neofetch --w3m $img
+}
+
+fetch() {
+    clear_cache
+    display
+}
+
+while http $src --output $img ; do
+fetch 
+done

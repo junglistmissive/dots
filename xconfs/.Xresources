@@ -9,7 +9,7 @@ URxvt.fading:               0
 URxvt.loginShell:           true
 URxvt.saveLines:            400
 URxvt.lineSpace:            2
-
+URxvt.depth:                32
 ! Fonts
 URxvt.allow_bold:           false
 URxvt*font:-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1, \

@@ -17,7 +17,7 @@ red=$(xrdb -query | grep color1 | awk 'NR==1 { print $2 }')
 fg=$(xrdb -query | grep foreground | awk '{ print $2 }')
 acc=$(xrdb -query | grep color1 | awk 'NR==1 { print $2 }')
 bblk=$(xrdb -query | grep color8 | awk '{ print $2 }')
-bg=$(xrdb -query | grep background | awk '{ print $2 }')
+bg=$(xrdb -query | grep background | awk -F\# 'NR == 1 { print "#"$2 }')
 wht=$(xrdb -query | grep color7 | awk '{ print $2 }')
 cyn=$(xrdb -query | grep color6 | awk '{ print $2  }')
 blu=$(xrdb -query | grep color4 | awk '{ print $2  }')
@@ -156,7 +156,7 @@ content()
     # If iwgetid is not found, then DISCONNECTED will be displayed
     wireless()
     {
-        wifi=$(nmcli -t -f active,ssid dev wifi | egrep '^yes' | cut -d\' -f2 | awk -F: '{ print $2 }')
+        wifi=$(iw dev wlp1s0 link | awk -F: 'NR == 2 { print $2 }')
 
         if [[ -z $wifi ]]; then
             wifi="DISCONNECTED"
@@ -185,7 +185,7 @@ content()
 
 
 # Formatting options
-fonts=" -f -ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1  -f -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1 -f -lucy-tewi-medium-r-normal-*-11-90-75-75-p-58-iso10646-1"
+fonts=" -f -ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1  -f -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
 width=1366
 height=24
 # x - y offsets
@@ -207,5 +207,5 @@ options=" ${fonts} -g ${width}x${height}+${xoff}+${yoff} -B ${bbg} -F ${bfg} -u 
 while true; do
     echo $(content)
     sleep .5
-done | lemonbar ${options}
+done | lemonbar ${options} 
 

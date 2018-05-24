@@ -135,7 +135,7 @@ auto-reload yes
 # Default value: lynx
 #
 #browser "w3m -o display_image=true -o auto_image=true -o image_scale=35 %u"
-browser w3m -o display_image=true -o auto_image=true -o image_scale=20% %u
+browser elinks %u
 ####  cache-file
 #
 # This configuration option sets the cache file. This is especially useful if
