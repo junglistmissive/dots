@@ -24,7 +24,8 @@ Plug 'junegunn/limelight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
-
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'jacoborus/tender.vim'
 call plug#end()
 
 " }}}
@@ -72,6 +73,9 @@ augroup nerdtree
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 augroup END
 
+augroup startify
+        autocmd User Startified let &l:stl = ' welcome to neovim motherfucker!'
+augroup END
 " }}}
 
 

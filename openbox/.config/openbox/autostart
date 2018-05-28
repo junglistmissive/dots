@@ -27,9 +27,9 @@ xset b off
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.
 xset r rate 250 25
-xset fp+ ~/.local/share/fonts &
-xset fp rehash &
-xrdb -merge ~/.Xresources
+#xset fp+ ~/.local/share/fonts &
+#xset fp rehash &
+#xrdb -merge ~/.Xresources
 ## Add keyboard mapping.
 #xmodmap -e "keysym Insert = Multi_key"
 
@@ -46,10 +46,9 @@ xrdb -merge ~/.Xresources
 
 ## Configure touchpad. See 'man synaptics' for more info.
 ## (Now might be using libinput instead of synaptics.)
-synclient TapButton1=1 TapButton2=3 TapButton3=2
 
 ## Disable touchpad while typing
-syndaemon -i .5 -K -t -R -d &
+#syndaemon -i .5 -K -t -R -d &
 
 ### TOUCHPAD END
 
@@ -59,7 +58,7 @@ syndaemon -i .5 -K -t -R -d &
 #/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 ## Set a wallpaper
-feh --bg-fill ~/wall.jpg &
+feh --bg-fill ~/wall.png &
 
 urxvtd &
 ## Compton
@@ -67,7 +66,7 @@ urxvtd &
 compton &
 
 ## Start the tint2 session (the default tint2 will run if no sessions have been set)
-~/bin/bar &
+/home/daniel/bin/bar &
 
 
 

@@ -24,7 +24,7 @@ then
     ~/bin/bar &
 fi
 
-feh --bg-fill ~/wall.png &
+/home/daniel/bin/simple &
 
 urxvtd &
 

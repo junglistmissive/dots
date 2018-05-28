@@ -38,7 +38,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle Goles/battery
 # Load the theme.
-antigen theme cypher
+antigen theme eastwood
 
 # Tell Antigen that you're done.
 antigen apply
@@ -48,6 +48,7 @@ alias OMZ='antigen theme $(ls ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes |
 alias stellar='feh --bg-fill $(shuf -n 1 ~/bin/stellar.txt)'
 alias earthly='feh --bg-fill $(shuf -n 1 ~/bin/prettyearth.txt)'
 alias apod='feh --bg-fill $(shuf -n 1 ~/bin/apod.txt)'
+alias awal='feh --bg-fill $(shuf -n 1 ~/bin/androidwalls.txt)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if ! pgrep -x "bspwm" > /dev/null ;

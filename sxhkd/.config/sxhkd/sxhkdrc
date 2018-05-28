@@ -6,7 +6,11 @@
 
 ## terminal emulator ##
 super + t
-	urxvt
+	urxvtc
+
+## simple desktop ##
+super + s
+    /home/daniel/bin/simple
 
 ## program launcher ##
 super + d
@@ -37,9 +41,6 @@ super + l
 ## xrdb merge ##
 super + a
 	xrdb -merge ~/.Xresources
-
-super + s
-        /home/daniel/bin/simple
 	
 ┌──────────────────────────────────────┐
 │░█▀▄░█▀▀░█▀█░█░█░█▄█░░░█░█░█▀▀░█░█░█▀▀│
@@ -82,7 +83,7 @@ super + shift + p
 	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
 		
 ## swap current node with biggest node ##
-super + s
+super + shift +s
 	bspc node -s biggest	
 
 ## set window gap to 14 ##

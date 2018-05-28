@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+img=$(shuf -n1 ~/bin/simple.txt)
+src=$(echo "/tmp/tmp.png")
+cache=$(ls ~/.cache/thumbnails/neofetch | wc -l)
+
+clean() {
+ if [[ $cache > 0 ]]; then   
+    rm ~/.cache/thumbnails/neofetch/*
+fi
+}
+
+show() {
+    exec neofetch
+}
+
+while http $img > /tmp/tmp.png ; do
+    clean
+    show
+done
