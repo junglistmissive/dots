@@ -59,4 +59,4 @@ rofi.kb-row-up: Up,Control+p,ISO_Left_Tab
 rofi.kb-row-down: Down,Control+n
 rofi.cycle:true
 rofi.color: enabled
-
+XTerm*background: #2B2B2B

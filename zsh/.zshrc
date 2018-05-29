@@ -49,7 +49,11 @@ alias stellar='feh --bg-fill $(shuf -n 1 ~/bin/stellar.txt)'
 alias earthly='feh --bg-fill $(shuf -n 1 ~/bin/prettyearth.txt)'
 alias apod='feh --bg-fill $(shuf -n 1 ~/bin/apod.txt)'
 alias awal='feh --bg-fill $(shuf -n 1 ~/bin/androidwalls.txt)'
+alias ptrn='feh --bg-tile $(shuf -n 1 ~/bin/patterns.txt)'
+alias ptbw='feh --bg-tile $(shuf -n 1 ~/bin/patternsbw.txt)'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 
 if ! pgrep -x "bspwm" > /dev/null ;
 then
