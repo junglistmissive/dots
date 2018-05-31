@@ -48936,3 +48936,25 @@ antigen
 antigen-bundle
 antigen-theme
 antigen
+[WRN][1527797487.6570837498] /home/daniel/dots/antigen/.antigen/antigen.zsh:266
+[WRN][1527797487.6570837498] -antigen-interactive-mode: toplevel:shfunc:file:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[TRA][1527797487.6573290825] /home/daniel/dots/antigen/.antigen/antigen.zsh:475
+[TRA][1527797487.6573290825] Gonna create compdump file @ env-setup COMPDUMP
+[TRA][1527797487.6573290825] TRACE
+-antigen-env-setup
+/home/daniel/dots/antigen/.antigen/antigen.zsh
+antigen
+[TRA][1527797487.7007627487] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527797487.7007627487] Called antigen-bundle with --loc=themes/gnzh --btype=theme BUNDLE
+[TRA][1527797487.7007627487] TRACE
+antigen-bundle
+antigen-theme
+antigen
+(eval)
+antigen
+[TRA][1527797510.3453302383] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527797510.3453302383] Called antigen-bundle with --loc=themes/avit --btype=theme BUNDLE
+[TRA][1527797510.3453302383] TRACE
+antigen-bundle
+antigen-theme
+antigen
