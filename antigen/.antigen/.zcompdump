@@ -1,4 +1,4 @@
-#files: 722	version: 5.5.1
+#files: 723	version: 5.5.1
 
 _comps=(
 '-' '_precommand'
@@ -493,6 +493,7 @@ _comps=(
 'head' '_head'
 'heat' '_openstack'
 'help' '_sccs'
+'herbstclient' '_herbstclient'
 'heroku' '_heroku'
 'hexdump' '_hexdump'
 'hg' '_hg'
@@ -1589,37 +1590,38 @@ autoload -Uz _bootctl _bspc _busctl _coredumpctl _curl \
             _yp _zcat _zdump _zfs _zfs_dataset \
             _zfs_keysource_props _zfs_pool _zip _zpool _zsh \
             _acroread _code _dcop _evince _gnome-gv \
-            _gqview _gv _kdeconnect _kfmclient _matlab \
-            _mozilla _mplayer _nautilus _nedit _netscape \
-            _okular _pdftk _qiv _rdesktop _setxkbmap \
-            _sublimetext _urxvt _vnc _x_arguments _xauth \
-            _xautolock _x_borderwidth _xclip _x_color _x_colormapid \
-            _x_cursor _x_display _xdvi _x_extension _xfig \
-            _x_font _xft_fonts _x_geometry _x_keysym _xloadimage \
-            _x_locale _x_modifier _xmodmap _x_name _xournal \
-            _xpdf _xrandr _x_resource _xscreensaver _x_selection_timeout \
-            _xset _xt_arguments _xterm _x_title _xt_session_id \
-            _x_utils _xv _x_visual _x_window _xwit \
-            _add-zle-hook-widget _add-zsh-hook _alias _aliases _arrays \
-            _assign _autocd _bindkey _brace_parameter _builtin \
-            _cd _command _command_names _compadd _compdef \
-            _completers _condition _default _delimiters _directory_stack \
-            _dirs _disable _dynamic_directory_name _echotc _echoti \
-            _emulate _enable _equal _fc _file_descriptors \
-            _first _functions _globflags _globqual_delims _globquals \
-            _hash _history_modifiers _in_vared _jobs _jobs_bg \
-            _jobs_builtin _jobs_fg _kill _limit _limits \
-            _math _math_params _mere _module_math_func _options \
-            _options_set _options_unset _parameter _parameters _precommand \
-            _print _prompt _ps1234 _read _redirect \
-            _run-help _sched _set _setopt _source \
-            _stat _strftime _subscript _suffix_alias_files _tcpsys \
-            _tilde _trap _ttyctl _typeset _ulimit \
-            _unhash _user_math_func _value _vared _vars \
-            _wait _which _widgets _zargs _zattr \
-            _zcalc _zcalc_line _zcompile _zed _zftp \
-            _zle _zmodload _zmv _zpty _zsh-mime-handler \
-            _zsocket _zstyle _ztodo _heroku _pip
+            _gqview _gv _herbstclient _kdeconnect _kfmclient \
+            _matlab _mozilla _mplayer _nautilus _nedit \
+            _netscape _okular _pdftk _qiv _rdesktop \
+            _setxkbmap _sublimetext _urxvt _vnc _x_arguments \
+            _xauth _xautolock _x_borderwidth _xclip _x_color \
+            _x_colormapid _x_cursor _x_display _xdvi _x_extension \
+            _xfig _x_font _xft_fonts _x_geometry _x_keysym \
+            _xloadimage _x_locale _x_modifier _xmodmap _x_name \
+            _xournal _xpdf _xrandr _x_resource _xscreensaver \
+            _x_selection_timeout _xset _xt_arguments _xterm _x_title \
+            _xt_session_id _x_utils _xv _x_visual _x_window \
+            _xwit _add-zle-hook-widget _add-zsh-hook _alias _aliases \
+            _arrays _assign _autocd _bindkey _brace_parameter \
+            _builtin _cd _command _command_names _compadd \
+            _compdef _completers _condition _default _delimiters \
+            _directory_stack _dirs _disable _dynamic_directory_name _echotc \
+            _echoti _emulate _enable _equal _fc \
+            _file_descriptors _first _functions _globflags _globqual_delims \
+            _globquals _hash _history_modifiers _in_vared _jobs \
+            _jobs_bg _jobs_builtin _jobs_fg _kill _limit \
+            _limits _math _math_params _mere _module_math_func \
+            _options _options_set _options_unset _parameter _parameters \
+            _precommand _print _prompt _ps1234 _read \
+            _redirect _run-help _sched _set _setopt \
+            _source _stat _strftime _subscript _suffix_alias_files \
+            _tcpsys _tilde _trap _ttyctl _typeset \
+            _ulimit _unhash _user_math_func _value _vared \
+            _vars _wait _which _widgets _zargs \
+            _zattr _zcalc _zcalc_line _zcompile _zed \
+            _zftp _zle _zmodload _zmv _zpty \
+            _zsh-mime-handler _zsocket _zstyle _ztodo _heroku \
+            _pip
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs

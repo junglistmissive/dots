@@ -19,3 +19,4 @@ xrdb ~/.Xresources
 urxvtd -q -f -o &
 #exec openbox
 exec bspwm
+#exec herbstluftwm

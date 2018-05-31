@@ -203,9 +203,11 @@ bfg=${fg}
 # Final output formatting
 options=" ${fonts} -g ${width}x${height}+${xoff}+${yoff} -B ${bbg} -F ${bfg} -u ${brdr}"
 
+{
 # Main loop
-while true; do
-    echo $(content)
-    sleep .5
-done | lemonbar ${options} 
+    while true; do
+        echo $(content)
+        sleep .5 
+    done
+} 2> /dev/null | lemonbar ${options} 
 

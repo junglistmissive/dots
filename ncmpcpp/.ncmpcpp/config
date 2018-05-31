@@ -12,7 +12,7 @@ message_delay_time = "2"
 
 [playlist]
 playlist_display_mode = classic
-song_list_format = "{{%a - %t}|{%f}}{$R%l}"
+song_list_format = "{{%a - %t}|{%f}}{$R%l }"
 now_playing_prefix = "$b$5"
 now_playing_suffix = "$/b$9"
 
@@ -50,5 +50,6 @@ visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "30"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
-visualizer_look = "●┃"
+visualizer_look = "▗▗"
 
+execute_on_song_change = "~/neoalbum > /dev/null 2>1"

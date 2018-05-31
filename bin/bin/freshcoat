@@ -90,7 +90,6 @@ write_sh() {
 # WRITE OUTPUT TO x_colors in $CACHEDIR
 write_all() {
 	output=${x_output}${rofi_output}
-	echo $output
 	printf "${output}" > "${CACHEDIR}/x_colors"
 }
 
@@ -135,6 +134,11 @@ then
 fi
 }
 
+hcreload() {
+    exec herbstclient reload &
+}
+    
+
 bspfresh() {
 if  ! pgrep -x "openbox" > /dev/null ; 
 then
@@ -148,7 +152,7 @@ fi
 roficolor() {
 	exec $HOME/bin/rofisquash &
 }
-fresh() {
+{
 if [ -f $THEMEDIR/$COLORSCHEME ]; then
 	# CLEANUP
 	cleanup
@@ -177,11 +181,13 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
 	roficolor
 	obcolor
         bspfresh
+        hcreload
 	#setwall
 
 else
 	printf "YOU DID IT WRONG"
 fi
-}
-
-fresh > /dev/null 2&>1
+} 2> /dev/null
+#{
+ #fresh 
+ #} 2> /dev/null 

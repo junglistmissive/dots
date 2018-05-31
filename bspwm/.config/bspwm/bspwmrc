@@ -30,14 +30,12 @@ urxvtd &
 
 bspc monitor eDP1 -d  I II III IV 
 
-bspc config border_width            8
+bspc config border_width            4
 bspc config window_gap              8
 
 bspc config split_ratio             0.50
 bspc config top_padding             28
-bspc config auto_cancel             true
 bspc config focus_follows_pointer   true
-bspc config auto_alternate          true
 bspc config center_pseudo_tiled 	true
 bspc config normal_border_color		"$inactive"
 bspc config focused_border_color	"$active"

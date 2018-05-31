@@ -198,13 +198,13 @@ hc set smart_window_surroundings    0
 hc set smart_frame_surroundings     0
 hc set mouse_recenter_gap           0
 
-hc set tree_style '╾│ ├└╼─┐'
+hc set tree_style "-| |'--."
 ##
 # Application launching
 ##
 
 keybind $MOD-d              spawn rofi -show run
-keybind $MOD-t              spawn urxvt
+keybind $MOD-t              spawn urxvtc
 keybind $MOD-w				spawn chromium
 keybind $MOD-f				spawn thunar
 ##
@@ -228,16 +228,12 @@ hc unlock
 # and run chain.
 hc_run_chain
 
-xset +fp /home/daniel/.local/share/fonts &
-xset fp rehash &
-xset -b
 pkill -x dunst
 dunst &
 pkill -x lemonbar
 bar &
 pkill -x compton
 compton &
-. ~/.fehbg &
+/home/daniel/bin/simple &
 rofisquash &
-hwall &
 xrdb -merge ~/.Xresources

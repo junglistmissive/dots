@@ -3,6 +3,10 @@ PATH=$PATH:/home/daniel/bin:/home/daniel/.gem/ruby/2.5.0/bin:
 export PATH
 GOPATH=/home/daniel/gocode
 export GOPATH
+EDITOR=/usr/bin/nvim
+export EDITOR
+PAGER=/usr/bin/vimpager
+export PAGER
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -44,6 +48,7 @@ antigen theme eastwood
 antigen apply
 
 alias fresh='freshcoat'
+alias less='vimpager'
 alias OMZ='antigen theme $(ls ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes | fzf)'
 alias stellar='feh --bg-fill $(shuf -n 1 ~/bin/stellar.txt)'
 alias earthly='feh --bg-fill $(shuf -n 1 ~/bin/prettyearth.txt)'
