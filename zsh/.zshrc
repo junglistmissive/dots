@@ -42,7 +42,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle Goles/battery
 # Load the theme.
-antigen theme eastwood
+antigen theme gianu
 
 # Tell Antigen that you're done.
 antigen apply

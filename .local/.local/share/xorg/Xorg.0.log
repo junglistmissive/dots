@@ -299,3 +299,18 @@ X Protocol Version 11, Revision 0
 [    35.737] (II) intel(0): EDID vendor "AUO", prod id 16476
 [    35.737] (II) intel(0): Printing DDC gathered Modelines:
 [    35.737] (II) intel(0): Modeline "1366x768"x0.0   69.30  1366 1414 1446 1456  768 772 778 793 -hsync -vsync (47.6 kHz eP)
+[  1404.005] (II) event0  - AT Translated Set 2 keyboard: SYN_DROPPED event - some input events have been lost.
+[  1405.993] (II) event0  - AT Translated Set 2 keyboard: SYN_DROPPED event - some input events have been lost.
+[  1417.140] (II) event0  - AT Translated Set 2 keyboard: SYN_DROPPED event - some input events have been lost.
+[  1439.970] (EE) client bug: timer event7 keyboard: offset negative (-2711ms)
+[  1439.973] (EE) client bug: timer event7 keyboard: offset negative (-2376ms)
+[  1439.974] (EE) client bug: timer event7 keyboard: offset negative (-1841ms)
+[  1439.974] (EE) client bug: timer event7 keyboard: offset negative (-1841ms)
+[  1450.800] (EE) client bug: timer event7 keyboard: offset negative (-2288ms)
+[  1450.801] (EE) client bug: timer event7 keyboard: offset negative (-1727ms)
+[  1461.482] (EE) client bug: timer event7 keyboard: offset negative (-1917ms)
+[  1461.485] (EE) client bug: timer event7 keyboard: offset negative (-544ms)
+[  1461.485] (EE) client bug: timer event7 keyboard: offset negative (-17ms)
+[  2940.115] (EE) client bug: timer event7 gestures: offset negative (-98ms)
+[  2940.823] (II) event7  - Elan Touchpad: SYN_DROPPED event - some input events have been lost.
+[  2940.824] (EE) client bug: timer event7 tap: offset negative (-3ms)
