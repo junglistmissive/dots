@@ -49126,3 +49126,219 @@ antigen
 antigen-bundle
 antigen-theme
 antigen
+[WRN][1527869309.7993328571] /home/daniel/dots/antigen/.antigen/antigen.zsh:266
+[WRN][1527869309.7993328571] -antigen-interactive-mode: toplevel:shfunc:file:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[TRA][1527869309.8002455235] /home/daniel/dots/antigen/.antigen/antigen.zsh:475
+[TRA][1527869309.8002455235] Gonna create compdump file @ env-setup COMPDUMP
+[TRA][1527869309.8002455235] TRACE
+-antigen-env-setup
+/home/daniel/dots/antigen/.antigen/antigen.zsh
+antigen
+[TRA][1527869309.8430743217] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527869309.8430743217] Called antigen-bundle with --loc=themes/itg-text --btype=theme BUNDLE
+[TRA][1527869309.8430743217] TRACE
+antigen-bundle
+antigen-theme
+antigen
+(eval)
+antigen
+[TRA][1527869316.1599562168] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527869316.1599562168] Called antigen-bundle with --loc=themes/itg --btype=theme BUNDLE
+[TRA][1527869316.1599562168] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[WRN][1527885231.5700750351] /home/daniel/dots/antigen/.antigen/antigen.zsh:266
+[WRN][1527885231.5700750351] -antigen-interactive-mode: toplevel:shfunc:file:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[TRA][1527885231.5711426735] /home/daniel/dots/antigen/.antigen/antigen.zsh:475
+[TRA][1527885231.5711426735] Gonna create compdump file @ env-setup COMPDUMP
+[TRA][1527885231.5711426735] TRACE
+-antigen-env-setup
+/home/daniel/dots/antigen/.antigen/antigen.zsh
+antigen
+[TRA][1527885231.6140153408] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885231.6140153408] Called antigen-bundle with --loc=themes/essembeh --btype=theme BUNDLE
+[TRA][1527885231.6140153408] TRACE
+antigen-bundle
+antigen-theme
+antigen
+(eval)
+antigen
+[TRA][1527885251.0817489624] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885251.0817489624] Called antigen-bundle with --loc=themes/rgm --btype=theme BUNDLE
+[TRA][1527885251.0817489624] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885264.4343295097] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885264.4343295097] Called antigen-bundle with --loc=themes/pmcgee --btype=theme BUNDLE
+[TRA][1527885264.4343295097] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885270.9626080990] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885270.9626080990] Called antigen-bundle with --loc=themes/norm --btype=theme BUNDLE
+[TRA][1527885270.9626080990] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885284.7032628059] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885284.7032628059] Called antigen-bundle with --loc=themes/jispwoso --btype=theme BUNDLE
+[TRA][1527885284.7032628059] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885294.1132917404] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885294.1132917404] Called antigen-bundle with --loc=themes/jtriley --btype=theme BUNDLE
+[TRA][1527885294.1132917404] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885301.0922782421] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885301.0922782421] Called antigen-bundle with --loc=themes/jnrowe --btype=theme BUNDLE
+[TRA][1527885301.0922782421] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885328.0784032345] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885328.0784032345] Called antigen-bundle with --loc=themes/imajes --btype=theme BUNDLE
+[TRA][1527885328.0784032345] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885340.9767217636] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885340.9767217636] Called antigen-bundle with --loc=themes/intheloop --btype=theme BUNDLE
+[TRA][1527885340.9767217636] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885355.3820691109] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885355.3820691109] Called antigen-bundle with --loc=themes/itchy --btype=theme BUNDLE
+[TRA][1527885355.3820691109] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885368.9068062305] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885368.9068062305] Called antigen-bundle with --loc=themes/tjkirch --btype=theme BUNDLE
+[TRA][1527885368.9068062305] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885386.8423058987] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885386.8423058987] Called antigen-bundle with --loc=themes/gozilla --btype=theme BUNDLE
+[TRA][1527885386.8423058987] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885439.5930821896] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885439.5930821896] Called antigen-bundle with --loc=themes/jbergantine --btype=theme BUNDLE
+[TRA][1527885439.5930821896] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885442.6726241112] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885442.6726241112] Called antigen-bundle with --loc=themes/jbergantine --btype=theme BUNDLE
+[TRA][1527885442.6726241112] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[WRN][1527885447.7128107548] /home/daniel/dots/antigen/.antigen/antigen.zsh:266
+[WRN][1527885447.7128107548] -antigen-interactive-mode: toplevel:shfunc:file:shfunc:shfunc $_ANTIGEN_INTERACTIVE = 
+[TRA][1527885447.7130572796] /home/daniel/dots/antigen/.antigen/antigen.zsh:475
+[TRA][1527885447.7130572796] Gonna create compdump file @ env-setup COMPDUMP
+[TRA][1527885447.7130572796] TRACE
+-antigen-env-setup
+/home/daniel/dots/antigen/.antigen/antigen.zsh
+antigen
+[TRA][1527885447.7556858063] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885447.7556858063] Called antigen-bundle with --loc=themes/jbergantine --btype=theme BUNDLE
+[TRA][1527885447.7556858063] TRACE
+antigen-bundle
+antigen-theme
+antigen
+(eval)
+antigen
+[TRA][1527885459.0628302097] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885459.0628302097] Called antigen-bundle with --loc=themes/jonathan --btype=theme BUNDLE
+[TRA][1527885459.0628302097] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885470.0523672104] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885470.0523672104] Called antigen-bundle with --loc=themes/josh --btype=theme BUNDLE
+[TRA][1527885470.0523672104] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885555.9618179798] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885555.9618179798] Called antigen-bundle with --loc=themes/kphoen --btype=theme BUNDLE
+[TRA][1527885555.9618179798] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885584.4179158211] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885584.4179158211] Called antigen-bundle with --loc=themes/kafeitu --btype=theme BUNDLE
+[TRA][1527885584.4179158211] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885617.7469904423] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885617.7469904423] Called antigen-bundle with --loc=themes/kardan --btype=theme BUNDLE
+[TRA][1527885617.7469904423] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885651.7082018852] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885651.7082018852] Called antigen-bundle with --loc=themes/kennethreitz --btype=theme BUNDLE
+[TRA][1527885651.7082018852] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885671.0023078918] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885671.0023078918] Called antigen-bundle with --loc=themes/kardan --btype=theme BUNDLE
+[TRA][1527885671.0023078918] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885682.0384459496] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885682.0384459496] Called antigen-bundle with --loc=themes/kiwi --btype=theme BUNDLE
+[TRA][1527885682.0384459496] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885694.4073786736] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885694.4073786736] Called antigen-bundle with --loc=themes/kolo --btype=theme BUNDLE
+[TRA][1527885694.4073786736] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885706.1873741150] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885706.1873741150] Called antigen-bundle with --loc=themes/lukerandall --btype=theme BUNDLE
+[TRA][1527885706.1873741150] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885737.2251086235] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885737.2251086235] Called antigen-bundle with --loc=themes/macovsky --btype=theme BUNDLE
+[TRA][1527885737.2251086235] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885746.8982317448] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885746.8982317448] Called antigen-bundle with --loc=themes/maran --btype=theme BUNDLE
+[TRA][1527885746.8982317448] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885772.6924438477] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885772.6924438477] Called antigen-bundle with --loc=themes/mgutz --btype=theme BUNDLE
+[TRA][1527885772.6924438477] TRACE
+antigen-bundle
+antigen-theme
+antigen
+[TRA][1527885804.0025126934] /home/daniel/dots/antigen/.antigen/antigen.zsh:808
+[TRA][1527885804.0025126934] Called antigen-bundle with --loc=themes/mh --btype=theme BUNDLE
+[TRA][1527885804.0025126934] TRACE
+antigen-bundle
+antigen-theme
+antigen

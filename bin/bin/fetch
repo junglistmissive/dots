@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-img=$(shuf -n1 ~/bin/simple.txt)
+img=$(shuf -n1 ~/bin/prettyearth.txt)
 src=$(echo "/tmp/tmp.png")
 cache=$(ls ~/.cache/thumbnails/neofetch | wc -l)
 

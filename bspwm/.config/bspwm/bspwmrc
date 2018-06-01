@@ -21,7 +21,7 @@ xset fp rehash &
 
 if ! pgrep -x "lemonbar" > /dev/null
 then
-    ~/bin/bar &
+    ~/bin/lpanel &
 fi
 
 /home/daniel/bin/simple &

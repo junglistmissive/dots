@@ -1,0 +1,74 @@
+#!/bin/sh
+red=$(xrq '*.color1')
+grey=$(xrq '*.color8')
+mag=$(xrq '*.color5')
+blue=$(xrq '*.color4')
+ylw=$(xrq '*.color3')
+fg=$(xrq '*.foreground')
+bg=$(xrq '*.background' | sed 's/\[...//g')
+win=$(echo -e "\ue1d8")
+bat=$(echo -e "\ue037")
+chrg=$(echo -e "\ue09e")
+low=$(echo -e "\ue035")
+wifi=$(echo -e "\ue048")
+blk=$(xrq '*.color0')
+clr="%{B-}"
+SEP="  "
+GAP=" "
+SEC="%{B$blk}"
+SPC="%{B$blk}"$GAP"%{B-}"
+
+content() {
+window_title() {
+    color="%{B$red}"
+    icon="%{F$blk}$win%{F-}"
+    title=$SEC$(xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) WM_NAME | awk -F\" '{print $2}')
+    echo "$color$SEP$icon$SEP$clr$SPC$title$SPC$clr"
+}
+
+clock() {
+    time=$(date '+%l:%M')
+    echo "$time"
+}
+
+battery() {
+    good="%{B$blue}"
+    warn="%{B$ylw}"
+    bad="%{B$red}"
+    icon="%{F$blk}$bat%{F-}"
+    iconc="%{F$blk}$chrg%{F-}"
+    iconl="%{F$blk}$low%{F-}"
+    power=$(acpi |awk '{ print$4 }' | sed 's/%,/ /g;s/^/ /g')
+    status=$(cat /sys/class/power_supply/BAT0/status)
+    
+    if [[ "$power" -gt " 90 " ]] || [[ $status == "Charging" ]]; then
+        echo "$good$SEP$iconc$SEP$clr$SPC$SEC$power$SPC$clr"
+    elif [[ "$power" -gt " 40 " ]]; then
+        echo "$warn$SEP$icon$SEP$clr$SPC$SEC$power$SPC$clr"
+    else 
+        echo "$bad$SEP$iconl$SEP$clr$SPC$SEC$power$SPC$clr"
+    fi
+}
+
+network() {
+    color="%{B$mag}"
+    icon="%{F$blk}$wifi%{F-}"
+    SSID=$SEC$(iwgetid | awk -F\" '{print" ",$2," "}')
+    echo "$color$SEP$icon$SEP$clr$SPC$SSID$SPC$clr"
+}
+
+
+    left="$(window_title)"
+    center="$(clock)"
+    right="$(battery)$(network)"
+
+    output="$left%{c}$center%{r}$right"
+    echo -n "$output "
+}
+
+{
+while :; do
+    echo $(content)
+    sleep 1
+done
+} 2> /dev/null | lemonbar -d -f "-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1" -f "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" -F $(xrq '*.foreground') -B $(xrq '*.background' | sed 's/\[...//g') -g 1366x$(bspc config top_padding)

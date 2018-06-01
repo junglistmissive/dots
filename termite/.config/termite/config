@@ -1,3 +1,4 @@
+$(xrq '*.color')!/usr/bin/env bash
 [options]
 scroll_on_output = false
 scroll_on_keystroke = true
@@ -7,7 +8,7 @@ allow_bold = false
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Tewi 13px
+font = Monaco for Powerline 10
 scrollback_lines = 10000
 search_wrap = true
 icon_name = utilities-terminal
@@ -19,22 +20,22 @@ browser = exo-open
 filter_unmatched_urls = true
 
 [colors]
-color0 = #321300
-color1 = #b2270e
-color2 = #44a900
-color3 = #aa820c
-color4 = #58859a
-color5 = #97363d
-color6 = #b25a1e
-color7 = #786b53
-color8 = #433626
-color9 = #ed5d20
-color10 = #55f238
-color11 = #f2b732
-color12 = #85cfed
-color13 = #e14c5a
-color14 = #f07d14
-color15 = #ffc800
-foreground = #786b53
-background = #191919
-cursor = #786b53
+color0 = $(xrq '*.color0')
+color1 = $(xrq '*.color1')
+color2 = $(xrq '*.color2')
+color3 = $(xrq '*.color3')
+color4 = $(xrq '*.color4')
+color5 = $(xrq '*.color5')
+color6 = $(xrq '*.color6')
+color7 = $(xrq '*.color7')
+color8 = $(xrq '*.color8')
+color9 = $(xrq '*.color9')
+color10 = $(xrq '*.color10')
+color11 = $(xrq '*.color11')
+color12 = $(xrq '*.color12')
+color13 = $(xrq '*.color13')
+color14 = $(xrq '*.color14')
+color15 = $(xrq '*.color15')
+foreground = $(xrq '*.foreground')
+background = $(xrq '*.background' | sed 's/\[0-9//g;s/\]//g')
+cursor = $(xrq '*.foreground')

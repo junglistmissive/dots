@@ -32,7 +32,7 @@ mergex() {
 # RELOAD LEMONBAR
 reload_bar() {
 	pkill -x lemonbar
-	bar &
+	lpanel &
 }
 
 # BUILD COLOR ARRAY
@@ -135,7 +135,10 @@ fi
 }
 
 hcreload() {
+if ! pgrep -x "bspwm" > /dev/null ;
+then    
     exec herbstclient reload &
+fi
 }
     
 
