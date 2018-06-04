@@ -4,3 +4,6 @@
 [submodule "rainbow_levels.vim"]
 	path = rainbow_levels.vim
 	url = https://github.com/thiagoalessio/rainbow_levels.vim
+[submodule "antigen/.antigen/bundles/oh-my-zsh"]
+	path = antigen/.antigen/bundles/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh

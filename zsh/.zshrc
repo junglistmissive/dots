@@ -48,7 +48,7 @@ GEOMETRY_COLOR_PROMPT="green"
 PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME="3"
 PROMPT_GEOMETRY_EXEC_TIME=true
 
-antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+antigen theme geometry-zsh/geometry
 
 # Tell Antigen that you're done.
 antigen apply

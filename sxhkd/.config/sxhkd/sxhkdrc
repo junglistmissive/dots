@@ -6,12 +6,12 @@
 
 ## terminal emulator ##
 super + t
-	urxvtc
+	termite
 
 
 ## termite ##
 super + Return
-        termite
+        urxvtc
 
 
 ## simple desktop ##
