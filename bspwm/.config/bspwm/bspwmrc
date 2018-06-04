@@ -1,44 +1,38 @@
 #!/bin/sh
-inactive=$(xrdb -query | grep 'color8:' | awk '{ print $2 }')
+inactive=$(xrdb -query | grep 'color5:' | awk '{ print $2 }')
 active=$(xrdb -query | grep 'color4:' | awk 'NR==1 { print $2 }')
-
-#/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-if ! pgrep -x "sxhkd" > /dev/null
-then
-    sxhkd &
+if ! pgrep -x "sxhkd" > /dev/null; then
+  sxhkd &
 fi
-#synclient TapButton1=1 TapButton2=3 TapButton3=2 &
-xrdb -merge ~/.Xresources
- 
 
-if ! pgrep -x "compton" > /dev/null 
-then
-    compton &
+xrdb -merge ~/.Xresources
+
+if ! pgrep -x "compton" > /dev/null; then
+  compton &
 fi
 
 xset fp+ ~/.local/share/fonts &
 xset fp rehash &
 
-if ! pgrep -x "lemonbar" > /dev/null
-then
-    ~/bin/lpanel &
+if ! pgrep -x "lemonbar" > /dev/null; then
+  ~/bin/lpanel &
 fi
 
-/home/daniel/bin/simple &
+. ~/.fehbg &
 
 urxvtd &
 
-bspc monitor eDP1 -d  I II III IV 
+bspc monitor eDP1 -d  I II III IV
 
-bspc config border_width            4
+bspc config border_width            6
 bspc config window_gap              8
 
 bspc config split_ratio             0.50
 bspc config top_padding             28
 bspc config focus_follows_pointer   true
-bspc config center_pseudo_tiled 	true
-bspc config normal_border_color		"$inactive"
-bspc config focused_border_color	"$active"
+bspc config center_pseudo_tiled     true
+bspc config normal_border_color	    "$inactive"
+bspc config focused_border_color    "$active"
 bspc rule -a imv state=floating border=off rectangle=250x250+8+36
 
 

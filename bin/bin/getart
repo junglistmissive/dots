@@ -1,0 +1,13 @@
+#!/bin/bash
+artist=$(mpc -f '%artist%' current | sed 's/ /+/g')
+album=$(mpc -f '%album%' current | sed 's/ /+/g')
+title=$(mpc -f '%title%' current)
+dunst=$(mpc current)
+
+art() {
+    wget $( http ws.audioscrobbler.com/2.0/\?method\=album.getinfo\&api_key\=8e66e9a862e827690b3ca187438b43b2\&artist\=$artist\&album\=$album | awk -F\> 'NR == 9 {print $2}' | sed 's/png.*/png/g') -O ~/cover.png
+}
+
+{
+art && notify-send -i /home/daniel/cover.png "Now Playing:" "$dunst"
+} 2> /dev/null

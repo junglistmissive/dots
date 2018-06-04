@@ -42,7 +42,11 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle Goles/battery
 # Load the theme.
-antigen theme gianu
+GEOMETRY_COLOR_PROMPT="green"
+PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME="3"
+PROMPT_GEOMETRY_EXEC_TIME=true
+
+antigen theme geometry-zsh/geometry
 
 # Tell Antigen that you're done.
 antigen apply
@@ -64,3 +68,5 @@ if ! pgrep -x "bspwm" > /dev/null ;
 then
     [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 fi
+
+eval $(thefuck --alias)

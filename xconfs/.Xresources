@@ -11,16 +11,11 @@ URxvt.saveLines:            400
 URxvt.lineSpace:            2
 URxvt.depth:                32
 ! Fonts
-URxvt.allow_bold:           false
-URxvt*font:-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1, \
-xft:ShureTechMono Nerd Font:pixelsize=14, \
-xft:Monaco for Powerline:pixelsize=14, \
--gbdfed-creep-regular-r-normal-*-16-120-96-96-m-4-iso10646-1
+URxvt.allow_bold: false
+URxvt*font:-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1
 URxvt*boldFont:-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1
- 
-
 ! Fix font space
-URxvt*letterSpace:-1
+URxvt*letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle:          rxvt

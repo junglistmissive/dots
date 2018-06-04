@@ -8,6 +8,12 @@
 super + t
 	urxvtc
 
+
+## termite ##
+super + Return
+        termite
+
+
 ## simple desktop ##
 super + s
     /home/daniel/bin/simple

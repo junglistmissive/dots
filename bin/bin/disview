@@ -1,0 +1,40 @@
+#!/bin/bash
+artist=$(mpc -f '%artist%' current | sed 's/ /+/g')
+album=$(mpc -f '%album%' current | sed 's/ /+/g')
+title=$(mpc -f '%title%' current)
+
+art() {
+    wget $( http ws.audioscrobbler.com/2.0/\?method\=album.getinfo\&api_key\=8e66e9a862e827690b3ca187438b43b2\&artist\=$artist\&album\=$album | awk -F\> 'NR == 9 {print $2}' | sed 's/png.*/png/g') -O ~/cover.png
+}
+
+display_image() {
+    printf '%b\n  \n\e[48C\xE2\x80\x8B\x20' '0;1;6;6;180;180;;;;;/home/daniel/cover.png\n4;\n3;' '%b\n '
+ }
+
+current_artist() {
+    printf "%b\n \n\e[H\e[38C\e[6B\xE2\x80\x8B\x20\e[35mArtist: $(echo -n $artist |sed 's/+/ /g') " 
+}
+
+current_album() {
+    printf "%b\n \n\e[H\e[38C\e[7B\xE2\x80\x8B\x20\e[34mAlbum: $(echo -n $album |sed 's/+/ /g')" 
+}
+current_title() {
+    
+    printf "%b\n \n\e[H\e[38C\e[8B\xE2\x80\x8B\x20Track: $title\e[m" 
+}
+
+
+clr() {
+     printf '%b\n \e[2J\e[H'
+}
+
+    art
+    clr
+    current_artist
+    current_album
+    current_title
+    display_image | /usr/lib/w3m/w3mimgdisplay 
+
+
+
+

@@ -1,4 +1,61 @@
-6
+63
+DankMono-Italic.ttf -misc-dank mono-medium-i-normal--0-0-0-0-p-0-adobe-fontspecific
+DankMono-Italic.ttf -misc-dank mono-medium-i-normal--0-0-0-0-p-0-iso10646-1
+DankMono-Regular.ttf -misc-dank mono-medium-r-normal--0-0-0-0-p-0-adobe-fontspecific
+DankMono-Regular.ttf -misc-dank mono-medium-r-normal--0-0-0-0-p-0-iso10646-1
+LoRes12-Regular.ttf -misc-lores 12-medium-r-normal--0-0-0-0-p-0-adobe-standard
+LoRes12-Regular.ttf -misc-lores 12-medium-r-normal--0-0-0-0-p-0-ascii-0
+LoRes12-Regular.ttf -misc-lores 12-medium-r-normal--0-0-0-0-p-0-iso10646-1
+LoRes12-Regular.ttf -misc-lores 12-medium-r-normal--0-0-0-0-p-0-iso8859-1
+LoRes12-Regular.ttf -misc-lores 12-medium-r-normal--0-0-0-0-p-0-iso8859-15
+LoRes12-Regular.ttf -misc-lores 12-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-adobe-standard
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-ascii-0
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso10646-1
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-1
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-10
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-13
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-15
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-16
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-2
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-3
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-4
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-5
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-iso8859-9
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-koi8-e
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-koi8-r
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-koi8-ru
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-koi8-u
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-koi8-uni
+Monaco-Powerline.otf -b&h-monaco for powerline-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+OperatorMono-Book.otf -misc-operator mono book-light-r-normal--0-0-0-0-m-0-adobe-fontspecific
+OperatorMono-Book.otf -misc-operator mono book-light-r-normal--0-0-0-0-m-0-iso10646-1
+OperatorMono-BookItalic.otf -misc-operator mono book-light-i-normal--0-0-0-0-m-0-adobe-fontspecific
+OperatorMono-BookItalic.otf -misc-operator mono book-light-i-normal--0-0-0-0-m-0-iso10646-1
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-adobe-standard
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-ascii-0
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-ibm-cp437
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-ibm-cp850
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-ibm-cp852
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-ibm-cp866
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso10646-1
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-1
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-10
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-13
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-15
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-16
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-2
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-3
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-4
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-5
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-8
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-iso8859-9
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-koi8-e
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-koi8-r
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-koi8-ru
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-koi8-u
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-koi8-uni
+PxPlus_VGA_SquarePx.ttf -misc-pxplus vga squarepx-medium-r-normal--0-0-0-0-c-0-microsoft-cp1252
 Shure Tech Mono Nerd Font Complete.ttf -misc-shuretechmono nerd font-medium-r-normal--0-0-0-0-p-0-adobe-standard
 Shure Tech Mono Nerd Font Complete.ttf -misc-shuretechmono nerd font-medium-r-normal--0-0-0-0-p-0-ascii-0
 Shure Tech Mono Nerd Font Complete.ttf -misc-shuretechmono nerd font-medium-r-normal--0-0-0-0-p-0-iso10646-1

@@ -9,7 +9,6 @@ mapclear
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -26,6 +25,10 @@ Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'jacoborus/tender.vim'
+Plug 'bpstahlman/txtfmt'
+Plug 'thiagoalessio/rainbow_levels.vim'
+Plug 'mhartington/oceanic-next'
+Plug 'tyrannicaltoucan/vim-deep-space'
 call plug#end()
 
 " }}}
@@ -124,7 +127,17 @@ set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+let g:nord_italic_comments = 1
+let g:nord_italic = 1
 colorscheme nord
+
+
+
 let g:limelight_conceal_ctermfg = 1
 let g:startify_padding_left = 5
 let g:startify_bookmarks = [ '~/.config'  ]
@@ -140,7 +153,21 @@ set softtabstop=0    " backspace through spaces
 set smarttab
 " }}}
 
+"highlight link RainbowLevel0 Comment
+"highlight link RainbowLevel1 Constant
+"highlight link RainbowLevel2 Special
+"highlight link RainbowLevel3 Identifier
+"highlight link RainbowLevel4 Statement
+"highlight link RainbowLevel5 PreProc
+"highlight link RainbowLevel6 Normal
+"highlight link RainbowLevel7 NonText
 
+"highlight Comment cterm=italic ctermfg=008
+"highlight Bold cterm=italic
+"highlight Boolean cterm=italic
+"highlight vimLet cterm=italic
+"highlight Operator cterm=italic
+"highlight shFunction cterm=italic
 " statusline {{{
 
 let g:currentmode={
