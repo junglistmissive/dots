@@ -1,3 +1,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
         url = antigen/.antigen/bundles/robbyrussell/oh-my-zsh
+[submodule "rainbow_levels.vim"]
+	path = rainbow_levels.vim
+	url = https://github.com/thiagoalessio/rainbow_levels.vim
