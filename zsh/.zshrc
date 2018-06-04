@@ -39,6 +39,8 @@ antigen bundle lein
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle Goles/battery
 # Load the theme.
@@ -46,7 +48,7 @@ GEOMETRY_COLOR_PROMPT="green"
 PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME="3"
 PROMPT_GEOMETRY_EXEC_TIME=true
 
-antigen theme geometry-zsh/geometry
+antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 
 # Tell Antigen that you're done.
 antigen apply
