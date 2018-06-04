@@ -1,3 +1,3 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = /home/daniel/.antigen/bundles/robbyrussell/oh-my-zsh
+	url = /home/daniel/dots/antigen/.antigen/bundles/robbyrussell/oh-my-zsh
