@@ -19,11 +19,12 @@ SEC="%{B$blk}"
 SPC="%{B$blk}"$GAP"%{B-}"
 
 content() {
-window_title() {
-    color="%{B$red}"
-    icon="%{F$blk}$win%{F-}"
-    title=$SEC$(xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) WM_NAME | awk -F\" '{print $2}')
-    echo "$color$SEP$icon$SEP$clr$SPC$title$SPC$clr"
+
+    window_title() {
+        color="%{B$red}"
+        icon="%{F$blk}$win%{F-}"
+        title=$SEC$(xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) WM_NAME | awk -F\" '{print $2}')
+        echo "$color$SEP$icon$SEP$clr$SPC$SPC$title$SPC$SPC$clr"
 }
 
 clock() {
@@ -53,7 +54,7 @@ battery() {
 network() {
     color="%{B$mag}"
     icon="%{F$blk}$wifi%{F-}"
-    SSID=$SEC$(iwgetid | awk -F\" '{print" ",$2," "}')
+    SSID=$SEC$(iw dev wlp1s0 link | awk 'NR == 2 {print" ",$2," "}')
     echo "$color$SEP$icon$SEP$clr$SPC$SSID$SPC$clr"
 }
 

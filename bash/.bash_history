@@ -129,3 +129,7 @@ sudo pacman -Syyu
 cd
 sudo chsh daniel
 logout
+./freetype2.sh
+cat freetype2.sh 
+quit
+exit

@@ -147,9 +147,6 @@ write_name() {
     printf "${name_output}" > "$CACHEDIR/current"
 }
 
-setwall() {
-    . ~/.fehbg &
-}
 
 obcolor() {
     if ! pgrep -x "bspwm" > /dev/null ; then
@@ -200,7 +197,6 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
     obcolor
     bspfresh
     hcreload
-    #setwall
 
 else
     printf "You're doing it wrong."

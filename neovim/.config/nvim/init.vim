@@ -29,6 +29,8 @@ Plug 'bpstahlman/txtfmt'
 Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'vim-scripts/SyntaxAttr.vim'
+Plug 'dracula/vim',{'as':'dracula'}
 call plug#end()
 
 " }}}
@@ -127,23 +129,48 @@ set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
-if (has("termguicolors"))
- set termguicolors
-endif
+"if (has("termguicolors"))
+" set termguicolors
+"endif
 
 syntax enable
-let g:nord_italic_comments = 1
-let g:nord_italic = 1
 colorscheme nord
 
-
+highlight shQuote cterm=italic ctermfg=006
+highlight shCmdSubRegion cterm=italic ctermfg=006
+highlight bashStatement cterm=italic ctermfg=003
+highlight shCommandSub cterm=italic ctermfg=002
+highlight shOperator cterm=italic ctermfg=006
+highlight shOption cterm=none ctermfg=255
+highlight shVariable cterm=none ctermfg=255
+highlight shDerefSimple cterm=none ctermfg=006
+highlight shNumber cterm=none ctermfg=255
+highlight shSingleQuote cterm=italic ctermfg=002
+highlight shSpecial cterm=none ctermfg=006
+highlight shFunction cterm=italic ctermfg=004
+highlight shFunctionOne cterm=none ctermfg=255
+highlight shLoop cterm=none ctermfg=005
+highlight shFor cterm=none ctermfg=255
+highlight shRange cterm=none ctermfg=006
+highlight shTestOpr cterm=none ctermfg=255
+highlight shExpr cterm=none ctermfg=007
+highlight shConditional cterm=none ctermfg=005
+highlight shStatement cterm=italic ctermfg=006
+highlight shDoubleQuote cterm=italic ctermfg=002
+highlight PreProc cterm=italic ctermfg=006
+highlight shDerefVar cterm=italic ctermfg=255
+highlight Delimiter cterm=none ctermfg=003
+highlight shDerefSpecial cterm=none ctermfg=255
+highlight shCurlyIn cterm=none ctermfg=255
+highlight shCtrlSeq cterm=italic ctermfg=002
+highlight Comment cterm=italic ctermfg=008
 
 let g:limelight_conceal_ctermfg = 1
-let g:startify_padding_left = 5
+let g:startify_padding_left = 50
 let g:startify_bookmarks = [ '~/.config'  ]
 let g:startify_lists = [
-    \ { 'type': 'files',        'header': [     'Recent']        },
-    \ { 'type': 'bookmarks',    'header': [     'Bookmarks']     },
+    \ { 'type': 'files',        'header': [     '                                                  Recent']        },
+    \ { 'type': 'bookmarks',    'header': [     '                                                  Bookmarks']     },
     \]
 
 set shiftwidth=4     " indent = 4 spaces
@@ -153,21 +180,6 @@ set softtabstop=0    " backspace through spaces
 set smarttab
 " }}}
 
-"highlight link RainbowLevel0 Comment
-"highlight link RainbowLevel1 Constant
-"highlight link RainbowLevel2 Special
-"highlight link RainbowLevel3 Identifier
-"highlight link RainbowLevel4 Statement
-"highlight link RainbowLevel5 PreProc
-"highlight link RainbowLevel6 Normal
-"highlight link RainbowLevel7 NonText
-
-"highlight Comment cterm=italic ctermfg=008
-"highlight Bold cterm=italic
-"highlight Boolean cterm=italic
-"highlight vimLet cterm=italic
-"highlight Operator cterm=italic
-"highlight shFunction cterm=italic
 " statusline {{{
 
 let g:currentmode={
@@ -321,8 +333,8 @@ let g:user_emmet_leader_key='<C-X>'
 let g:NERDTreeMinimalUI  = 1
 let g:NERDTreeWinPos     = 'right'
 let g:NERDTreeStatusline = 0
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 " }}}
 
 
@@ -335,20 +347,29 @@ let g:NERDTreeDirArrowCollapsible = '-'
     let g:startify_update_oldfiles     = 1
     let g:startify_session_autoload    = 1
     let g:startify_session_persistence = 1
-	
-	let g:startify_custom_header = 'startify#fortune#boxed()'
-	let g:startify_custom_header = [
-            \ '@@@  @@@  @@@  @@@  @@@  @@@@@@@@@@ ',
-            \ '@@@@ @@@  @@@  @@@  @@@  @@@@@@@@@@@',
-            \ '@@!@!@@@  @@!  @@@  @@!  @@! @@! @@!',
-            \ '!@!!@!@!  !@!  @!@  !@!  !@! !@! !@!',
-            \ '@!@ !!@!  @!@  !@!  !!@  @!! !!@ @!@',
-            \ '!@!  !!!  !@!  !!!  !!!  !@!   ! !@!',
-            \ '!!:  !!!  :!:  !!:  !!:  !!:     !!:',
-			\ ':!:  !:!   ::!!:!   :!:  :!:     :!:',
-			\ ' ::   ::    ::::     ::  :::     :: ',
-			\ ' ::    :      :      :     :      :  ',
-			\ ]
+    let g:startify_custom_header = 'startify#fortune#boxed()'
+    let g:startify_custom_header = [
+            \ '                                                         @@@  @@@  @@@  @@@  @@@  @@@@@@@@@@ ',
+            \ '                                                         @@@@ @@@  @@@  @@@  @@@  @@@@@@@@@@@',
+            \ '                                                         @@!@!@@@  @@!  @@@  @@!  @@! @@! @@!',
+            \ '                                                         !@!!@!@!  !@!  @!@  !@!  !@! !@! !@!',
+            \ '                                                         @!@ !!@!  @!@  !@!  !!@  @!! !!@ @!@',
+            \ '                                                         !@!  !!!  !@!  !!!  !!!  !@!   ! !@!',
+            \ '                                                         !!:  !!!  :!:  !!:  !!:  !!:     !!:',
+	    \ '                                                         :!:  !:!   ::!!:!   :!:  :!:     :!:',
+	    \ '                                                          ::   ::    ::::     ::  :::     :: ',
+	    \ '                                                          ::    :      :      :     :      : ',
+	    \ ]
 
-
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:WebDevIconsUnicodeDecorateFileNodes = 1
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
+let g:webdevicons_conceal_nerdtree_brackets = 1
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ' '
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = ''
+let g:WebDevIconsUnicodeByteOrderMarkerDefaultSymbol = ''
+let g:WebDevIconsOS = 'Linux'
 " }}}

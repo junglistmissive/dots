@@ -1,21 +1,40 @@
-!!!! dkeg - teva !!!!
 
-*background: #170F0D
-*foreground: #746C48
+!------------------------------------------------------------------------------
+!TerminalMagoon
+!------------------------------------------------------------------------------
+!ExtremelyLightGrey&SuperDarkGreyBlue&ExtremelyLightGrey
+*.foreground:#F2FAFF
+*.background:#2B3034
+*.cursorColor:#F2FAFF
 
-*color0: #191F31
-*color1: #282E39
-*color2: #303844
-*color3: #3B444A
-*color4: #3C4435
-*color5: #4E534F
-*color6: #5D5D35
-*color7: #66695D
-*color8: #706D56
-*color9: #8B7852
-*color10: #909581
-*color11: #91703A
-*color12: #948658
-*color13: #A19662
-*color14: #AD9152
-*color15: #C6A13F
+!Black
+*.color0:#374955
+*.color8:#575D61
+
+!Red
+*.color1:#FF7D7A
+*.color9:#FF7D7A
+
+!Green
+*.color2:#52C071
+*.color10:#52C071
+
+!Yellow
+*.color3:#F9F871
+*.color11:#F9F871
+
+!Blue
+*.color4:#5CB0FF
+*.color12:#5CB0FF
+
+!Magenta
+*.color5:#C973DD
+*.color13:#C973DD
+
+!Cyan
+*.color6:#2EFCEF
+*.color14:#2EFCEF
+
+!White
+*.color7:#BCC3C7
+*.color15:#f2faff

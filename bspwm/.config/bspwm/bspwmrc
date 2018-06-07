@@ -21,6 +21,7 @@ fi
 . ~/.fehbg &
 
 urxvtd &
+xfsettingsd &
 
 bspc monitor eDP1 -d  I II III IV
 
