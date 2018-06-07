@@ -1,0 +1,8 @@
+.local/.local/share/nvim/plugged/dracula
+.local/.local/share/nvim/plugged/rainbow_levels.vim
+.local/.local/share/nvim/plugged/txtfmt
+antigen/.antigen/bundles/Goles/battery
+antigen/.antigen/bundles/arialdomartini/oh-my-git-themes
+antigen/.antigen/bundles/itsthatguy/itg.zsh-theme
+antigen/.antigen/bundles/robbyrussell/oh-my-zsh
+antigen/.antigen/bundles/tylerreckart/odin
