@@ -285,4 +285,54 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/daniel/optimo.ch" added="2018-06-07T08:31:19Z" modified="2018-06-07T08:31:19Z" visited="2018-06-07T08:31:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T08:31:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/lineto.com" added="2018-06-07T09:13:10Z" modified="2018-06-07T09:13:10Z" visited="2018-06-07T09:13:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T09:13:10Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics/2-JS-Basics/index.html" added="2018-06-07T16:07:01Z" modified="2018-06-07T16:07:01Z" visited="2018-06-07T16:07:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T16:07:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics/2-JS-Basics/script.js" added="2018-06-07T16:30:31Z" modified="2018-06-07T16:30:31Z" visited="2018-06-07T16:30:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T16:30:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics/2-JS-Basics" added="2018-06-07T16:30:50Z" modified="2018-06-07T16:30:50Z" visited="2018-06-07T16:30:50.871970Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T16:30:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

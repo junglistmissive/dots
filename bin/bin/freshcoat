@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Grab options from config folder & use fzf to filter/find and select
-COLORSCHEME="$(ls /home/daniel/.config/freshcoat | sort --reverse | fzf --cycle)"
+COLORSCHEME="$(ls /home/daniel/.config/freshcoat | sort --reverse | fzf --ansi --cycle)"
 
 # Cache & theme dirs
 CACHEDIR=$HOME/.cache/freshcoat

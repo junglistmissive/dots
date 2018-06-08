@@ -133,3 +133,5 @@ logout
 cat freetype2.sh 
 quit
 exit
+ls
+exit
