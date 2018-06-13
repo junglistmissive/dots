@@ -434,12 +434,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/PxGrotesk-Regular.ttf" added="2018-06-11T23:40:25Z" modified="2018-06-11T23:40:25Z" visited="2018-06-11T23:40:25.378563Z">
+  <bookmark href="file:///home/daniel/PxGrotesk-Regular.ttf" added="2018-06-11T23:40:25Z" modified="2018-06-11T23:40:25Z" visited="2018-06-11T23:40:25Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="font/ttf"/>
         <bookmark:applications>
           <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-11T23:40:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/dots" added="2018-06-13T19:18:42Z" modified="2018-06-13T19:18:42Z" visited="2018-06-13T19:18:42.569130Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-13T19:18:42Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
