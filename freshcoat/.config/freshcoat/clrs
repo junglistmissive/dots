@@ -1,40 +1,36 @@
-
-!------------------------------------------------------------------------------
-!TerminalMagoon
-!------------------------------------------------------------------------------
-!ExtremelyLightGrey&SuperDarkGreyBlue&ExtremelyLightGrey
-*.foreground:#F2FAFF
-*.background:#2B3034
-*.cursorColor:#F2FAFF
+!BG,FG,Cursor
+*.foreground:#F6F6F6
+*.background:#13293D
+*.cursorColor:#F6F6F6
 
 !Black
-*.color0:#374955
-*.color8:#575D61
+*.color0:#092327
+*.color8:#253031
 
 !Red
-*.color1:#FF7D7A
-*.color9:#FF7D7A
+*.color1:#FF5A5F
+*.color9:#FF5A5F
 
 !Green
-*.color2:#52C071
-*.color10:#52C071
+*.color2:#00A878
+*.color10:#00A878
 
 !Yellow
-*.color3:#F9F871
-*.color11:#F9F871
+*.color3:#F4D35E
+*.color11:#F4D35E
 
 !Blue
-*.color4:#5CB0FF
-*.color12:#5CB0FF
+*.color4:#19647E
+*.color12:#19647E
 
 !Magenta
-*.color5:#C973DD
-*.color13:#C973DD
+*.color5:#A4036F
+*.color13:#A4036F
 
 !Cyan
-*.color6:#2EFCEF
-*.color14:#2EFCEF
+*.color6:#28AFB0
+*.color14:#28AFB0
 
 !White
-*.color7:#BCC3C7
-*.color15:#f2faff
+*.color7:#F6F6F6
+*.color15:#F6F6F6

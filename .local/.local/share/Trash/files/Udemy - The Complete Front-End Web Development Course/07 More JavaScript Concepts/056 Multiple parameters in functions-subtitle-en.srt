@@ -1,0 +1,344 @@
+1
+00:00:00,060 --> 00:00:07,620
+Alright guys, so in this video we are going
+
+2
+00:00:00,060 --> 00:00:07,620
+to follow along with the functions section
+
+3
+00:00:07,620 --> 00:00:12,540
+here, and I'm going to talk about
+
+4
+00:00:07,620 --> 00:00:12,540
+multiple values and a quick, dirty way to
+
+5
+00:00:12,540 --> 00:00:21,990
+have however many values you want. So,
+
+6
+00:00:12,540 --> 00:00:21,990
+what we're going to do is first to pass
+
+7
+00:00:21,990 --> 00:00:28,830
+multiple variables into a
+
+8
+00:00:21,990 --> 00:00:28,830
+function, it's literally as simple as
+
+9
+00:00:28,830 --> 00:00:36,030
+putting a comma and then defining the
+
+10
+00:00:28,830 --> 00:00:36,030
+second piece of data, or the
+
+11
+00:00:36,030 --> 00:00:41,190
+second parameter. So, in this case, get
+
+12
+00:00:36,030 --> 00:00:41,190
+phrase length is going to take phrase
+
+13
+00:00:41,190 --> 00:00:49,379
+and another. So what we're going to do is
+
+14
+00:00:41,190 --> 00:00:49,379
+we're going to add both of these lengths
+
+15
+00:00:49,379 --> 00:00:59,670
+together, so I'm going to create two variables. I'll use this for one, so p1 is going to
+
+16
+00:00:59,670 --> 00:01:06,560
+be equal to that, and then var p2 is
+
+17
+00:00:59,670 --> 00:01:06,560
+going to be equal to "This is a shorter
+
+18
+00:01:06,560 --> 00:01:14,310
+sentence." And then when we call the get
+
+19
+00:01:06,560 --> 00:01:14,310
+phrase length we're going to pass in
+
+20
+00:01:14,310 --> 00:01:20,460
+both. So I'm going to save this, and now
+
+21
+00:01:14,310 --> 00:01:20,460
+I'm going to refresh, and it still says
+
+22
+00:01:20,460 --> 00:01:25,890
+34 because we still only do this. So what
+
+23
+00:01:20,460 --> 00:01:25,890
+we're going to do is phrase.length +
+
+24
+00:01:25,890 --> 00:01:31,799
+another.length. So we're going to
+
+25
+00:01:25,890 --> 00:01:31,799
+save that, now we're going to refresh and
+
+26
+00:01:31,799 --> 00:01:36,540
+it's going to say 61. So this is the
+
+27
+00:01:31,799 --> 00:01:36,540
+total length of both of these strings
+
+28
+00:01:36,540 --> 00:01:41,880
+here, and that's how to do two
+
+29
+00:01:36,540 --> 00:01:41,880
+parameters. Now what happens if I just
+
+30
+00:01:41,880 --> 00:01:46,860
+pass one into that function? When we
+
+31
+00:01:41,880 --> 00:01:46,860
+refresh it can't get the second one. So
+
+32
+00:01:46,860 --> 00:01:53,720
+it's going to fail because we assume
+
+33
+00:01:46,860 --> 00:01:53,720
+that that parameter is being passed in.
+
+34
+00:01:53,720 --> 00:02:02,280
+Now if I remove this, save it and refresh,
+
+35
+00:01:53,720 --> 00:02:02,280
+it works just fine, and that's because
+
+36
+00:02:02,280 --> 00:02:08,759
+this second parameter, as long as we
+
+37
+00:02:02,280 --> 00:02:08,759
+don't reference it within this function,
+
+38
+00:02:08,759 --> 00:02:21,890
+we could do something like this.
+
+39
+00:02:08,759 --> 00:02:21,890
+If typeof another doesn't equal
+
+40
+00:02:21,890 --> 00:02:35,030
+"undefined" then we can do l +=
+
+41
+00:02:21,890 --> 00:02:35,030
+another.length; and then save this.
+
+42
+00:02:35,030 --> 00:02:43,500
+Now we're going to pass in p2, after we
+
+43
+00:02:35,030 --> 00:02:43,500
+put a comma in that method call here, and
+
+44
+00:02:43,500 --> 00:02:49,440
+I'm going to save it and refresh, now we
+
+45
+00:02:43,500 --> 00:02:49,440
+get 61. So typeof is a way to check the
+
+46
+00:02:49,440 --> 00:02:58,409
+type of something. So, if I say typeof
+
+47
+00:02:49,440 --> 00:02:58,409
+this, it's going to say "object" because
+
+48
+00:02:58,409 --> 00:03:01,230
+that's how we create an object, which
+
+49
+00:02:58,409 --> 00:03:01,230
+we're going to get to in the next video.
+
+50
+00:03:01,230 --> 00:03:05,370
+If I say typeof this, it's going to say
+
+51
+00:03:01,230 --> 00:03:05,370
+"object" as well, even though it's an array.
+
+52
+00:03:05,370 --> 00:03:13,139
+If I say typeof that, it's going to say a
+
+53
+00:03:05,370 --> 00:03:13,139
+"number." It's going to say the same thing
+
+54
+00:03:13,139 --> 00:03:31,250
+for a float, and a string. So as you can
+
+55
+00:03:13,139 --> 00:03:31,250
+see typeof...now if I say typeof vf
+
+56
+00:03:31,250 --> 00:03:34,500
+without putting this in quotations or
+
+57
+00:03:31,250 --> 00:03:34,500
+anything, it's assumed that this is a
+
+58
+00:03:34,500 --> 00:03:39,060
+variable, as you can tell here, and we
+
+59
+00:03:34,500 --> 00:03:39,060
+haven't defined that variable. So typeof
+
+60
+00:03:39,060 --> 00:03:43,139
+a variable that hasn't been created is
+
+61
+00:03:39,060 --> 00:03:43,139
+going to return as a string
+
+62
+00:03:43,139 --> 00:03:49,680
+representation of "undefined." So, that's
+
+63
+00:03:43,139 --> 00:03:49,680
+how we can check going into this method,
+
+64
+00:03:49,680 --> 00:03:57,000
+if typeof and then another does not
+
+65
+00:03:49,680 --> 00:03:57,000
+equal undefined as a string. So, again,
+
+66
+00:03:57,000 --> 00:04:02,639
+when you're using comparisons this means not, and by using not, equals, equals it
+
+67
+00:04:02,639 --> 00:04:08,970
+means it is not the value, and not the
+
+68
+00:04:02,639 --> 00:04:08,970
+type. So this is a string that represents
+
+69
+00:04:08,970 --> 00:04:17,880
+the word undefined. If we don't pass that
+
+70
+00:04:08,970 --> 00:04:17,880
+in, save and refresh, it just prints out 34
+
+71
+00:04:17,880 --> 00:04:24,210
+and it skips over this because this type
+
+72
+00:04:17,880 --> 00:04:24,210
+of returns undefined, so then this
+
+73
+00:04:24,210 --> 00:04:29,970
+doesn't even run if
+
+74
+00:04:24,210 --> 00:04:29,970
+it's undefined. So that's a bit more
+
+75
+00:04:29,970 --> 00:04:36,960
+about I guess variable error checking,
+
+76
+00:04:29,970 --> 00:04:36,960
+I guess. Rather, existence, checking the
+
+77
+00:04:36,960 --> 00:04:41,970
+existence of something, specifically a
+
+78
+00:04:36,960 --> 00:04:41,970
+variable, and making sure it's not
+
+79
+00:04:41,970 --> 00:04:46,050
+undefined before using it. Which
+
+80
+00:04:41,970 --> 00:04:46,050
+shouldn't really be necessary except in
+
+81
+00:04:46,050 --> 00:04:50,780
+this case where I'm trying to call it
+
+82
+00:04:46,050 --> 00:04:50,780
+with only one, with only one parameter.
+
+83
+00:04:50,780 --> 00:04:57,030
+Now, in the next video we're going to
+
+84
+00:04:50,780 --> 00:04:57,030
+get to objects, and I think this
+
+85
+00:04:57,030 --> 00:05:02,930
+is the end of the functions, at least for
+
+86
+00:04:57,030 --> 00:05:02,930
+now.
+

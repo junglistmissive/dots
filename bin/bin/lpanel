@@ -1,5 +1,6 @@
 #!/bin/sh
 red=$(xrq '*.color1')
+grn=$(xrq '*.color2')
 grey=$(xrq '*.color8')
 mag=$(xrq '*.color5')
 blue=$(xrq '*.color4')
@@ -7,23 +8,25 @@ ylw=$(xrq '*.color3')
 fg=$(xrq '*.foreground')
 bg=$(xrq '*.background' | sed 's/\[...//g')
 win=$(echo -e "\ue1d8")
-bat=$(echo -e "\ue037")
-chrg=$(echo -e "\ue09e")
-low=$(echo -e "\ue035")
+med=$(echo -e "\ue1fe")
+chg=$(echo -e "\ue200")
+low=$(echo -e "\ue1fd")
+bat=$(echo -e "\ue1ff")
+full=$(echo -e "\ue201")
 wifi=$(echo -e "\ue048")
 blk=$(xrq '*.color0')
 clr="%{B-}"
 SEP="  "
 GAP=" "
-SEC="%{B$blk}"
-SPC="%{B$blk}"$GAP"%{B-}"
+SEC="%{B$grey}"
+SPC="%{B$grey}"$GAP"%{B-}"
 
 content() {
 
     window_title() {
         color="%{B$red}"
         icon="%{F$blk}$win%{F-}"
-        title=$SEC$(xprop -id $(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5) WM_NAME | awk -F\" '{print $2}')
+        title=$SEC$(xtitle)
         echo "$color$SEP$icon$SEP$clr$SPC$SPC$title$SPC$SPC$clr"
 }
 
@@ -33,21 +36,28 @@ clock() {
 }
 
 battery() {
-    good="%{B$blue}"
+    chrg="%{B$blue}"
+    good="%{B$grn}"
     warn="%{B$ylw}"
     bad="%{B$red}"
     icon="%{F$blk}$bat%{F-}"
-    iconc="%{F$blk}$chrg%{F-}"
+    iconf="%{F$blk}$full%{F-}"
+    iconc="%{F$blk}$chg%{F-}"
+    iconm="%{F$blk}$med%{F-}"
     iconl="%{F$blk}$low%{F-}"
-    power=$(acpi |awk '{ print$4 }' | sed 's/%,/ /g;s/^/ /g')
+    power=$(acpi |awk '{ print$4 }' | sed 's/%,//g;s/%//g')
     status=$(cat /sys/class/power_supply/BAT0/status)
     
-    if [[ "$power" -gt " 90 " ]] || [[ $status == "Charging" ]]; then
-        echo "$good$SEP$iconc$SEP$clr$SPC$SEC$power$SPC$clr"
-    elif [[ "$power" -gt " 40 " ]]; then
-        echo "$warn$SEP$icon$SEP$clr$SPC$SEC$power$SPC$clr"
+    if [[ $status == "Full" ]]; then
+        echo "$chrg$SEP$iconf$SEP$clr$SPC$SEC $power $SPC$clr"
+    elif [[ $status == "Charging" ]]; then
+        echo "$chrg$SEP$iconc$SEP$clr$SPC$SEC $power $SPC$clr"
+    elif [[ "$power" -gt " 50 " ]]; then
+        echo "$good$SEP$icon$SEP$clr$SPC$SEC $power $SPC$clr"
+    elif [[ "$power" -gt " 20 " ]]; then
+        echo "$warn$SEP$iconm$SEP$clr$SPC$SEC $power $SPC$clr"
     else 
-        echo "$bad$SEP$iconl$SEP$clr$SPC$SEC$power$SPC$clr"
+        echo "$bad$SEP$iconl$SEP$clr$SPC$SEC $power $SPC$clr"
     fi
 }
 

@@ -135,7 +135,7 @@ auto-reload yes
 # Default value: lynx
 #
 #browser "w3m -o display_image=true -o auto_image=true -o image_scale=35 %u"
-browser "w3m -o display_image=true -o auto_image=true -o image_scale=35 %u"
+browser "elinks %u"
 ####  cache-file
 #
 # This configuration option sets the cache file. This is especially useful if
@@ -171,12 +171,12 @@ cleanup-on-quit yes
 #
 # colors
 color background           color0 color0
-color listnormal           color10 color0
-color listfocus            color11 color0
+color listnormal           color1 color0
+color listfocus            color3 color0
 color listnormal_unread    color255 color0
-color listfocus_unread     color3 color0
+color listfocus_unread     color2 color0
 color info                 color6 color0
-color article              color3 color0
+color article              color7 color0
 ####  confirm-exit
 #
 # If set to yes, then newsboat will ask for confirmation whether the user

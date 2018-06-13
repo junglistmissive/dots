@@ -1,0 +1,272 @@
+1
+00:00:00,030 --> 00:00:03,510
+Alright guys. So what we're going to be
+
+2
+00:00:00,030 --> 00:00:03,510
+learning about in this video is just how
+
+3
+00:00:03,510 --> 00:00:08,580
+to put images into a webpage, and it's
+
+4
+00:00:03,510 --> 00:00:08,580
+important to note that images or image
+
+5
+00:00:08,580 --> 00:00:13,400
+tags are block level, which means they're
+
+6
+00:00:08,580 --> 00:00:13,400
+going to appear full width within the page.
+
+7
+00:00:13,400 --> 00:00:18,480
+So, for our news article here I've
+
+8
+00:00:13,400 --> 00:00:18,480
+downloaded some images. I've downloaded a
+
+9
+00:00:18,480 --> 00:00:25,140
+dog, chocolate, and HTML 5 from Google, and these are going to be corresponding to
+
+10
+00:00:25,140 --> 00:00:28,590
+each article, as you can see here. So, each
+
+11
+00:00:25,140 --> 00:00:28,590
+article is going to have it's own image.
+
+12
+00:00:28,590 --> 00:00:36,410
+So what we're going to do is jump up to
+
+13
+00:00:28,590 --> 00:00:36,410
+the top one here, and the image should be
+
+14
+00:00:36,500 --> 00:00:43,410
+above the title. Within the article
+
+15
+00:00:36,500 --> 00:00:43,410
+we're going to go ahead and type img. Now
+
+16
+00:00:43,410 --> 00:00:50,640
+this is self closing. That's all you need
+
+17
+00:00:43,410 --> 00:00:50,640
+to do to create an image element, but as
+
+18
+00:00:50,640 --> 00:00:53,910
+you'll see there's no image inside of it
+
+19
+00:00:50,640 --> 00:00:53,910
+and that's because there's an essential
+
+20
+00:00:53,910 --> 00:01:01,050
+property here, or attribute of the
+
+21
+00:00:53,910 --> 00:01:01,050
+element, which is src. And this basically
+
+22
+00:01:01,050 --> 00:01:05,580
+is an abbreviation for the word source.
+
+23
+00:01:01,050 --> 00:01:05,580
+So we need the source of the image that
+
+24
+00:01:05,580 --> 00:01:10,439
+we want to show here, and that is a file
+
+25
+00:01:05,580 --> 00:01:10,439
+path. Now if it's within the same
+
+26
+00:01:10,439 --> 00:01:13,470
+directory you don't have to worry about
+
+27
+00:01:10,439 --> 00:01:13,470
+anything just type the name of
+
+28
+00:01:13,470 --> 00:01:21,720
+the file. So in this case it's dog.jpg, save it refresh, and there we go.
+
+29
+00:01:21,720 --> 00:01:28,140
+There's the picture of our dog. Let's go
+
+30
+00:01:21,720 --> 00:01:28,140
+ahead and create one for the second
+
+31
+00:01:28,140 --> 00:01:34,470
+article which is about chocolate in
+
+32
+00:01:28,140 --> 00:01:34,470
+outer space. So the source for this one
+
+33
+00:01:34,470 --> 00:01:40,350
+is going to be chocolate.jpg, but what
+
+34
+00:01:34,470 --> 00:01:40,350
+you can do is, if you want, if it's in the
+
+35
+00:01:40,350 --> 00:01:45,119
+same directory, and this is going to be
+
+36
+00:01:40,350 --> 00:01:45,119
+relevant sometimes, if it's in the same
+
+37
+00:01:45,119 --> 00:01:50,130
+directory at the same path you can use
+
+38
+00:01:45,119 --> 00:01:50,130
+just the title. And once we get into
+
+39
+00:01:50,130 --> 00:01:54,270
+rewriting and stuff for URLs, which might
+
+40
+00:01:50,130 --> 00:01:54,270
+not even be in this course, you're going
+
+41
+00:01:54,270 --> 00:01:57,090
+to have to reference the current
+
+42
+00:01:54,270 --> 00:01:57,090
+directory that this page is in, so that's
+
+43
+00:01:57,090 --> 00:02:08,670
+./ So, it's chocolate.jpg, and then we close it. As you can see,
+
+44
+00:02:08,670 --> 00:02:14,160
+new study confirms chocolate is in space,
+
+45
+00:02:08,670 --> 00:02:14,160
+Mars bar, which is fitting. And then
+
+46
+00:02:14,160 --> 00:02:26,130
+finally we have the html5 article, and so
+
+47
+00:02:14,160 --> 00:02:26,130
+the source in this one...we can see
+
+48
+00:02:26,130 --> 00:02:32,390
+the source to our project, so we're going
+
+49
+00:02:26,130 --> 00:02:32,390
+to put an absolute source here. So,
+
+50
+00:02:32,660 --> 00:02:45,660
+C:\Users\nickg\Projects\web-course
+
+51
+00:02:32,660 --> 00:02:45,660
+and then the file name which is
+
+52
+00:02:45,660 --> 00:02:54,030
+html5.png, and then self close that. And we see here this is actually pretty big, so
+
+53
+00:02:54,030 --> 00:03:00,840
+what I need to do is I need to set the
+
+54
+00:02:54,030 --> 00:03:00,840
+width of this to a 100%, or
+
+55
+00:03:00,840 --> 00:03:05,549
+any pixel size we could also do. But by
+
+56
+00:03:00,840 --> 00:03:05,549
+setting it to a hundred percent it's just
+
+57
+00:03:05,549 --> 00:03:09,720
+going to make it only be as wide as the
+
+58
+00:03:05,549 --> 00:03:09,720
+page, but then it's also going to scale
+
+59
+00:03:09,720 --> 00:03:13,769
+it proportionally so that it won't be
+
+60
+00:03:09,720 --> 00:03:13,769
+stretched or anything, it will then
+
+61
+00:03:13,769 --> 00:03:18,750
+become as tall as it needs to be to fit
+
+62
+00:03:13,769 --> 00:03:18,750
+the width that we've specified. And so
+
+63
+00:03:18,750 --> 00:03:22,590
+that is the image tag and how to add it
+
+64
+00:03:18,750 --> 00:03:22,590
+to your web page.
+
+65
+00:03:22,590 --> 00:03:27,329
+These are block elements but you can do
+
+66
+00:03:22,590 --> 00:03:27,329
+crafty things like making them up here
+
+67
+00:03:27,329 --> 00:03:32,420
+inline, and we're going to be getting
+
+68
+00:03:27,329 --> 00:03:32,420
+into that with CSS.
+

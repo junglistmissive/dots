@@ -164,13 +164,20 @@ highlight shDerefSpecial cterm=none ctermfg=255
 highlight shCurlyIn cterm=none ctermfg=255
 highlight shCtrlSeq cterm=italic ctermfg=002
 highlight Comment cterm=italic ctermfg=008
+highlight StartifyHeader ctermfg=006
+highlight StartifyNumber ctermfg=004
+highlight StartifySection ctermfg=006
+highlight StartifyBracket ctermfg=001
+highlight StartifySlash ctermfg=004
+highlight StartifyFile ctermfg=255
+highlight StartifyPath ctermfg=001
 
 let g:limelight_conceal_ctermfg = 1
-let g:startify_padding_left = 50
-let g:startify_bookmarks = [ '~/.config'  ]
+let g:startify_padding_left = 10
+let g:startify_bookmarks = [ '~/dots/neovim/.config/nvim/init.vim','~/.config/', '~/dots/zsh/.zshrc', '~/dots/xconfs/.Xresources', '~/dots/termite/.config/termite/config', '~/dots/bspwm/.config/bspwm/bspwmrc', '~/dots/sxhkd/.config/sxhkd/sxhkdrc'  ]
 let g:startify_lists = [
-    \ { 'type': 'files',        'header': [     '                                                  Recent']        },
-    \ { 'type': 'bookmarks',    'header': [     '                                                  Bookmarks']     },
+    \ { 'type': 'files',        'header': [ '  Recent']        },
+    \ { 'type': 'bookmarks',    'header': [ '  Bookmarks']     },
     \]
 
 set shiftwidth=4     " indent = 4 spaces
@@ -208,7 +215,7 @@ set statusline=
 set statusline+=%#PrimaryBlock#
 set statusline+=\ %{g:currentmode[mode()]}
 set statusline+=%#SecondaryBlock#
-set statusline+=%{StatuslineGit()}
+"set statusline+=%{StatuslineGit()}
 set statusline+=%#TeritaryBlock#
 set statusline+=\ %f\ 
 set statusline+=%M\ 
@@ -262,8 +269,8 @@ let mapleader=' '
 " nnoremap {{{
 nnoremap <Leader>o : only<cr>
 nnoremap <Leader>l : Lines<cr>
-nnoremap <Leader>b : Buffers<cr>
-nnoremap <Leader>z : FZF<cr>
+nnoremap <Leader>f : NERDTreeFind ~/.<cr>
+nnoremap <Leader>z : tabnew<cr>
 nnoremap <Leader>w : MtaJumpToOtherTag<cr>
 nnoremap <Leader>t : call GetTabber()<cr>
 nnoremap <Leader>n : tabnext<cr>
@@ -349,16 +356,16 @@ let g:NERDTreeDirArrowCollapsible = ''
     let g:startify_session_persistence = 1
     let g:startify_custom_header = 'startify#fortune#boxed()'
     let g:startify_custom_header = [
-            \ '                                                         @@@  @@@  @@@  @@@  @@@  @@@@@@@@@@ ',
-            \ '                                                         @@@@ @@@  @@@  @@@  @@@  @@@@@@@@@@@',
-            \ '                                                         @@!@!@@@  @@!  @@@  @@!  @@! @@! @@!',
-            \ '                                                         !@!!@!@!  !@!  @!@  !@!  !@! !@! !@!',
-            \ '                                                         @!@ !!@!  @!@  !@!  !!@  @!! !!@ @!@',
-            \ '                                                         !@!  !!!  !@!  !!!  !!!  !@!   ! !@!',
-            \ '                                                         !!:  !!!  :!:  !!:  !!:  !!:     !!:',
-	    \ '                                                         :!:  !:!   ::!!:!   :!:  :!:     :!:',
-	    \ '                                                          ::   ::    ::::     ::  :::     :: ',
-	    \ '                                                          ::    :      :      :     :      : ',
+            \ '         @@@  @@@  @@@  @@@  @@@  @@@@@@@@@@ ',
+            \ '         @@@@ @@@  @@@  @@@  @@@  @@@@@@@@@@@',
+            \ '         @@!@!@@@  @@!  @@@  @@!  @@! @@! @@!',
+            \ '         !@!!@!@!  !@!  @!@  !@!  !@! !@! !@!',
+            \ '         @!@ !!@!  @!@  !@!  !!@  @!! !!@ @!@',
+            \ '         !@!  !!!  !@!  !!!  !!!  !@!   ! !@!',
+            \ '         !!:  !!!  :!:  !!:  !!:  !!:     !!:',
+	    \ '         :!:  !:!   ::!!:!   :!:  :!:     :!:',
+	    \ '          ::   ::    ::::     ::  :::     :: ',
+	    \ '          ::    :      :      :     :      : ',
 	    \ ]
 
 let g:webdevicons_enable = 1

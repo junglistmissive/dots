@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-img=$(shuf -n1 ~/bin/androidwalls.txt)
+img=$(shuf -n1 ~/bin/patterns.txt)
 src=$(echo "/tmp/tmp.png")
 cache=$(ls ~/.cache/thumbnails/neofetch | wc -l)
 

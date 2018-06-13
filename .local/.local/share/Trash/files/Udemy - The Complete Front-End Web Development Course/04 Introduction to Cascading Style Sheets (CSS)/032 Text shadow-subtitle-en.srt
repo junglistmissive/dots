@@ -1,0 +1,568 @@
+1
+00:00:00,030 --> 00:00:02,970
+Alright, welcome back guys. We are not
+
+2
+00:00:00,030 --> 00:00:02,970
+going to be talking about pseudo states
+
+3
+00:00:02,970 --> 00:00:06,060
+in this video, we're going to be doing
+
+4
+00:00:02,970 --> 00:00:06,060
+that in the next video, and the reason is
+
+5
+00:00:06,060 --> 00:00:12,240
+is because we're going to start, well
+
+6
+00:00:06,060 --> 00:00:12,240
+we're going to be talking about text
+
+7
+00:00:12,240 --> 00:00:17,340
+shadow, and that's the final text
+
+8
+00:00:12,240 --> 00:00:17,340
+property that I think we need
+
+9
+00:00:17,340 --> 00:00:22,830
+to focus on here.
+
+10
+00:00:17,340 --> 00:00:22,830
+So, let's go ahead and we're going to be
+
+11
+00:00:22,830 --> 00:00:29,699
+applying this rule to the body element,
+
+12
+00:00:22,830 --> 00:00:29,699
+and all inherited elements. So any child
+
+13
+00:00:29,699 --> 00:00:34,710
+element of the body is going to get a
+
+14
+00:00:29,699 --> 00:00:34,710
+text shadow as well. And as you can guess,
+
+15
+00:00:34,710 --> 00:00:42,390
+it's a two word property so it's
+
+16
+00:00:34,710 --> 00:00:42,390
+separated by a dash, text-shadow, and now
+
+17
+00:00:42,390 --> 00:00:48,780
+this is going to take a possible
+
+18
+00:00:42,390 --> 00:00:48,780
+four values that you pass in. The first
+
+19
+00:00:48,780 --> 00:00:56,239
+is the direction vertically, so let's say
+
+20
+00:00:48,780 --> 00:00:56,239
+2 pixels. The second is going to be the
+
+21
+00:00:56,239 --> 00:01:03,870
+distance from the text horizontally. The
+
+22
+00:00:56,239 --> 00:01:03,870
+third one is going to be a color. I'll save it
+
+23
+00:01:03,870 --> 00:01:09,840
+and refresh, sorry the first property
+
+24
+00:01:03,870 --> 00:01:09,840
+is left and right. I think I said that
+
+25
+00:01:09,840 --> 00:01:16,049
+one was up and down. So what we're going to be doing here, is that looks alright,
+
+26
+00:01:16,049 --> 00:01:23,960
+but the text shadow is not spread at all.
+
+27
+00:01:16,049 --> 00:01:23,960
+It's exactly the same weight and
+
+28
+00:01:23,960 --> 00:01:27,689
+thickness. So what we're going to do is
+
+29
+00:01:23,960 --> 00:01:27,689
+add a spread here, and we're going to set
+
+30
+00:01:27,689 --> 00:01:33,540
+that to 5 pixels as well, and it's going
+
+31
+00:01:27,689 --> 00:01:33,540
+to blur the text shadow and make it
+
+32
+00:01:33,540 --> 00:01:41,460
+actually look like a shadow. That's good.
+
+33
+00:01:33,540 --> 00:01:41,460
+We can set the previous two properties,
+
+34
+00:01:41,460 --> 00:01:45,570
+the first two, with a negative sign
+
+35
+00:01:41,460 --> 00:01:45,570
+that's going to move it in the opposite
+
+36
+00:01:45,570 --> 00:01:52,909
+direction. So, this one just defines the
+
+37
+00:01:45,570 --> 00:01:52,909
+gravity of the direction I guess, or the
+
+38
+00:01:52,909 --> 00:01:58,860
+anti-gravity, because it's the opposite.
+
+39
+00:01:52,909 --> 00:01:58,860
+Two pixels set as the first property
+
+40
+00:01:58,860 --> 00:02:05,700
+means two pixels to the right of the text,
+
+41
+00:01:58,860 --> 00:02:05,700
+negative five pixels means negative five
+
+42
+00:02:05,700 --> 00:02:11,190
+pixels down, right, so that would
+
+43
+00:02:05,700 --> 00:02:11,190
+obviously be five pixels up. That's
+
+44
+00:02:11,190 --> 00:02:15,120
+what's happened here.
+
+45
+00:02:11,190 --> 00:02:15,120
+I'm going to set these a little more
+
+46
+00:02:15,120 --> 00:02:22,890
+conservatively to both two pixels, and
+
+47
+00:02:15,120 --> 00:02:22,890
+refresh, that looks a little better. And
+
+48
+00:02:22,890 --> 00:02:29,600
+the spread I'm going to set that to 10
+
+49
+00:02:22,890 --> 00:02:29,600
+pixels just to spread it out a bit more.
+
+50
+00:02:31,640 --> 00:02:36,900
+Actually, no, what I'm going to do is
+
+51
+00:02:31,640 --> 00:02:36,900
+set these to one pixel, one pixel, and
+
+52
+00:02:36,900 --> 00:02:39,900
+then spread is going to be two pixels.
+
+53
+00:02:36,900 --> 00:02:39,900
+We're going to go really conservative
+
+54
+00:02:39,900 --> 00:02:47,610
+with this. And what you'll notice is the
+
+55
+00:02:39,900 --> 00:02:47,610
+the higher you set the spread, the
+
+56
+00:02:47,610 --> 00:02:54,990
+more it actually spreads it and lightens
+
+57
+00:02:47,610 --> 00:02:54,990
+it. You'll see here it's a light gray, but
+
+58
+00:02:54,990 --> 00:02:59,370
+if we only use a two pixel spread it's
+
+59
+00:02:54,990 --> 00:02:59,370
+going to be all condensed into those two
+
+60
+00:02:59,370 --> 00:03:03,030
+pixels. So what we're going to do is
+
+61
+00:02:59,370 --> 00:03:03,030
+we're going to set the color using
+
+62
+00:03:03,030 --> 00:03:08,910
+RGBA, and that way we can add alpha to it as well. And the reason we would do this
+
+63
+00:03:08,910 --> 00:03:17,130
+is because, we could totally set this to
+
+64
+00:03:08,910 --> 00:03:17,130
+a light gray color. So, I mean, that's too
+
+65
+00:03:17,130 --> 00:03:24,709
+light. Let's set it to ddd...it's a little bit
+
+66
+00:03:17,130 --> 00:03:24,709
+too light, let's set it to aaa,
+
+67
+00:03:24,709 --> 00:03:29,570
+there we go. We can kind of see that now.
+
+68
+00:03:30,739 --> 00:03:35,130
+What's going to happen, this works on a
+
+69
+00:03:30,739 --> 00:03:35,130
+white background because the text shadow
+
+70
+00:03:35,130 --> 00:03:39,840
+is between the text color and the
+
+71
+00:03:35,130 --> 00:03:39,840
+background. It looks like the background
+
+72
+00:03:39,840 --> 00:03:46,140
+is just darkened. Actually, I'm going to
+
+73
+00:03:39,840 --> 00:03:46,140
+set this quite low so we can get it a
+
+74
+00:03:46,140 --> 00:03:54,709
+little better. But what happens, let's say
+
+75
+00:03:46,140 --> 00:03:54,709
+I set the articles with a background of
+
+76
+00:03:54,709 --> 00:04:02,250
+red, what happens is the text shadow doesn't
+
+77
+00:03:54,709 --> 00:04:02,250
+account for that really, and it's still
+
+78
+00:04:02,250 --> 00:04:12,390
+dark. If I set this down to 000 you're
+
+79
+00:04:02,250 --> 00:04:12,390
+going to see that. Now setting the
+
+80
+00:04:12,390 --> 00:04:18,320
+property that way would work over here,
+
+81
+00:04:12,390 --> 00:04:18,320
+and it's really noticeable when we just
+
+82
+00:04:18,320 --> 00:04:25,530
+remove the spread all together. It's
+
+83
+00:04:18,320 --> 00:04:25,530
+still black rather than just
+
+84
+00:04:25,530 --> 00:04:29,569
+a darkened version. I mean, it's hard to see what I mean,
+
+85
+00:04:29,569 --> 00:04:36,080
+but you guys will encounter instances
+
+86
+00:04:29,569 --> 00:04:36,080
+where you see this. So what I'm going to do
+
+87
+00:04:36,080 --> 00:04:39,830
+is we're going to set this
+
+88
+00:04:36,080 --> 00:04:39,830
+with an RGBA color, I'm going to set it
+
+89
+00:04:39,830 --> 00:04:46,430
+to 0, 0, 0, and .3,
+
+90
+00:04:39,830 --> 00:04:46,430
+save it and refresh, and there is our
+
+91
+00:04:46,430 --> 00:04:53,990
+text shadow. It looks a bit better on all
+
+92
+00:04:46,430 --> 00:04:53,990
+different colored backgrounds. Let me get
+
+93
+00:04:53,990 --> 00:05:03,050
+that out of there. And along the same
+
+94
+00:04:53,990 --> 00:05:03,050
+lines are box shadows. So a box shadow is
+
+95
+00:05:03,050 --> 00:05:08,150
+kind of used in the same way to a text
+
+96
+00:05:03,050 --> 00:05:08,150
+shadow, but it's intended for elements
+
+97
+00:05:08,150 --> 00:05:13,250
+that aren't text, I guess. Not the internal
+
+98
+00:05:08,150 --> 00:05:13,250
+content, but rather the external content
+
+99
+00:05:13,250 --> 00:05:16,400
+or the element itself. So we're going to
+
+100
+00:05:13,250 --> 00:05:16,400
+set that on the articles, and we're going
+
+101
+00:05:16,400 --> 00:05:23,090
+to set box a shadow, and using the same
+
+102
+00:05:16,400 --> 00:05:23,090
+properties. The only difference is this
+
+103
+00:05:23,090 --> 00:05:30,289
+one can actually use, it can have a
+
+104
+00:05:23,090 --> 00:05:30,289
+maximum of five values instead of just
+
+105
+00:05:30,289 --> 00:05:39,139
+four. So, the first one is going to be the
+
+106
+00:05:30,289 --> 00:05:39,139
+left-right direction so let's say five
+
+107
+00:05:39,139 --> 00:05:47,810
+pixels, five pixels vertically, five pixel
+
+108
+00:05:39,139 --> 00:05:47,810
+spread, and then we're going to set the
+
+109
+00:05:47,810 --> 00:05:59,270
+color again to RGBA. Set that to
+
+110
+00:05:47,810 --> 00:05:59,270
+0, 0, 0, .6, and then we're going to end that line
+
+111
+00:05:59,270 --> 00:06:04,089
+with a semicolon,
+
+112
+00:05:59,270 --> 00:06:04,089
+and refresh, and there's our text shadow,
+
+113
+00:06:04,089 --> 00:06:10,909
+or there's our box shadow, rather. Now
+
+114
+00:06:04,089 --> 00:06:10,909
+what you can do is you can set this
+
+115
+00:06:10,909 --> 00:06:18,770
+value very low, and it's going to make it
+
+116
+00:06:10,909 --> 00:06:18,770
+less spread, obviously. Or you can set it
+
+117
+00:06:18,770 --> 00:06:25,879
+very high, that's not very high but
+
+118
+00:06:18,770 --> 00:06:25,879
+that's a bit higher, and you can make it
+
+119
+00:06:25,879 --> 00:06:32,180
+a bigger, softer shadow. I guess soft is
+
+120
+00:06:25,879 --> 00:06:32,180
+the term. But, what if you want the
+
+121
+00:06:32,180 --> 00:06:35,719
+spread that high and you want it still
+
+122
+00:06:32,180 --> 00:06:35,719
+very dense? What you can do is set a
+
+123
+00:06:35,719 --> 00:06:41,200
+fourth property which is also in pixels,
+
+124
+00:06:35,719 --> 00:06:41,200
+and this changes
+
+125
+00:06:41,200 --> 00:06:49,850
+the density of the shadow. So if we now set this to two pixels, third property rather
+
+126
+00:06:49,850 --> 00:06:58,610
+two pixels, this controls how far the
+
+127
+00:06:49,850 --> 00:06:58,610
+shadow outreach is, while this is I
+
+128
+00:06:58,610 --> 00:07:04,640
+guess the softness. So let's set that back to
+
+129
+00:06:58,610 --> 00:07:04,640
+20, this back to set it to negative one,
+
+130
+00:07:04,640 --> 00:07:11,750
+let's refresh, and there we've got box
+
+131
+00:07:04,640 --> 00:07:11,750
+shadows that look alright. Now, this is
+
+132
+00:07:11,750 --> 00:07:20,030
+when the RGBA color for this is
+
+133
+00:07:11,750 --> 00:07:20,030
+going to make sense, I'm going to set
+
+134
+00:07:20,030 --> 00:07:27,860
+this to .2, and we've got a very,
+
+135
+00:07:20,030 --> 00:07:27,860
+very light hint of shadow there. Let me
+
+136
+00:07:27,860 --> 00:07:33,740
+increase that to .3 actually, that's a
+
+137
+00:07:27,860 --> 00:07:33,740
+little bit better. There you go.
+
+138
+00:07:33,740 --> 00:07:37,220
+Now in the next video we're talking about
+
+139
+00:07:33,740 --> 00:07:37,220
+pseudo states, this is going to become
+
+140
+00:07:37,220 --> 00:07:41,330
+really relevant because we're going to
+
+141
+00:07:37,220 --> 00:07:41,330
+be mixing pseudo states with these box
+
+142
+00:07:41,330 --> 00:07:43,780
+shadows.
+

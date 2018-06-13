@@ -1,0 +1,452 @@
+1
+00:00:00,030 --> 00:00:06,210
+Alright guys. So, we've got a mostly
+
+2
+00:00:00,030 --> 00:00:06,210
+working form here with very basic
+
+3
+00:00:06,210 --> 00:00:10,519
+functionality. What we're going to be
+
+4
+00:00:06,210 --> 00:00:10,519
+doing is adding in a way for the user to
+
+5
+00:00:10,519 --> 00:00:17,179
+select a size. So under the address here,
+
+6
+00:00:18,680 --> 00:00:25,230
+let me move these lines here so I can
+
+7
+00:00:18,680 --> 00:00:25,230
+get both of those line breaks above
+
+8
+00:00:25,230 --> 00:00:30,630
+where I'm going to create the size, I'm going to
+
+9
+00:00:25,230 --> 00:00:30,630
+create an h4 element as a title so we
+
+10
+00:00:30,630 --> 00:00:39,149
+can know what this refers to. It's going
+
+11
+00:00:30,630 --> 00:00:39,149
+to be Size. So we open it, type stuff,
+
+12
+00:00:39,149 --> 00:00:47,489
+close it, and now we're going to create a
+
+13
+00:00:39,149 --> 00:00:47,489
+select attribute or element. And what
+
+14
+00:00:47,489 --> 00:00:56,180
+this is it's multiple choice in a
+
+15
+00:00:47,489 --> 00:00:56,180
+drop-down that people can select one of.
+
+16
+00:00:56,180 --> 00:01:03,570
+So it's kind of like a radio element
+
+17
+00:00:56,180 --> 00:01:03,570
+except it displays in a drop-down. You
+
+18
+00:01:03,570 --> 00:01:09,150
+can also select multiple in a select box,
+
+19
+00:01:03,570 --> 00:01:09,150
+and that's not really pertinent to what
+
+20
+00:01:09,150 --> 00:01:14,159
+we're doing here. So just learning the
+
+21
+00:01:09,150 --> 00:01:14,159
+select box that's what it does. So we're
+
+22
+00:01:14,159 --> 00:01:20,220
+going to give it a name and the name is
+
+23
+00:01:14,159 --> 00:01:20,220
+going to be size, and that's all we need
+
+24
+00:01:20,220 --> 00:01:26,369
+to do. So let's go ahead and close this
+
+25
+00:01:20,220 --> 00:01:26,369
+select element. I'm going to save it and
+
+26
+00:01:26,369 --> 00:01:30,570
+refresh here, and you'll see that it
+
+27
+00:01:26,369 --> 00:01:30,570
+drops down but there's nothing in it yet
+
+28
+00:01:30,570 --> 00:01:34,710
+because we haven't put anything in it. So
+
+29
+00:01:30,570 --> 00:01:34,710
+that's what we're going to be learning
+
+30
+00:01:34,710 --> 00:01:41,909
+now. Within a select element which lets
+
+31
+00:01:34,710 --> 00:01:41,909
+you select items from a drop-down we
+
+32
+00:01:41,909 --> 00:01:46,070
+need to have options, and so the next
+
+33
+00:01:41,909 --> 00:01:46,070
+element we're going to learn is very
+
+34
+00:01:46,070 --> 00:01:52,380
+appropriately named option. And each
+
+35
+00:01:46,070 --> 00:01:52,380
+option is going to have a property of
+
+36
+00:01:52,380 --> 00:01:56,969
+value and this is going to be what the
+
+37
+00:01:52,380 --> 00:01:56,969
+option is. So we're going to start off
+
+38
+00:01:56,969 --> 00:02:09,950
+with 12-inch, and let's put the cost
+
+39
+00:01:56,969 --> 00:02:09,950
+there too. Let's say
+
+40
+00:02:10,170 --> 00:02:18,550
+$13.99...I'm not sure if that's expensive
+
+41
+00:02:10,170 --> 00:02:18,550
+or not, but it's good pizza. So, the next
+
+42
+00:02:18,550 --> 00:02:26,380
+one is going to be 16 inches, and just so
+
+43
+00:02:18,550 --> 00:02:26,380
+you guys can see better the format of it
+
+44
+00:02:26,380 --> 00:02:31,270
+you open it, and you never
+
+45
+00:02:26,380 --> 00:02:31,270
+put an attribute in the closing tag,
+
+46
+00:02:31,270 --> 00:02:35,530
+I guess that's important to know, you
+
+47
+00:02:31,270 --> 00:02:35,530
+only ever put attributes within the
+
+48
+00:02:35,530 --> 00:02:41,769
+opening tag itself. So we're going to say
+
+49
+00:02:35,530 --> 00:02:41,769
+16 inch and we're going to say that is
+
+50
+00:02:41,769 --> 00:02:51,549
+going to be $16.99. On the next line, and we don't need to add line breaks or
+
+51
+00:02:51,549 --> 00:02:56,560
+anything it's all automatic here within
+
+52
+00:02:51,549 --> 00:02:56,560
+the select list, we're going to create
+
+53
+00:02:56,560 --> 00:03:05,950
+another one with a value of 18, and we're
+
+54
+00:02:56,560 --> 00:03:05,950
+going to type out what's going to appear
+
+55
+00:03:05,950 --> 00:03:16,510
+as the option, and this is going to be
+
+56
+00:03:05,950 --> 00:03:16,510
+$19.99. And then just in case anybody's
+
+57
+00:03:16,510 --> 00:03:22,570
+really hungry, we need to add a very
+
+58
+00:03:16,510 --> 00:03:22,570
+large option and this is going to be 72
+
+59
+00:03:22,570 --> 00:03:35,140
+inches, and the price for that is going
+
+60
+00:03:22,570 --> 00:03:35,140
+to be $149.99. Alright, so, with our
+
+61
+00:03:35,140 --> 00:03:42,090
+select box created and four options
+
+62
+00:03:35,140 --> 00:03:42,090
+within it, I'm going to save this and
+
+63
+00:03:42,090 --> 00:03:50,410
+refresh, and there we go.
+
+64
+00:03:42,090 --> 00:03:50,410
+So we've got our select box there. It's
+
+65
+00:03:50,410 --> 00:03:54,430
+going to let people choose a size. So
+
+66
+00:03:50,410 --> 00:03:54,430
+right now this is basically feature
+
+67
+00:03:54,430 --> 00:03:58,840
+complete as what it's intended to do on
+
+68
+00:03:54,430 --> 00:03:58,840
+the front end. We give the user the
+
+69
+00:03:58,840 --> 00:04:02,950
+option of delivery or pickup. If they
+
+70
+00:03:58,840 --> 00:04:02,950
+choose delivery they need to add in
+
+71
+00:04:02,950 --> 00:04:08,079
+their address, maybe their phone number
+
+72
+00:04:02,950 --> 00:04:08,079
+as well. We let them choose a size of a
+
+73
+00:04:08,079 --> 00:04:13,150
+pizza, and then also ingredients. These
+
+74
+00:04:08,079 --> 00:04:13,150
+are all the important things about
+
+75
+00:04:13,150 --> 00:04:17,919
+ordering a pizza. These are the things
+
+76
+00:04:13,150 --> 00:04:17,919
+you need to be able to do. So what we're
+
+77
+00:04:17,919 --> 00:04:21,670
+going to do now, we're ready for it, we
+
+78
+00:04:17,919 --> 00:04:21,670
+just need to let them
+
+79
+00:04:21,670 --> 00:04:32,770
+send it to us. So we're going to create a
+
+80
+00:04:21,670 --> 00:04:32,770
+button with a type submit, and it's
+
+81
+00:04:32,770 --> 00:04:39,160
+going to say Place Order, and we're going
+
+82
+00:04:32,770 --> 00:04:39,160
+to close that button. I'm going to save
+
+83
+00:04:39,160 --> 00:04:44,740
+it here, and then refresh, I need to add a
+
+84
+00:04:39,160 --> 00:04:44,740
+line break above that. It doesn't look quite
+
+85
+00:04:44,740 --> 00:04:50,340
+right, I'm going to add two of them actually.
+
+86
+00:04:50,460 --> 00:04:58,210
+There we go. So now what we're able to do
+
+87
+00:04:50,460 --> 00:04:58,210
+is we're able to select a few different
+
+88
+00:04:58,210 --> 00:05:06,010
+ones, and then hit place order. As you can
+
+89
+00:04:58,210 --> 00:05:06,010
+see, I've made this a get method up in
+
+90
+00:05:06,010 --> 00:05:11,050
+the form here, the method is equal to get,
+
+91
+00:05:06,010 --> 00:05:11,050
+and so what it does is it carries across
+
+92
+00:05:11,050 --> 00:05:19,150
+all these values as you know in the in
+
+93
+00:05:11,050 --> 00:05:19,150
+the URL. So this is how they're going to
+
+94
+00:05:19,150 --> 00:05:25,840
+be accessed within PHP. If you wanted to
+
+95
+00:05:19,150 --> 00:05:25,840
+automate this a bit, I mean this is
+
+96
+00:05:25,840 --> 00:05:29,560
+why you would use get. If you want to
+
+97
+00:05:25,840 --> 00:05:29,560
+send someone directly to a page and send
+
+98
+00:05:29,560 --> 00:05:33,850
+parameters to that page as well, you're
+
+99
+00:05:29,560 --> 00:05:33,850
+going to use this. So if I sent you a
+
+100
+00:05:33,850 --> 00:05:41,950
+link like this it would automatically order
+
+101
+00:05:33,850 --> 00:05:41,950
+you a pizza at my address. So, that's how
+
+102
+00:05:41,950 --> 00:05:51,000
+the get method works. And post, just so you
+
+103
+00:05:41,950 --> 00:05:51,000
+guys can see, go back here and refresh.
+
+104
+00:05:51,000 --> 00:05:58,750
+I'm going to place our order again, I'm going
+
+105
+00:05:51,000 --> 00:05:58,750
+to hit place order, and it sends it to
+
+106
+00:05:58,750 --> 00:06:03,220
+the place order script without the URL.
+
+107
+00:05:58,750 --> 00:06:03,220
+So it's all done behind the scenes, and
+
+108
+00:06:03,220 --> 00:06:07,860
+that's why you would use the post method
+
+109
+00:06:03,220 --> 00:06:07,860
+for sensitive data like passwords, or
+
+110
+00:06:07,860 --> 00:06:16,120
+address, stuff like that. So that is our
+
+111
+00:06:07,860 --> 00:06:16,120
+form and basically that's complete,
+
+112
+00:06:16,120 --> 00:06:21,420
+except for one final touch and we're
+
+113
+00:06:16,120 --> 00:06:21,420
+going to add that in the next video.
+

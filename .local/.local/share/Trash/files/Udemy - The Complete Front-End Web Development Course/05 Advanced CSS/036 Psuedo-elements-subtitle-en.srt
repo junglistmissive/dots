@@ -1,0 +1,552 @@
+1
+00:00:00,030 --> 00:00:03,570
+Alright guys. So we've already learned
+
+2
+00:00:00,030 --> 00:00:03,570
+about a lot of different elements, and
+
+3
+00:00:03,570 --> 00:00:07,560
+I'm sure that's a lot of information
+
+4
+00:00:03,570 --> 00:00:07,560
+that you're going to have to find a way
+
+5
+00:00:07,560 --> 00:00:17,340
+to retain. For the most part, the
+
+6
+00:00:07,560 --> 00:00:17,340
+syntax is really easy to learn when
+
+7
+00:00:17,340 --> 00:00:23,430
+it comes to CSS and HTML. It's the
+
+8
+00:00:17,340 --> 00:00:23,430
+specifics that you really need to
+
+9
+00:00:23,430 --> 00:00:29,900
+practice. Which specific elements like
+
+10
+00:00:23,430 --> 00:00:29,900
+a video element, a div, a span, and then also
+
+11
+00:00:29,900 --> 00:00:35,760
+CSS properties or attributes, and that's
+
+12
+00:00:29,900 --> 00:00:35,760
+border-bottom, or position, as seen here.
+
+13
+00:00:35,760 --> 00:00:39,930
+Those are the things that you're going
+
+14
+00:00:35,760 --> 00:00:39,930
+to need to really hammer away on in
+
+15
+00:00:39,930 --> 00:00:46,590
+order to retain all this information. So,
+
+16
+00:00:39,930 --> 00:00:46,590
+with that set and out of the way, there's
+
+17
+00:00:46,590 --> 00:00:51,090
+a gray area here where an element
+
+18
+00:00:46,590 --> 00:00:51,090
+doesn't really exist, but we can make it
+
+19
+00:00:51,090 --> 00:01:00,840
+exist if we want to, and that's before
+
+20
+00:00:51,090 --> 00:01:00,840
+and after. So, the main header here, it has
+
+21
+00:01:00,840 --> 00:01:07,560
+a before and after, there's a partial
+
+22
+00:01:00,840 --> 00:01:07,560
+element before it and an element after
+
+23
+00:01:07,560 --> 00:01:12,540
+it, and they're not visible, and they're not
+
+24
+00:01:07,560 --> 00:01:12,540
+used unless we actually use it ourselves.
+
+25
+00:01:12,540 --> 00:01:17,880
+So let's go ahead and say main-header,
+
+26
+00:01:12,540 --> 00:01:17,880
+we're gonna put two colons, and gonna say
+
+27
+00:01:17,880 --> 00:01:26,729
+before. Now this creates a blank element
+
+28
+00:01:17,880 --> 00:01:26,729
+that didn't exist before now, it has no
+
+29
+00:01:26,729 --> 00:01:32,070
+default styles, it has no properties
+
+30
+00:01:26,729 --> 00:01:32,070
+assigned by default, so that's where we
+
+31
+00:01:32,070 --> 00:01:39,659
+need to start defining the content. So,
+
+32
+00:01:32,070 --> 00:01:39,659
+content is a property that we're
+
+33
+00:01:39,659 --> 00:01:44,340
+generally not going to use except for
+
+34
+00:01:39,659 --> 00:01:44,340
+right here, and it's going to be blank,
+
+35
+00:01:44,340 --> 00:01:49,680
+and this just tells it that it has
+
+36
+00:01:44,340 --> 00:01:49,680
+content so it can be displayed, and then
+
+37
+00:01:49,680 --> 00:01:56,430
+we're gonna set display to block. Save
+
+38
+00:01:49,680 --> 00:01:56,430
+this and refresh the page, and you won't
+
+39
+00:01:56,430 --> 00:02:00,540
+notice any difference because we haven't
+
+40
+00:01:56,430 --> 00:02:00,540
+applied styles to it, but when I drop
+
+41
+00:02:00,540 --> 00:02:07,200
+this down here you're now gonna see a
+
+42
+00:02:00,540 --> 00:02:07,200
+little before. It has no width, no height, or
+
+43
+00:02:07,200 --> 00:02:10,410
+it's actually full width because we set
+
+44
+00:02:07,200 --> 00:02:10,410
+display to block. If we didn't, it would
+
+45
+00:02:10,410 --> 00:02:13,710
+be 0 by 0. And if we set the content to
+
+46
+00:02:10,410 --> 00:02:13,710
+none, if I
+
+47
+00:02:13,710 --> 00:02:17,940
+disable that altogether, it's just gonna
+
+48
+00:02:13,710 --> 00:02:17,940
+go away. It just disappears. It needs to
+
+49
+00:02:17,940 --> 00:02:22,140
+have the content property set, you can
+
+50
+00:02:17,940 --> 00:02:22,140
+even put text in here if you want. We can
+
+51
+00:02:22,140 --> 00:02:27,170
+save it and refresh and there,
+
+52
+00:02:22,140 --> 00:02:27,170
+we've got content in it, you can see it.
+
+53
+00:02:27,170 --> 00:02:31,770
+But we don't want content in it, normally
+
+54
+00:02:27,170 --> 00:02:31,770
+you're not going to you, normally this is
+
+55
+00:02:31,770 --> 00:02:39,000
+going to be used to further style in the
+
+56
+00:02:31,770 --> 00:02:39,000
+first, beginning there. So let's say,
+
+57
+00:02:39,000 --> 00:02:45,000
+or it's gonna be further defining styles
+
+58
+00:02:39,000 --> 00:02:45,000
+for this element, it's just going to
+
+59
+00:02:45,000 --> 00:02:49,980
+create an additional element that you
+
+60
+00:02:45,000 --> 00:02:49,980
+can position differently. So let's say to
+
+61
+00:02:49,980 --> 00:02:59,090
+the left of that text I want to have a
+
+62
+00:02:49,980 --> 00:02:59,090
+box that's 5 pixels wide and 80
+
+63
+00:02:59,090 --> 00:03:07,470
+pixels high. So what I'm gonna do is I'm
+
+64
+00:02:59,090 --> 00:03:07,470
+going to set the width to, did I say 10
+
+65
+00:03:07,470 --> 00:03:16,110
+pixels? And then the height to 80 pixels,
+
+66
+00:03:07,470 --> 00:03:16,110
+save it and refresh, and again nothing
+
+67
+00:03:16,110 --> 00:03:21,540
+happens except you know it pushes
+
+68
+00:03:16,110 --> 00:03:21,540
+everything down, but you can't see
+
+69
+00:03:21,540 --> 00:03:27,810
+it itself yet. So here's where we're
+
+70
+00:03:21,540 --> 00:03:27,810
+gonna define the background. In this
+
+71
+00:03:27,810 --> 00:03:33,450
+instance, it's going to be black. We just
+
+72
+00:03:27,810 --> 00:03:33,450
+want to create a black rectangle to the
+
+73
+00:03:33,450 --> 00:03:40,980
+left. Well, that kind of screwed that up,
+
+74
+00:03:33,450 --> 00:03:40,980
+but that's where we use positioning. So
+
+75
+00:03:40,980 --> 00:03:46,370
+this is when absolute positioning should
+
+76
+00:03:40,980 --> 00:03:46,370
+be used. You're gonna set the position to
+
+77
+00:03:46,370 --> 00:03:53,160
+absolute, and then I'm gonna refresh, oh
+
+78
+00:03:46,370 --> 00:03:53,160
+the whole header is only 80 pixels high.
+
+79
+00:03:53,160 --> 00:03:58,290
+I thought it was 100. Let me change this
+
+80
+00:03:53,160 --> 00:03:58,290
+to take off 10 on both the top and
+
+81
+00:03:58,290 --> 00:04:02,630
+bottom, so the height of the before
+
+82
+00:03:58,290 --> 00:04:02,630
+pseudo-element now is gonna be 60 pixels,
+
+83
+00:04:02,630 --> 00:04:08,100
+there we go. We can actually go even
+
+84
+00:04:02,630 --> 00:04:08,100
+shorter. Let's go with 40 and see what that
+
+85
+00:04:08,100 --> 00:04:15,410
+looks like. And now with
+
+86
+00:04:08,100 --> 00:04:15,410
+positioning, with absolute positioning,
+
+87
+00:04:15,410 --> 00:04:19,700
+and here's where I'm gonna start to use
+
+88
+00:04:15,410 --> 00:04:19,700
+the console actually or the dev tools,
+
+89
+00:04:19,700 --> 00:04:26,780
+I'm going to select that, and I'm going
+
+90
+00:04:19,700 --> 00:04:26,780
+to start adding styles to it through
+
+91
+00:04:26,780 --> 00:04:32,570
+here. Writing CSS directly in the
+
+92
+00:04:26,780 --> 00:04:32,570
+developer tools is essentially the same
+
+93
+00:04:32,570 --> 00:04:38,120
+process as writing it within the actual
+
+94
+00:04:32,570 --> 00:04:38,120
+CSS file, except you don't have to keep
+
+95
+00:04:38,120 --> 00:04:42,170
+going back and forth if you're playing
+
+96
+00:04:38,120 --> 00:04:42,170
+around with something. So, what I'm gonna
+
+97
+00:04:42,170 --> 00:04:49,610
+do is I'm going to set margin-top to 20
+
+98
+00:04:42,170 --> 00:04:49,610
+pixels, and I'm gonna hover over it, and you
+
+99
+00:04:49,610 --> 00:04:55,750
+can see on the very top there, see the
+
+100
+00:04:49,610 --> 00:04:55,750
+orange space that it created, that's
+
+101
+00:04:55,750 --> 00:05:02,620
+using margin to do what we want, and
+
+102
+00:04:55,750 --> 00:05:02,620
+that's technically part of that element.
+
+103
+00:05:02,620 --> 00:05:07,460
+Although, it's unstyled. So what we're
+
+104
+00:05:02,620 --> 00:05:07,460
+gonna do instead is we're going to set
+
+105
+00:05:07,460 --> 00:05:11,810
+top to 20 pixels. As you can see, it didn't
+
+106
+00:05:07,460 --> 00:05:11,810
+move it, so it keeps it in the same
+
+107
+00:05:11,810 --> 00:05:16,820
+position as a 20 pixel margin did, except
+
+108
+00:05:11,810 --> 00:05:16,820
+now it does not become part of the
+
+109
+00:05:16,820 --> 00:05:21,860
+element. So, this is an absolute
+
+110
+00:05:16,820 --> 00:05:21,860
+positioning property, so it's left, right,
+
+111
+00:05:21,860 --> 00:05:32,380
+and bottom. So what I'm gonna do is I'm
+
+112
+00:05:21,860 --> 00:05:32,380
+going to set left to a 100 pixels,
+
+113
+00:05:32,380 --> 00:05:40,640
+and you'll see that it moved it over
+
+114
+00:05:32,380 --> 00:05:40,640
+here. Now if I remove the top rule here,
+
+115
+00:05:40,640 --> 00:05:50,750
+and the left, I'm gonna say a bottom is
+
+116
+00:05:40,640 --> 00:05:50,750
+equal to zero, and what this does is it
+
+117
+00:05:50,750 --> 00:05:58,490
+moves it to the bottom of its element.
+
+118
+00:05:50,750 --> 00:05:58,490
+I mean, I guess you can look at it like
+
+119
+00:05:58,490 --> 00:06:02,990
+this is a child element of header,
+
+120
+00:05:58,490 --> 00:06:02,990
+although it's not child element, it's
+
+121
+00:06:02,990 --> 00:06:08,030
+it's inside the header element, so this
+
+122
+00:06:02,990 --> 00:06:08,030
+is the container of it, but it's not a
+
+123
+00:06:08,030 --> 00:06:14,930
+child, I guess. It gets a little confusing
+
+124
+00:06:08,030 --> 00:06:14,930
+there. But, you can position it you know
+
+125
+00:06:14,930 --> 00:06:19,850
+left, and bottom, and top, and stuff, and
+
+126
+00:06:14,930 --> 00:06:19,850
+let's change the color so that we can
+
+127
+00:06:19,850 --> 00:06:25,740
+see the text underneath it, and you'll
+
+128
+00:06:19,850 --> 00:06:25,740
+see that it
+
+129
+00:06:25,740 --> 00:06:33,780
+defaults to, I mean we haven't applied any depth here. We've been working in two
+
+130
+00:06:33,780 --> 00:06:38,520
+dimensions so far, and that's the
+
+131
+00:06:33,780 --> 00:06:38,520
+horizontal and vertical, or the X and the
+
+132
+00:06:38,520 --> 00:06:42,960
+y-axis. But, we haven't even talked about
+
+133
+00:06:38,520 --> 00:06:42,960
+the z-axis and I think we should do that
+
+134
+00:06:42,960 --> 00:06:48,000
+in the next video, I don't think we
+
+135
+00:06:42,960 --> 00:06:48,000
+should do that right now, but that's, this
+
+136
+00:06:48,000 --> 00:06:53,640
+I guess it segues into that. So let's
+
+137
+00:06:48,000 --> 00:06:53,640
+stop here and in the next video let's
+
+138
+00:06:53,640 --> 00:06:56,270
+talk about depth.
+

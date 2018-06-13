@@ -15,54 +15,64 @@ NL=$'\n'
 sequence=""
 
 # Cleanup cache files
-cleanup() {
+cleanup()
+{
     rm -f $CACHEDIR/x_colors
 }
 
 # Reload terminals
-reloadx() {
+reloadx()
+{
     for term in /dev/pts/[0-9]*; do
         printf "%b" "$sequence" > "$term"
     done
 }
 
-mergex() {
+mergex()
+{
     xrdb -merge ${HOME}/.Xresources
 }
 
 # Reload lemonbar
-reload_bar() {
-    pkill -x lemonbar
-    lpanel &
+reload_bar()
+{
+    if [[ $(pgrep lemonbar) ]]; then
+        pkill -x lemonbar
+    fi
+    ( lpanel &) > /dev/null 2>&1
 }
 
 # Build color array
-get_colors() {
+get_colors()
+{
     . $THEMEDIR/$THEME
     COLOR_ARRAY=($blk $red $grn $ylw $blu $mag $cyn $wht \
 	        $bblk $bred $bgrn $bylw $bblu $bmag $bcyn $bwht)
 }
 
 # Add colors to sequence
-create_sequence() {
+create_sequence()
+{
     for i in {0..15}; do
 	sequence+="\033]4;${i};${COLOR_ARRAY[${i}]}\007"
     done
 }
 
 # Add BG & FG colors to sequence from sourced vars
-create_second_sequence() {
+create_second_sequence()
+{
 # FG
     for i in 10 12 13; do
 	sequence+="\033]${i};${fg}\007"
     done
 # BG
-    for i in 11 14 708; do
+    for i in 11 14; do
 	sequence+="\033]${i};${bg}\007"
     done
 }
 
-write_termite() {
+write_termite()
+{
     termite_output+="color0 = ${blk}${NL}"
     termite_output+="color1 = ${red}${NL}"
     termite_output+="color2 = ${grn}${NL}"
@@ -87,7 +97,8 @@ write_termite() {
     printf "${termite_output}" >> "/home/daniel/.config/termite/config"
 }
 
-write_x_source() {
+write_x_source()
+{
     x_output=""
     x_output+="*.foreground:  ${fg}${NL}"
     x_output+="*.background:  ${bg}${NL}"
@@ -99,7 +110,8 @@ write_x_source() {
     done
 }
 
-write_rofi() {
+write_rofi()
+{
     rofi_output=""
     rofi_output+="rofi.color-enabled: true${NL}"
     rofi_output+="rofi.color-window: ${bg}, ${bg}, ${blk}${NL}"
@@ -107,18 +119,21 @@ write_rofi() {
 }
 
 # SH Colors
-write_sh() {
+write_sh()
+{
     rm -f $CACHEDIR/colors 
     cp $THEMEDIR/$THEME $CACHEDIR/colors
 }
 
 # Write output to x_colors in $CACHEDIR
-write_all() {
+write_all()
+{
     output=${x_output}${rofi_output}
     printf "${output}" > "${CACHEDIR}/x_colors"
 }
 
-write_x_define() {
+write_x_define()
+{
     xd_output=""
     xd_output+="#define bg  ${bg}${NL}"
     xd_output+="#define blk  ${blk}${NL}"
@@ -142,31 +157,36 @@ write_x_define() {
     printf "${xd_output}" > "$CACHEDIR/xd_colors"
 }
 
-write_name() {
+write_name()
+{
     name_output="$THEME"
     printf "${name_output}" > "$CACHEDIR/current"
 }
 
 
-obcolor() {
-    if ! pgrep -x "bspwm" > /dev/null ; then
+obcolor()
+{
+    if [[ $(pgrep openbox) ]]; then
         obsquash &
     fi
 }
 
-hcreload() {
-    if ! pgrep -x "bspwm" > /dev/null ; then
+hcreload()
+{
+    if [[ $(pgrep herbstluftwm) ]]; then
         exec herbstclient reload &
     fi
 }
 
-bspfresh() {
-    if  ! pgrep -x "openbox" > /dev/null ; then
+bspfresh()
+{
+    if  [[ $(pgrep bspwm) ]]; then
         ~/.config/bspwm/bspwmrc &
     fi
 }
 
-roficolor() {
+roficolor()
+{
     exec $HOME/bin/rofisquash &
 }
 
@@ -194,9 +214,7 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
     mergex
     reload_bar
     roficolor
-    obcolor
     bspfresh
-    hcreload
 
 else
     printf "You're doing it wrong."
