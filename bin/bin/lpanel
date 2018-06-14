@@ -18,8 +18,8 @@ blk=$(xrq '*.color0')
 clr="%{B-}"
 SEP="  "
 GAP=" "
-SEC="%{B$grey}"
-SPC="%{B$grey}"$GAP"%{B-}"
+SEC="%{B$blk}"
+SPC="%{B$blk}"$GAP"%{B-}"
 
 content() {
 

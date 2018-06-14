@@ -1,5 +1,5 @@
 #!/bin/sh
-inactive=$(xrdb -query | grep 'color5:' | awk '{ print $2 }')
+inactive=$(xrdb -query | grep 'color8:' | awk '{ print $2 }')
 active=$(xrdb -query | grep 'color4:' | awk 'NR==1 { print $2 }')
 if ! pgrep -x "sxhkd" > /dev/null; then
   sxhkd &
