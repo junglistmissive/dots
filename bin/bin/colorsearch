@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ ! -a $1 ]]; then
+    echo File not found
+    exit 1
+
+fi
+
+ sed  's/\*\.//g;s/\!.*//g;/^$/d;s/^/"/g;s/$/",/g;s/:/":"/g;2 i \{' "$1" | sed '$ s/.$/}/;s/\"\ */"/g'
+ exit

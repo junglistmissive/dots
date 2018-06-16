@@ -1,4 +1,4 @@
-140
+141
 4thD.bdf -aaron-4thd-medium-r-normal--4-40-86-86-c-30-iso8859-1
 5thElement.bdf -aaron-5thelement-medium-r-normal--5-40-86-86-c-30-iso8859-1
 DankMono-Italic.ttf -misc-dank mono-medium-i-normal--0-0-0-0-p-0-adobe-fontspecific
@@ -139,3 +139,4 @@ t0-12-uni.pcf.gz -uw-ttyp0-medium-r-normal--12-110-75-75-c-60-iso10646-1
 t0-14-uni.pcf.gz -uw-ttyp0-medium-r-normal--14-130-75-75-c-70-iso10646-1
 t0-14b-m51.pcf.gz -uw-ttyp0-bold-r-normal--14-130-75-75-c-70-microsoft-cp1251
 type13.pcf.gz --type-medium-r-normal--13-130-72-72-m-80-iso8859-1
+xbmicons.pcf -misc-xbmicons-medium-r-normal--12-120-72-72-c-60-iso10646-1

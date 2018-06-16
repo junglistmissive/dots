@@ -31,6 +31,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'vim-scripts/SyntaxAttr.vim'
 Plug 'dracula/vim',{'as':'dracula'}
+Plug 'Rykka/colorv.vim'
 call plug#end()
 
 " }}}

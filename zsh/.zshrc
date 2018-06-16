@@ -1,4 +1,4 @@
-PATH=$PATH:/home/daniel/bin:/home/daniel/.gem/ruby/2.5.0/bin:
+PATH=$PATH:/home/daniel/bin:/home/daniel/.gem/ruby/2.5.0/bin:/home/daniel/.local/bin:
 export PATH
 GOPATH=/home/daniel/gocode
 export GOPATH
