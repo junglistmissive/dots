@@ -1,4 +1,5 @@
 .local/.local/share/nvim/plugged/
+antigen/.antigen/
 .local/.local/share/nvim/plugged/rainbow_levels.vim
 .local/.local/share/nvim/plugged/txtfmt
 antigen/.antigen/bundles/Goles/battery
