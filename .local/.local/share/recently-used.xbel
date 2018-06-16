@@ -444,12 +444,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/dots" added="2018-06-13T19:18:42Z" modified="2018-06-13T19:18:42Z" visited="2018-06-13T19:18:42Z">
+  <bookmark href="file:///home/daniel/dots" added="2018-06-13T19:18:42Z" modified="2018-06-16T06:43:09Z" visited="2018-06-13T19:18:42Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="inode/directory"/>
         <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-13T19:18:42Z" count="1"/>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-16T06:43:09Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
