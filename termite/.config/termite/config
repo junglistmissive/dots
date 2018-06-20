@@ -17,8 +17,8 @@ hyperlinks = false
 [colors]
 color0 = #383c4a
 color1 = #e28d9d
-background = #222222
-cursor = #dddddd
+background = #111c2a
+cursor = #f6f7ee
 color0 = #2d3241
 color1 = #b04b57
 color2 = #93b379
