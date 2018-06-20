@@ -3,19 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/daniel/.zcompdump" added="2018-05-18T01:41:56Z" modified="2018-05-18T01:41:56Z" visited="2018-05-18T01:41:56Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>geany</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2018-05-18T01:41:56Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/daniel/wall.jpg" added="2018-05-21T08:53:40Z" modified="2018-05-26T18:49:18Z" visited="2018-05-21T08:53:40Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -375,7 +362,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/pattern_037.gif" added="2018-06-10T06:31:28Z" modified="2018-06-10T06:53:55Z" visited="2018-06-10T06:31:28Z">
+  <bookmark href="file:///home/daniel/pattern_037.gif" added="2018-06-10T06:31:28Z" modified="2018-06-17T04:22:43Z" visited="2018-06-10T06:31:28Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/gif"/>
@@ -384,6 +371,7 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-10T06:53:55Z" count="8"/>
+          <bookmark:application name="Xfce Terminal" exec="&apos;xfce4-terminal %u&apos;" modified="2018-06-17T04:22:43Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -578,6 +566,56 @@
         <mime:mime-type type="image/gif"/>
         <bookmark:applications>
           <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-15T05:09:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/www.colophon-foundry.org/fonts/value/value-regular.ttf" added="2018-06-18T22:13:59Z" modified="2018-06-18T22:13:59Z" visited="2018-06-18T22:13:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-18T22:13:59Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/www.colophon-foundry.org/fonts/basis-grotesque/pro/basis-grotesque-regular-pro.ttf" added="2018-06-18T22:14:48Z" modified="2018-06-18T22:14:48Z" visited="2018-06-18T22:14:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-18T22:14:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/www.colophon-foundry.org/fonts/reader/reader-regular.ttf" added="2018-06-18T22:15:44Z" modified="2018-06-18T22:15:44Z" visited="2018-06-18T22:15:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-18T22:15:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/www.colophon-foundry.org/fonts/relative/relative-book.ttf" added="2018-06-18T22:16:05Z" modified="2018-06-18T22:16:05Z" visited="2018-06-18T22:16:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-18T22:16:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/BatonTurbo-Regular.ttf" added="2018-06-19T16:51:49Z" modified="2018-06-19T16:51:49Z" visited="2018-06-19T16:51:50.153600Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-19T16:51:49Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

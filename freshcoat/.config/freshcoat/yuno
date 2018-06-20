@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 bg=#080b0f
@@ -22,5 +21,8 @@ bmag=#53769d
 bcyn=#8093aa
 bwht=#dde3eb
 
-acc=#a9bdd5
+acc=#a9bdd5i
+
+
+
 

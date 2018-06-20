@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Grab options from config folder & use fzf to filter/find and select
-COLORSCHEME="$(ls /home/daniel/.config/freshcoat | sort --reverse | fzf --ansi --cycle)"
+COLORSCHEME="$(ls /home/daniel/.config/freshcoat | sort --reverse | fzf --ansi --cycle --inline-info --color=fg:006,fg+:001,bg+:-1,pointer:004,prompt:003,info:003,border:004 --header="$(printf "\n\e[3;37mChoose a theme from the list or type to search\e[0m\n ")" --height=98% --border --prompt="")"
 
 # Cache & theme dirs
 CACHEDIR=$HOME/.cache/freshcoat
@@ -217,6 +217,6 @@ if [ -f $THEMEDIR/$COLORSCHEME ]; then
     bspfresh
 
 else
-    printf "You're doing it wrong."
+    printf "You're doing it wrong.\n"
 fi
 } 2> /dev/null

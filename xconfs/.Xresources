@@ -36,8 +36,8 @@ URxvt.config-reload:        C-down-up
 
 ! Cursor
 URxvt.cursorBlink:          false
-URxvt.cursorColor:          #657b83
-URxvt.cursorUnderline:      false
+!URxvt.cursorColor:
+URxvt.cursorUnderline:      true
 
 ! Pointer
 URxvt.pointerBlank:         true

@@ -18,6 +18,10 @@ super + Return
 super + s
     /home/daniel/bin/simple
 
+## tile pattern wall ##
+super + p
+    /home/daniel/bin/ptn
+
 ## program launcher ##
 super + d
 	rofi -show run

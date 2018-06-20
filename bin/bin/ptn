@@ -1,0 +1,4 @@
+#!/bin/bash
+img=$(shuf -n 1 ~/bin/patterns.txt)
+
+feh --bg-tile $img

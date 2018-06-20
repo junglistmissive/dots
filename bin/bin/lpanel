@@ -5,6 +5,7 @@ grey=$(xrq '*.color8')
 mag=$(xrq '*.color5')
 blue=$(xrq '*.color6')
 ylw=$(xrq '*.color3')
+dblu=$(xrq '*.color4')
 fg=$(xrq '*.foreground')
 bg=$(xrq '*.background' | sed 's/\[...//g')
 win=$(echo -e "\ue1d8")
@@ -14,6 +15,7 @@ low=$(echo -e "\ue1fd")
 bat=$(echo -e "\ue1ff")
 full=$(echo -e "\ue201")
 wifi=$(echo -e "\ue048")
+music=$(echo -e "\ue1a6")
 blk=$(xrq '*.color0')
 clr="%{B-}"
 SEP="  "
@@ -25,10 +27,22 @@ content() {
 
     window_title() {
         color="%{B$red}"
+        mclr="%{B$dblu}"
+        micon="%{F$blk}$music%{F-}"
         icon="%{F$blk}$win%{F-}"
         title=$SEC$(xtitle)
-        echo "$color$SEP$icon$SEP$clr$SPC$SPC$title$SPC$SPC$clr"
+        track=$SEC$(/home/daniel/bin/progbar)
+        mpc_status=$(mpc status | awk -F "[][]" 'NR==2{print $2}')
+
+        if [[ "$mpc_status" == "playing"  ]]
+        then
+            echo "$mclr$SEP$micon$SEP$clr$SPC$SPC$track$SPC$SPC$clr"
+        else
+            echo "$color$SEP$icon$SEP$clr$SPC$SPC$title$SPC$SPC$clr"
+        fi
 }
+
+
 
 clock() {
     time=$(date '+%l:%M')
@@ -67,7 +81,6 @@ network() {
     SSID=$SEC$(iw dev wlp1s0 link | awk 'NR == 2 {print" ",$2," "}')
     echo "$color$SEP$icon$SEP$clr$SPC$SSID$SPC$clr"
 }
-
 
     left="$(window_title)"
     center="$(clock)"

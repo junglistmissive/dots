@@ -135,3 +135,44 @@ quit
 exit
 ls
 exit
+ eval "$(xidel http://site -e 'title:=//title' -e 'links:=//a/@href' --output-format bash)"
+ eval "$(xidel http://poolga.com -e 'title:=//title' -e 'links:=//a/@href' --output-format bash)"
+ eval "$(xidel http://poolga.com -e 'title:=//title' -e 'links:=//a/@img' --output-format bash)"
+ eval "$(xidel http://poolga.com -e 'title:=//title' -e 'links:=//a/@src' --output-format bash)"
+ eval "$(xidel http://poolga.com -e 'title:=//title' -e 'links:=//img/@src' --output-format bash)"
+ eval "$(xidel http://poolga.com -e 'links:=//a' -e 'links:=//img/@src' --output-format bash)"
+ eval "$(xidel http://poolga.com -e 'links:=//a' -e 'links:=//img' --output-format bash)"
+xidel --printed-node-format html -e "//a"
+xidel http://poolga.com --printed-node-format html -e "//a"
+xidel http://poolga.com --printed-node-format html -e "//img"
+xidel http://poolga.com --printed-node-format html -e "//img" | awk -F\" '{print $2}'
+xidel http://poolga.com --printed-node-format html -e "//img" | awk -F\" '{print $2}' > poolga
+cat poolga
+feh --filelist poolga
+xidel http://poolga.com/shared/images/poolgas --printed-node-format html -e "//img" | awk -F\" '{print $2}' > poolga
+xidel http://poolga.com/shared/images/poolgas -f --printed-node-format html -e "//img" | awk -F\" '{print $2}' > poolga
+xidel http://poolga.com/shared/images/poolgas --css(poolgas)
+xidel http://poolga.com/shared/images/poolgas --css "css(poolgas)"
+xidel http://poolga.com/ --css "css(poolgas)"
+xidel http://poolga.com/ --css "css,poolgas"
+xidel http://poolga.com/ --css "poolgas"
+xidel http://poolga.com/ --css "poolgas" -e "//a"
+xidel http://poolga.com/ --css "wallpapers" -e "//a"
+xidel http://poolga.com/ --css "wallpapers" -e "//img"
+xidel http://poolga.com/ --css "wallpapers" -e "//src"
+xidel http://poolga.com/ --css "wallpapers" 
+xidel http://poolga.com/ --css ".wallpapers" 
+xidel http://poolga.com/ --css ".wallpapers" -e"//links"
+xidel http://poolga.com/ --css ".wallpapers" -e "//links"
+xidel http://poolga.com/ --css ".wallpapers" -e "//a"
+exit
+ls
+ninja install
+ninja install
+ninja install
+..
+..
+..
+cd
+ls
+sudo rm -r LibreSprite/

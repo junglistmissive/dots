@@ -1,0 +1,222 @@
+#!/usr/bin/env bash
+
+# Grab options from config folder & use fzf to filter/find and select
+COLORSCHEME="$(ls /home/daniel/.config/freshcoat | sort --reverse | fzf --ansi --cycle)"
+
+# Cache & theme dirs
+CACHEDIR=$HOME/.cache/freshcoat
+THEMEDIR=$HOME/.config/freshcoat
+WM=$(head -n 1 $CACHEDIR/wm)
+THEME=$COLORSCHEME
+RGBABG=$(colorconvert "$(xrq '*.background' | awk -F\] '{print $2}')" | sed 's/)/, 0\.9)/g;s/rgb/rgba/g')
+
+# Define sequence and newline helper
+NL=$'\n'
+sequence=""
+
+# Cleanup cache files
+cleanup()
+{
+    rm -f $CACHEDIR/x_colors
+}
+
+# Reload terminals
+reloadx()
+{
+    for term in /dev/pts/[0-9]*; do
+        printf "%b" "$sequence" > "$term"
+    done
+}
+
+mergex()
+{
+    xrdb -merge ${HOME}/.Xresources
+}
+
+# Reload lemonbar
+reload_bar()
+{
+    if [[ $(pgrep lemonbar) ]]; then
+        pkill -x lemonbar
+    fi
+    ( lpanel &) > /dev/null 2>&1
+}
+
+# Build color array
+get_colors()
+{
+    . $THEMEDIR/$THEME
+    COLOR_ARRAY=($blk $red $grn $ylw $blu $mag $cyn $wht \
+	        $bblk $bred $bgrn $bylw $bblu $bmag $bcyn $bwht)
+}
+
+# Add colors to sequence
+create_sequence()
+{
+    for i in {0..15}; do
+	sequence+="\033]4;${i};${COLOR_ARRAY[${i}]}\007"
+    done
+}
+
+# Add BG & FG colors to sequence from sourced vars
+create_second_sequence()
+{
+# FG
+    for i in 10 12 13; do
+	sequence+="\033]${i};${fg}\007"
+    done
+# BG
+    for i in 11 14; do
+	sequence+="\033]${i};${bg}\007"
+    done
+}
+
+write_termite()
+{
+    termite_output+="color0 = ${blk}${NL}"
+    termite_output+="color1 = ${red}${NL}"
+    termite_output+="color2 = ${grn}${NL}"
+    termite_output+="color3 = ${ylw}${NL}"
+    termite_output+="color4 = ${blu}${NL}"
+    termite_output+="color5 = ${mag}${NL}"
+    termite_output+="color6 = ${cyn}${NL}"
+    termite_output+="color7 = ${wht}${NL}"
+    termite_output+="color8 = ${bblk}${NL}"
+    termite_output+="color9 = ${bred}${NL}"
+    termite_output+="color10 = ${bgrn}${NL}"
+    termite_output+="color11 = ${bylw}${NL}"
+    termite_output+="color12 = ${bblu}${NL}"
+    termite_output+="color13 = ${bmag}${NL}"
+    termite_output+="color14 = ${bcyn}${NL}"
+    termite_output+="color15 = ${bwht}${NL}"
+    termite_output+="foreground = ${fg}${NL}"
+    termite_output+="background = ${bg}${NL}"
+    termite_output+="cursor = ${fg}${NL}"
+
+    sed -i '20,38d' ~/.config/termite/config
+    printf "${termite_output}" >> "/home/daniel/.config/termite/config"
+}
+
+write_x_source()
+{
+    x_output=""
+    x_output+="*.foreground:  ${fg}${NL}"
+    x_output+="*.background:  ${bg}${NL}"
+    x_output+="URxvt.background:  [95]${bg}${NL}"
+    x_output+="*.cursorColor: ${fg}${NL}"
+
+    for i in {0..15}; do
+	x_output+="*.color${i}: ${COLOR_ARRAY[${i}]}${NL}"
+    done
+}
+
+write_rofi()
+{
+    rofi_output=""
+    rofi_output+="rofi.color-enabled: true${NL}"
+    rofi_output+="rofi.color-window: ${bg}, ${bg}, ${blk}${NL}"
+    rofi_output+="rofi.color-normal: ${bg}, ${fg}, ${bg}, ${blk}, ${cyn}${NL}"
+}
+
+# SH Colors
+write_sh()
+{
+    rm -f $CACHEDIR/colors 
+    cp $THEMEDIR/$THEME $CACHEDIR/colors
+}
+
+# Write output to x_colors in $CACHEDIR
+write_all()
+{
+    output=${x_output}${rofi_output}
+    printf "${output}" > "${CACHEDIR}/x_colors"
+}
+
+write_x_define()
+{
+    xd_output=""
+    xd_output+="#define bg  ${bg}${NL}"
+    xd_output+="#define blk  ${blk}${NL}"
+    xd_output+="#define bblk  ${bblk}${NL}"
+    xd_output+="#define fg  ${fg}${NL}"
+    xd_output+="#define red  ${red}${NL}"
+    xd_output+="#define bred  ${bred}${NL}"
+    xd_output+="#define grn  ${grn}${NL}"
+    xd_output+="#define bgrn  ${bgrn}${NL}"
+    xd_output+="#define ylw  ${ylw}${NL}"
+    xd_output+="#define bylw  ${bylw}${NL}"
+    xd_output+="#define blu  ${blu}${NL}"
+    xd_output+="#define bblu  ${bblu}${NL}"
+    xd_output+="#define mag  ${mag}${NL}"
+    xd_output+="#define bmag  ${bmag}${NL}"
+    xd_output+="#define cyn  ${cyn}${NL}"
+    xd_output+="#define bcyn  ${bcyn}${NL}"
+    xd_output+="#define wht  ${wht}${NL}"
+    xd_output+="#define bwht  ${bwht}${NL}"
+
+    printf "${xd_output}" > "$CACHEDIR/xd_colors"
+}
+
+write_name()
+{
+    name_output="$THEME"
+    printf "${name_output}" > "$CACHEDIR/current"
+}
+
+
+obcolor()
+{
+    if [[ $(pgrep openbox) ]]; then
+        obsquash &
+    fi
+}
+
+hcreload()
+{
+    if [[ $(pgrep herbstluftwm) ]]; then
+        exec herbstclient reload &
+    fi
+}
+
+bspfresh()
+{
+    if  [[ $(pgrep bspwm) ]]; then
+        ~/.config/bspwm/bspwmrc &
+    fi
+}
+
+roficolor()
+{
+    exec $HOME/bin/rofisquash &
+}
+
+{
+if [ -f $THEMEDIR/$COLORSCHEME ]; then
+
+# Cleanup
+    cleanup
+# Source colors
+    get_colors
+# Create terminal reload sequence
+    create_sequence
+    create_second_sequence
+# Reload the fucking thing
+    reloadx
+# Write theme to cache
+    write_x_source
+    write_termite
+    write_rofi
+    write_all
+    write_sh
+    write_x_define
+    write_name
+# Merge X
+    mergex
+    reload_bar
+    roficolor
+    bspfresh
+
+else
+    printf "You're doing it wrong."
+fi
+} 2> /dev/null
