@@ -13,6 +13,9 @@ super + t
 super + Return
         urxvtc
 
+## b&w tile pattern wall ##
+super + i
+    /home/daniel/bin/ptbw
 
 ## simple desktop ##
 super + s
@@ -66,7 +69,7 @@ super + alt + Escape
 
 ## change tiled to monocle and vice versa ##
 super + m
-	bspc desktop -l next	
+	bspc desktop -l next
 
 ## kill bspwm ##
 super + {_,shift + }q
@@ -96,9 +99,9 @@ super + shift + p
 super + shift +s
 	bspc node -s biggest	
 
-## set window gap to 14 ##
+## set absurdly inefficient vanity window gap  ##
 super + shift + g
-	bspc config -d focused window_gap 14
+	bspc config -d focused window_gap 18
 
 ## rotate windows 90 degrees ##
 super + shift + r

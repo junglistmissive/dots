@@ -16,7 +16,6 @@ xset fp+ ~/.local/share/fonts &
 xset fp rehash &
 fc-cache &
 xrdb ~/.Xresources
-urxvtd -q -f -o &
 #exec openbox
 exec bspwm
 #exec herbstluftwm

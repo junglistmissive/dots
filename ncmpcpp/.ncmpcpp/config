@@ -28,8 +28,8 @@ song_library_format = "{{%a - %t}|{%f}}{$R%l}"
 empty_tag_color = "black"
 
 [statusbar]
-progressbar_look = "▁▁▁"
-progressbar_color = "black"
+progressbar_look = "─╼─"
+progressbar_color = "blue"
 progressbar_elapsed_color = "white"
 statusbar_visibility = "no"
 statusbar_color = "default"
@@ -50,6 +50,6 @@ visualizer_output_name = "my_fifo"
 visualizer_sync_interval = "30"
 visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
-visualizer_look = "⛌⛌"
+visualizer_look = "▌▐"
 
 execute_on_song_change = "~/bin/getart"

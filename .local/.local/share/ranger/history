@@ -1,6 +1,9 @@
 touch dcol.py
 help
-delete
 cd ~/.config/ranger/rifle.conf
 cd
 cd ~/.config
+delete
+scout nvim
+open_with nvim
+

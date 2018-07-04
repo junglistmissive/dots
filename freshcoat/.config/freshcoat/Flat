@@ -2,7 +2,7 @@
 #!/bin/bash
 
 bg=#1F2D3A
-fg=#1abc9c
+fg=#bdc3c7
 
 blk=#2c3e50
 red=#c0392b

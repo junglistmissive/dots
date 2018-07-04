@@ -48,7 +48,7 @@ GEOMETRY_COLOR_PROMPT="green"
 PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME="3"
 PROMPT_GEOMETRY_EXEC_TIME=true
 
-antigen theme sunrise
+antigen theme daveverwer
 
 # Apply antigen configuration
 antigen apply

@@ -176,3 +176,12 @@ ninja install
 cd
 ls
 sudo rm -r LibreSprite/
+logout
+exit
+printf "$((int(ceil(sqrt($range)))))"
+printf "$((int(ceil(sqrt(8)))))"
+printf "P6\n$((int(ceil(sqrt(8)))))\n255\n"
+printf "P6\n255\n"
+quit
+exitt
+exit

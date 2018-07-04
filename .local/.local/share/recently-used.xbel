@@ -3,166 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/daniel/wall.jpg" added="2018-05-21T08:53:40Z" modified="2018-05-26T18:49:18Z" visited="2018-05-21T08:53:40Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="wpg" exec="&apos;wpg %u&apos;" modified="2018-05-21T09:01:00Z" count="5"/>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-26T18:49:18Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/skull.jpg" added="2018-05-22T10:41:43Z" modified="2018-05-22T10:41:43Z" visited="2018-05-22T10:41:44Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-22T10:41:43Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/vexel.png" added="2018-05-22T10:53:16Z" modified="2018-05-22T10:53:16Z" visited="2018-05-22T10:53:17Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-22T10:53:16Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/.lexaloffle/pico-8/carts/jude.p8.png" added="2018-05-27T23:56:27Z" modified="2018-05-27T23:56:55Z" visited="2018-05-27T23:56:28Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="PabloDraw" exec="&apos;PabloDraw %u&apos;" modified="2018-05-27T23:56:55Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/alpha_king-QLAnsilove.png" added="2018-05-28T00:00:21Z" modified="2018-05-28T00:00:21Z" visited="2018-05-28T00:00:22Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-28T00:00:21Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/mnd-1297.asc.png" added="2018-05-28T02:05:23Z" modified="2018-05-28T02:05:23Z" visited="2018-05-28T02:05:23Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-28T02:05:23Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/mnd-1297.asc" added="2018-05-28T02:14:54Z" modified="2018-05-28T02:14:54Z" visited="2018-05-28T02:14:54Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="PabloDraw" exec="&apos;PabloDraw %u&apos;" modified="2018-05-28T02:14:54Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/decay.ans" added="2018-05-28T02:17:06Z" modified="2018-05-28T02:17:06Z" visited="2018-05-28T02:17:06Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="PabloDraw" exec="&apos;PabloDraw %u&apos;" modified="2018-05-28T02:17:06Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/MND-1297.ASC.png" added="2018-05-28T02:31:31Z" modified="2018-05-28T02:31:33Z" visited="2018-05-28T02:31:31Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-05-28T02:31:33Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/decay.png" added="2018-05-28T02:35:55Z" modified="2018-05-28T02:36:10Z" visited="2018-05-28T02:35:55Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-05-28T02:36:10Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/Downloads/cart.tic" added="2018-05-28T09:04:30Z" modified="2018-05-28T09:04:30Z" visited="2018-05-28T09:05:20Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="tic80" exec="&apos;tic80 %u&apos;" modified="2018-05-28T09:04:30Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/lace-seamless-bitmap-background-pattern-texture-tile-abstract-32919432.jpg" added="2018-05-28T19:43:48Z" modified="2018-05-28T19:43:48Z" visited="2018-05-28T19:43:48Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-28T19:43:48Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/tile.png" added="2018-05-28T21:12:51Z" modified="2018-05-28T21:12:51Z" visited="2018-05-28T21:12:51Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-05-28T21:12:51Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/Downloads/Prairie%20Wind.bmp" added="2018-05-28T22:41:37Z" modified="2018-05-28T22:41:37Z" visited="2018-05-28T22:41:38Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/bmp"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-05-28T22:41:37Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/begonia_flowers_red_121991_1280x720.jpg" added="2018-06-02T00:40:19Z" modified="2018-06-02T00:40:19Z" visited="2018-06-02T00:40:20Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-02T00:40:19Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/daniel/.config" added="2018-06-04T02:23:26Z" modified="2018-06-04T02:23:26Z" visited="2018-06-04T02:23:26Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -352,12 +192,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/Plaid-Type-Specimen.pdf" added="2018-06-10T05:17:55Z" modified="2018-06-10T05:17:55Z" visited="2018-06-10T05:17:55Z">
+  <bookmark href="file:///home/daniel/Plaid-Type-Specimen.pdf" added="2018-06-10T05:17:55Z" modified="2018-06-24T21:20:58Z" visited="2018-06-10T05:17:55Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-10T05:17:55Z" count="1"/>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-24T21:20:58Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -442,12 +282,16 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/death.jpg" added="2018-06-13T20:22:55Z" modified="2018-06-13T20:22:55Z" visited="2018-06-13T20:22:55Z">
+  <bookmark href="file:///home/daniel/death.jpg" added="2018-06-13T20:22:55Z" modified="2018-06-21T03:41:36Z" visited="2018-06-13T20:22:55Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-13T20:22:55Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-21T03:41:36Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -610,12 +454,218 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/BatonTurbo-Regular.ttf" added="2018-06-19T16:51:49Z" modified="2018-06-19T16:51:49Z" visited="2018-06-19T16:51:50.153600Z">
+  <bookmark href="file:///home/daniel/BatonTurbo-Regular.ttf" added="2018-06-19T16:51:49Z" modified="2018-06-19T16:51:49Z" visited="2018-06-19T16:51:50Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="font/ttf"/>
         <bookmark:applications>
           <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-19T16:51:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Untitled.png" added="2018-06-21T04:08:49Z" modified="2018-06-21T04:08:55Z" visited="2018-06-21T04:08:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-21T04:08:55Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/Downloads/MonumentGrotesk-Regular.otf" added="2018-06-21T05:57:43Z" modified="2018-06-21T05:57:43Z" visited="2018-06-21T05:57:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-21T05:57:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/robots.png" added="2018-06-23T19:04:16Z" modified="2018-06-23T19:04:16Z" visited="2018-06-23T19:04:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-23T19:04:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/tightype/style/fonts/Moderat-Regular.ttf" added="2018-06-24T22:25:57Z" modified="2018-06-24T22:25:57Z" visited="2018-06-24T22:25:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-24T22:25:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/ptrn.png" added="2018-06-26T21:04:08Z" modified="2018-06-27T06:46:27Z" visited="2018-06-26T21:04:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-27T06:46:27Z" count="19"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/seamlessroses.jpg" added="2018-06-27T01:14:58Z" modified="2018-06-27T01:14:58Z" visited="2018-06-27T01:14:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-27T01:14:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/ptrn2.png" added="2018-06-27T06:49:25Z" modified="2018-06-27T07:40:07Z" visited="2018-06-27T06:49:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-27T07:40:07Z" count="12"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/ptrn3.png" added="2018-06-27T07:46:02Z" modified="2018-06-27T08:16:13Z" visited="2018-06-27T07:46:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-27T08:16:13Z" count="14"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/ptrn4.png" added="2018-06-27T08:18:08Z" modified="2018-06-28T01:32:53Z" visited="2018-06-27T08:18:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-28T01:32:53Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/ptrn5.png" added="2018-06-27T08:20:43Z" modified="2018-06-27T08:21:37Z" visited="2018-06-27T08:20:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-27T08:21:37Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/ptrn6.png" added="2018-06-27T09:15:12Z" modified="2018-06-27T09:15:14Z" visited="2018-06-27T09:15:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-27T09:15:14Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/pattern_037.png" added="2018-06-30T21:07:56Z" modified="2018-06-30T21:42:25Z" visited="2018-06-30T21:07:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-30T21:42:25Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/pattern_099.gif" added="2018-07-01T03:37:11Z" modified="2018-07-01T03:37:11Z" visited="2018-07-01T03:37:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/gif"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-07-01T03:37:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/pattern_099.xcf" added="2018-07-01T04:21:50Z" modified="2018-07-01T07:34:00Z" visited="2018-07-01T04:21:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/x-xcf"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-07-01T07:34:00Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/p99.png" added="2018-07-01T05:53:22Z" modified="2018-07-01T07:33:50Z" visited="2018-07-01T05:53:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-07-01T07:33:50Z" count="22"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/pattern_049.gif" added="2018-07-01T07:41:12Z" modified="2018-07-01T08:35:22Z" visited="2018-07-01T07:41:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/gif"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-07-01T08:35:22Z" count="14"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/logo_tits_clut224.png" added="2018-07-03T07:04:04Z" modified="2018-07-03T07:04:04Z" visited="2018-07-03T07:04:04.381619Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-07-03T07:04:04Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

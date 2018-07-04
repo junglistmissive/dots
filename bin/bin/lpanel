@@ -30,7 +30,7 @@ content() {
         mclr="%{B$dblu}"
         micon="%{F$blk}$music%{F-}"
         icon="%{F$blk}$win%{F-}"
-        title=$SEC$(xtitle)
+        title=$SEC$(xtitle -t 64)
         track=$SEC$(/home/daniel/bin/progbar)
         mpc_status=$(mpc status | awk -F "[][]" 'NR==2{print $2}')
 
@@ -95,4 +95,4 @@ while :; do
     echo $(content)
     sleep 1
 done
-} 2> /dev/null | lemonbar -d -f "-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1" -f "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" -F $(xrq '*.foreground') -B $(xrq '*.background' | sed 's/\[...//g') -g 1366x$(bspc config top_padding)
+} 2> /dev/null | lemonbar -d -f "-ctrld-fixed-medium-r-normal-*-13-80-96-96-c-80-iso10646-1" -f "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1" -F $(xrq '*.foreground') -B $(xrq '*.background' | sed 's/\[...//g') -g 1366x28

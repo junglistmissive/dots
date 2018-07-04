@@ -1,4 +1,13 @@
 #!/bin/bash
-img=$(shuf -n 1 ~/bin/patterns.txt)
+link=$(shuf -n 1 ~/bin/patterns.txt)
 
-feh --bg-tile $img
+write_link() {
+    echo $link > ~/.cache/freshcoat/wall
+}
+
+set_wall() {
+feh --bg-tile $link
+}
+
+write_link
+set_wall
