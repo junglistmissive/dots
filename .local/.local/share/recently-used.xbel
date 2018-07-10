@@ -3,185 +3,6 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/daniel/.config" added="2018-06-04T02:23:26Z" modified="2018-06-04T02:23:26Z" visited="2018-06-04T02:23:26Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="inode/directory"/>
-        <bookmark:applications>
-          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2018-06-04T02:23:26Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/bin" added="2018-06-04T02:29:51Z" modified="2018-06-05T21:05:13Z" visited="2018-06-04T02:29:51Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="inode/directory"/>
-        <bookmark:applications>
-          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2018-06-04T02:29:51Z" count="1"/>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-05T21:05:13Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/.zshrc" added="2018-06-05T21:03:34Z" modified="2018-06-05T21:03:34Z" visited="2018-06-05T21:03:34Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-05T21:03:34Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/dots/neovim/.config/nvim/init.vim" added="2018-06-05T21:36:53Z" modified="2018-06-05T21:36:53Z" visited="2018-06-05T21:36:53Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-05T21:36:53Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/ps.jpg" added="2018-06-05T23:10:47Z" modified="2018-06-06T09:14:56Z" visited="2018-06-05T23:10:48Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-05T23:10:47Z" count="1"/>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-05T23:11:13Z" count="1"/>
-          <bookmark:application name="PabloDraw" exec="&apos;PabloDraw %u&apos;" modified="2018-06-06T09:14:56Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/ps.png" added="2018-06-05T23:12:02Z" modified="2018-06-05T23:12:21Z" visited="2018-06-05T23:12:02Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2018-06-05T23:12:21Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/patrick" added="2018-06-06T01:20:44Z" modified="2018-06-06T01:20:44Z" visited="2018-06-06T01:20:44Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="PabloDraw" exec="&apos;PabloDraw %u&apos;" modified="2018-06-06T01:20:44Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/patrick.ans" added="2018-06-06T06:08:17Z" modified="2018-06-06T06:08:17Z" visited="2018-06-06T06:08:18Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="PabloDraw" exec="&apos;PabloDraw %u&apos;" modified="2018-06-06T06:08:17Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/9202.jpg" added="2018-06-06T09:31:53Z" modified="2018-06-06T09:31:53Z" visited="2018-06-06T09:31:54Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-06T09:31:53Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/ti-ji28.png" added="2018-06-06T09:32:41Z" modified="2018-06-06T09:32:41Z" visited="2018-06-06T09:32:41Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/png"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-06T09:32:41Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/optimo.ch" added="2018-06-07T08:31:19Z" modified="2018-06-07T08:31:19Z" visited="2018-06-07T08:31:19Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="inode/directory"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T08:31:19Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/lineto.com" added="2018-06-07T09:13:10Z" modified="2018-06-07T09:13:10Z" visited="2018-06-07T09:13:10Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="inode/directory"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T09:13:10Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics/2-JS-Basics/index.html" added="2018-06-07T16:07:01Z" modified="2018-06-07T16:07:01Z" visited="2018-06-07T16:07:02Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/html"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T16:07:01Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics/2-JS-Basics/script.js" added="2018-06-07T16:30:31Z" modified="2018-06-07T16:30:31Z" visited="2018-06-07T16:30:32Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T16:30:31Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics/2-JS-Basics" added="2018-06-07T16:30:50Z" modified="2018-06-07T16:30:50Z" visited="2018-06-07T16:30:50Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="inode/directory"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-07T16:30:50Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///run/media/daniel/ISOIMAGE/%5BFreeTutorials.Us%5D%20Udemy%20-%20the-complete-javascript-course/02%20JavaScript%20Language%20Basics" added="2018-06-08T08:30:49Z" modified="2018-06-08T08:30:49Z" visited="2018-06-08T08:30:49Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="inode/directory"/>
-        <bookmark:applications>
-          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-06-08T08:30:49Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/daniel/Downloads/Favorit.otf" added="2018-06-08T22:32:28Z" modified="2018-06-08T22:32:28Z" visited="2018-06-08T22:32:28Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
-        <bookmark:applications>
-          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-06-08T22:32:28Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/daniel/Downloads/Eloquent%20JavaScript%20-%20Marijn%20Haverbeke.txt" added="2018-06-09T21:00:03Z" modified="2018-06-09T21:00:03Z" visited="2018-06-09T21:00:03Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -660,12 +481,32 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/daniel/logo_tits_clut224.png" added="2018-07-03T07:04:04Z" modified="2018-07-03T07:04:04Z" visited="2018-07-03T07:04:04.381619Z">
+  <bookmark href="file:///home/daniel/logo_tits_clut224.png" added="2018-07-03T07:04:04Z" modified="2018-07-03T07:04:04Z" visited="2018-07-03T07:04:04Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
         <bookmark:applications>
           <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-07-03T07:04:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/pantone-colors.json" added="2018-07-04T20:22:05Z" modified="2018-07-04T20:22:05Z" visited="2018-07-04T20:22:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="chromium" exec="&apos;chromium %u&apos;" modified="2018-07-04T20:22:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/daniel/tachyons.html" added="2018-07-10T07:08:45Z" modified="2018-07-10T07:08:45Z" visited="2018-07-10T07:08:45.744287Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-07-10T07:08:45Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

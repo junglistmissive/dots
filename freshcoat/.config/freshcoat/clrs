@@ -1,36 +1,36 @@
 !BG,FG,Cursor
-*.foreground:#EFEFEF
-*.background:#131F45
-*.cursorColor:#EFEFEF
+*.foreground:#7fdbff
+*.background:#001f3f
+*.cursorColor:#7fdbff
 
 !Black
-*.color0:#24212A
-*.color8:#38353E
+*.color0:#111111
+*.color8:#AAAAAA
 
 !Red
-*.color1:#EF2D56
-*.color9:#931621
+*.color1:#FF4136
+*.color9:#FF4136
 
 !Green
-*.color2:#03B4A2
-*.color10:#3FE2D1
+*.color2:#01FF70
+*.color10:#01FF70
 
 !Yellow
-*.color3:#F4670F
-*.color11:#FB9F38
+*.color3:#FFDC00
+*.color11:#FFDC00
 
 !Blue
-*.color4:#219DFD
-*.color12:#54C9FF
+*.color4:#0074d9
+*.color12:#0074d9
 
 !Magenta
-*.color5:#BE20D9
-*.color13:#ED32E3
+*.color5:#F012BE
+*.color13:#F012BE
 
 !Cyan
-*.color6:#07E3FD
-*.color14:#07FFE5
+*.color6:#7fdbff
+*.color14:#7fdbff
 
 !White
-*.color7:#F5E8FF
-*.color15:#FFF3F0
+*.color7:#DDDDDD
+*.color15:#FFFFFF

@@ -3,7 +3,8 @@
 arr=$(ruby ~/bin/testpal.rb)
 
 echo "$arr" | while read line; do
-echo -e "\e[48;2;$(echo $line | awk -F\( '{print $2$3$4"m"}' | sed 's/, /;/g;s/)//g')" ;
+echo -e "\e[38;2;$(echo $line | awk -F\( '{print $2$3$4"m"}' | sed 's/, /;/g;s/)//g;s/ //g')\e[0m" ;
+
 done
 
 
