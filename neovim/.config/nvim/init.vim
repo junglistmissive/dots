@@ -32,6 +32,7 @@ Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'vim-scripts/SyntaxAttr.vim'
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'Rykka/colorv.vim'
+Plug 'posva/vim-vue'
 call plug#end()
 
 " }}}
@@ -130,9 +131,9 @@ set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
-"if (has("termguicolors"))
-" set termguicolors
-"endif
+if (has("termguicolors"))
+set termguicolors
+endif
 
 syntax enable
 colorscheme nord
@@ -181,9 +182,9 @@ let g:startify_lists = [
     \ { 'type': 'bookmarks',    'header': [ '  Bookmarks']     },
     \]
 
-set shiftwidth=4     " indent = 4 spaces
+set shiftwidth=2     " indent = 4 spaces
 set expandtab      " tabs are tabs
-set tabstop=8        " tab = 4 spaces
+set tabstop=4        " tab = 4 spaces
 set softtabstop=0    " backspace through spaces
 set smarttab
 " }}}

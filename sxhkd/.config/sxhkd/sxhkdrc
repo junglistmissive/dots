@@ -41,7 +41,7 @@ super + Escape
 
 ## chrome ##
 super + w
-	chromium
+	google-chrome-stable
 
 ## gmrun ##
 super + z
