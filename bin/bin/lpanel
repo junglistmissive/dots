@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 red=$(xrq '*.color1')
 grn=$(xrq '*.color2')
 grey=$(xrq '*.color8')

@@ -1,4 +1,4 @@
-PATH=$PATH:/home/daniel/bin:/home/daniel/.gem/ruby/2.5.0/bin:/home/daniel/.local/bin:$HOME/.yarn/bin
+PATH=$PATH:/home/daniel/bin:/home/daniel/.gem/ruby/2.5.0/bin:/home/daniel/.local/bin:$HOME/.yarn/bin:$HOME/.config/composer/vendor/bin/
 export PATH
 GOPATH=/home/daniel/gocode
 export GOPATH
@@ -18,12 +18,6 @@ zstyle :compinstall filename '/home/daniel/.zshrc'
 autoload -Uz compinit
 compinit
 
-
-nplayer() (nc -kluw 1 127.0.0.1 5555 > /tmp/mpd.fifo & trap "kill $!" EXIT; ncmpcpp)
-
-dtop() (feh --bg-scale $(http --pretty=format https://api.desktoppr.co/1/wallpapers/random | grep jpg | awk -F\" 'NR >=3{ print $4}' ))
-
-
 # Source antigen
 source /home/daniel/.antigen/antigen.zsh
 
@@ -31,46 +25,45 @@ source /home/daniel/.antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # Load bundles .
-antigen bundle git
+antigen bundle lukechilds/zsh-nvm
 antigen bundle pip
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle Goles/battery
+
+
+
 
 # Load (and configure) the theme.
 SPACESHIP_PROMPT_ORDER=(
-time
-user
-host
+char
+)
+SPACESHIP_RPROMPT_ORDER=(
 dir
 node
-char
+venv
 )
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_CHAR_SYMBOL="$ "
+SPACESHIP_VENV_SHOW=true
+SPACESHIP_VENV_SYMBOL="("
+SPACESHIP_VENV_PREFIX="%F{001} %f"
+SPACESHIP_VENV_SUFFIX="%F{001})%f"
+SPACESHIP_VENV_COLOR="001"
+SPACESHIP_NODE_SYMBOL="%F{004}《%f"
+SPACESHIP_NODE_SUFFIX="%F{004} 》%f"
+SPACESHIP_VENV_GENERIC_NAMES=(virtualenv)
+SPACESHIP_CHAR_SYMBOL="%F{001}$(echo -e '\u2771')%f%F{003}$(echo -e '\u2771')%f%F{002}$(echo -e '\u2771')%f "
 SPACESHIP_CHAR_COLOR_SECONDARY="#6F4EBC"
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_COLOR="002"
-SPACESHIP_TIME_FORMAT="%K{004} %D{%I:%M}%k"
-SPACESHIP_TIME_SUFFIX="%K{004} %k"
-SPACESHIP_HOST_SHOW=always
-SPACESHIP_USER_SHOW=always
-SPACESHIP_USER_PREFIX=" "
-SPACESHIP_USER_SUFFIX=""
-SPACESHIP_HOST_PREFIX="%F{006} at %f"
-SPACESHIP_HOST_SUFFIX=""
-SPACESHIP_HOST_COLOR_PREFIX=""
-SPACESHIP_USER_COLOR="005"
-SPACESHIP_HOST_COLOR="003"
 SPACESHIP_DIR_SHOW=true
-SPACESHIP_DIR_PREFIX="%F{006} in %f"
-SPACESHIP_DIR_COLOR="003"
-SPACESHIP_DIR_TRUNC=3
-SPACESHIP_NODE_COLOR='001'
+SPACESHIP_DIR_PREFIX="%F{003} in %f"
+SPACESHIP_SUB_DIR_PREFIX="./"
+SPACESHIP_DIR_COLOR="002"
+SPACESHIP_DIR_TRUNC=4
+SPACESHIP_DIR_TRUNC_PREFIX="~/"
+SPACESHIP_NODE_COLOR='010'
 SPACESHIP_DIR_SUFFIX=" "
 
 antigen theme spaceship
@@ -81,12 +74,6 @@ antigen apply
 # Aliases
 #
 alias fresh='freshcoat'
-alias OMZ='antigen theme $(ls ~/.antigen/bundles/robbyrussell/oh-my-zsh/themes | fzf)'
-alias stellar='feh --bg-fill $(shuf -n 1 ~/bin/stellar.txt)'
-alias earthly='feh --bg-fill $(shuf -n 1 ~/bin/prettyearth.txt)'
-alias apod='feh --bg-fill $(shuf -n 1 ~/bin/apod.txt)'
-alias awal='feh --bg-fill $(shuf -n 1 ~/bin/androidwalls.txt)'
-alias ptrn='feh --bg-tile $(shuf -n 1 ~/bin/patterns.txt)'
 alias ptbw='feh --bg-tile $(shuf -n 1 ~/bin/patternsbw.txt)'
 
 # Source fzf script

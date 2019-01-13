@@ -23,10 +23,10 @@ fi
 urxvtd &
 xfsettingsd &
 
-bspc monitor eDP1 -d  I II III IV
+bspc monitor eDP-1 -d  I II III IV
 
-bspc config border_width            6
-bspc config window_gap              8
+bspc config border_width            4
+bspc config window_gap              4
 
 bspc config split_ratio             0.50
 bspc config top_padding             28

@@ -6,12 +6,12 @@
 
 ## terminal emulator ##
 super + t
-	termite
+	kitty
 
 
 ## termite ##
 super + Return
-        urxvtc
+        termite
 
 ## b&w tile pattern wall ##
 super + i
@@ -19,7 +19,7 @@ super + i
 
 ## simple desktop ##
 super + s
-    /home/daniel/bin/simple
+    /home/daniel/bin/bdrop
 
 ## tile pattern wall ##
 super + p

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<info version='1.4'>
+<MiddleToolbar>
+ <View index="0" showLabel="true">
+  <ChangeColor>
+   <Color/>
+  </ChangeColor>
+  <Page_Display>
+   <SinglePage/>
+   <Continuous/>
+   <Facing/>
+   <ContinuousFacing/>
+   <SeparateCoverPage/>
+  </Page_Display>
+  <RotateView>
+   <RotateRight/>
+   <RotateLeft/>
+  </RotateView>
+ </View>
+ <Comment index="1" showLabel="true">
+  <Text_Markup>
+   <Highlight/>
+   <Squiggly/>
+   <Underline/>
+   <StrikeOut/>
+   <Replace/>
+   <Caret/>
+  </Text_Markup>
+  <Typewriter>
+   <Typewriter/>
+   <Textbox/>
+   <Callout/>
+  </Typewriter>
+  <Pin>
+   <Note/>
+   <File/>
+  </Pin>
+  <Drawing>
+   <Shape/>
+   <Pencil/>
+   <Rubber/>
+   <AreaHighlight/>
+  </Drawing>
+  <Stamp>
+   <Stamp/>
+  </Stamp>
+  <ConnectedPDF>
+   <BUTTON_NAME_JS_PLUGIN_DISCUSSION/>
+   <BUTTON_NAME_JS_PLUGIN_INLINECOMMENT/>
+  </ConnectedPDF>
+  <Format>
+   <Thickness/>
+   <Color/>
+   <Font/>
+   <Pin/>
+  </Format>
+ </Comment>
+ <Connect index="2" showLabel="true">
+  <Create_ConnectedPDF>
+   <ConvertTocPDF/>
+   <RegisterNewVersion/>
+  </Create_ConnectedPDF>
+  <Document_Info>
+   <DocumentHomepage/>
+  </Document_Info>
+  <Tutorials>
+   <Tutorials/>
+  </Tutorials>
+  <ConnectedPDF>
+   <BUTTON_NAME_JS_PLUGIN_CDRM/>
+   <BUTTON_NAME_JS_PLUGIN_CREVIEW/>
+   <BUTTON_NAME_JS_PLUGIN_DISCUSSION/>
+  </ConnectedPDF>
+ </Connect>
+ <Protect index="3" showLabel="true">
+  <Sign>
+   <PDFSign/>
+  </Sign>
+  <RMS>
+   <RestrictAccess/>
+   <Settings/>
+  </RMS>
+  <ConnectedPDF>
+  <BUTTON_NAME_JS_PLUGIN_CDRM/>
+  </ConnectedPDF>
+ </Protect>
+</MiddleToolbar>
+</info>

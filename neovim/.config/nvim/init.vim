@@ -10,32 +10,29 @@ mapclear
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-repeat'
-Plug 'mattn/emmet-vim', { 'for': ['*html', '*css'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular'
-Plug 'lambdalisue/vim-manpager'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
-Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'jacoborus/tender.vim'
 Plug 'bpstahlman/txtfmt'
 Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'mhartington/oceanic-next'
-Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'vim-scripts/SyntaxAttr.vim'
-Plug 'dracula/vim',{'as':'dracula'}
-Plug 'Rykka/colorv.vim'
+Plug 'google/vim-colorscheme-primary'
+Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
+Plug 'mxw/vim-jsx'
+Plug 'Valloric/YouCompleteMe',
+Plug 'fenetikm/falcon'
+Plug 'evturn/vim-hardaway'
 call plug#end()
 
 " }}}
+
 
 " augroups {{{
 
@@ -56,6 +53,9 @@ augroup highlight_follows_focus
 	autocmd WinEnter * set nocursorline
 	autocmd WinLeave * set nocursorline
 augroup END
+
+au BufNewFile,BufRead *.handlebars set filetype=html
+
 
 
 augroup highlight_follows_vim
@@ -131,49 +131,13 @@ set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
-if (has("termguicolors"))
 set termguicolors
-endif
 
 syntax enable
-colorscheme nord
-
-highlight shQuote cterm=italic ctermfg=006
-highlight shCmdSubRegion cterm=italic ctermfg=006
-highlight bashStatement cterm=italic ctermfg=003
-highlight shCommandSub cterm=italic ctermfg=002
-highlight shOperator cterm=italic ctermfg=006
-highlight shOption cterm=none ctermfg=255
-highlight shVariable cterm=none ctermfg=255
-highlight shDerefSimple cterm=none ctermfg=006
-highlight shNumber cterm=none ctermfg=255
-highlight shSingleQuote cterm=italic ctermfg=002
-highlight shSpecial cterm=none ctermfg=006
-highlight shFunction cterm=italic ctermfg=004
-highlight shFunctionOne cterm=none ctermfg=255
-highlight shLoop cterm=none ctermfg=005
-highlight shFor cterm=none ctermfg=255
-highlight shRange cterm=none ctermfg=006
-highlight shTestOpr cterm=none ctermfg=255
-highlight shExpr cterm=none ctermfg=007
-highlight shConditional cterm=none ctermfg=005
-highlight shStatement cterm=italic ctermfg=006
-highlight shDoubleQuote cterm=italic ctermfg=002
-highlight PreProc cterm=italic ctermfg=006
-highlight shDerefVar cterm=italic ctermfg=255
-highlight Delimiter cterm=none ctermfg=003
-highlight shDerefSpecial cterm=none ctermfg=255
-highlight shCurlyIn cterm=none ctermfg=255
-highlight shCtrlSeq cterm=italic ctermfg=002
-highlight Comment cterm=italic ctermfg=008
-highlight StartifyHeader ctermfg=006
-highlight StartifyNumber ctermfg=004
-highlight StartifySection ctermfg=006
-highlight StartifyBracket ctermfg=001
-highlight StartifySlash ctermfg=004
-highlight StartifyFile ctermfg=255
-highlight StartifyPath ctermfg=001
-
+colorscheme vim-hardaway
+let g:colors_name = 'vim-hardaway'
+hi Pmenu guibg=Grey3 guifg=MediumSpringGreen
+hi PmenuSel guibg=MediumSpringGreen guifg=Grey3
 let g:limelight_conceal_ctermfg = 1
 let g:startify_padding_left = 10
 let g:startify_bookmarks = [ '~/dots/neovim/.config/nvim/init.vim','~/.config/', '~/dots/zsh/.zshrc', '~/dots/xconfs/.Xresources', '~/dots/termite/.config/termite/config', '~/dots/bspwm/.config/bspwm/bspwmrc', '~/dots/sxhkd/.config/sxhkd/sxhkdrc'  ]
@@ -181,7 +145,6 @@ let g:startify_lists = [
     \ { 'type': 'files',        'header': [ '  Recent']        },
     \ { 'type': 'bookmarks',    'header': [ '  Bookmarks']     },
     \]
-
 set shiftwidth=2     " indent = 4 spaces
 set expandtab      " tabs are tabs
 set tabstop=4        " tab = 4 spaces
@@ -213,20 +176,25 @@ let g:currentmode={
     \ 't'  : 'terminal '}
 
 
-set statusline=
-set statusline+=%#PrimaryBlock#
-set statusline+=\ %{g:currentmode[mode()]}
-set statusline+=%#SecondaryBlock#
+set statusline=%1*
+set statusline+=%1*\ %#PrimaryBlock#
+set statusline+=%1*\%{g:currentmode[mode()]}
+set statusline+=%1*\%#SecondaryBlock#
 "set statusline+=%{StatuslineGit()}
-set statusline+=%#TeritaryBlock#
-set statusline+=\ %f\ 
-set statusline+=%M\ 
-set statusline+=%#TeritaryBlock#
-set statusline+=%=
-set statusline+=%#SecondaryBlock#
-set statusline+=\ %Y\ 
-set statusline+=%#PrimaryBlock#
-set statusline+=\ %P\ 
+set statusline+=%1*\%#TeritaryBlock#
+set statusline+=%3*\ %f\ 
+set statusline+=%2*\%M\ 
+set statusline+=%1*\%#TeritaryBlock#
+set statusline+=%2*\%=
+set statusline+=%1*\%#SecondaryBlock#
+set statusline+=%1*\ %Y\ 
+set statusline+=%1*\%#PrimaryBlock#
+set statusline+=%3*\ %P\ 
+
+hi User1 guibg=MediumSpringGreen guifg=Black
+hi User2 guibg=Black guifg=Grey
+hi User3 guibg=grey3 guifg=SteelBlue1
+hi StatusLine guibg=Grey15 guifg=MediumSpringGreen
 
 function! GitBranch()
 	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
@@ -263,6 +231,8 @@ function! HelpInNewTab ()
 	endif
 endfunction
 " }}}
+
+let NERDTreeShowHidden=1
 
 " mappings {{{
 

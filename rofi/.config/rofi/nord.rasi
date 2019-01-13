@@ -1,16 +1,16 @@
 
 
 * {
-    backgroundcolor: #111c2a;
-    bg1: #111c2a;
-    backgroundcoloralternate: #111c2a;
-    separatorcolor: #454640;
-    scrollbarcolor: #454640;
-    foregroundcolor: #f6f7ee;
-    foregroundcolorinverse: #f6f7ee;
-    selectioncolor: #454640;
-	handle: #f82939;
-	bordercolor: #2d4562;
+    backgroundcolor: #002b36;
+    bg1: #002b36;
+    backgroundcoloralternate: #002b36;
+    separatorcolor: #003847;
+    scrollbarcolor: #003847;
+    foregroundcolor: #eee8d5;
+    foregroundcolorinverse: #eee8d5;
+    selectioncolor: #003847;
+	handle: #ff5f00;
+	bordercolor: #5fafff;
 
 	font-size: 1px;
     border-color: @separatorcolor;

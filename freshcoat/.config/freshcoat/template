@@ -2,29 +2,31 @@
 #
 # Inspired by NerdyPepper
 # github.com/NerdyPepper
+
+kitty=$(echo $HOME/.config/kitty/kitty.conf)
 echo "
 #!/bin/bash
 
-bg=$(grep background: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-fg=$(grep foreground: clrs | sed 's/: /:/g' | awk -F: 'NR==1 { print $2 }')
+bg=$(grep background $kitty |  awk -F" " 'NR==2 { print $2 }')
+fg=$(grep foreground $kitty |  awk -F" " 'NR==2 { print $2 }')
 
-blk=$(grep color0: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-red=$(grep color1: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-grn=$(grep color2: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-ylw=$(grep color3: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-blu=$(grep color4: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-mag=$(grep color5: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-cyn=$(grep color6: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-wht=$(grep color7: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
+blk=$(grep color0 $kitty |  awk -F" " '{ print $2 }')
+red=$(grep color1 $kitty |  awk -F" " 'NR==1 { print $2 }')
+grn=$(grep color2 $kitty |  awk -F" " '{ print $2 }')
+ylw=$(grep color3 $kitty |  awk -F" " '{ print $2 }')
+blu=$(grep color4 $kitty |  awk -F" " '{ print $2 }')
+mag=$(grep color5 $kitty |  awk -F" " '{ print $2 }')
+cyn=$(grep color6 $kitty |  awk -F" " '{ print $2 }')
+wht=$(grep color7 $kitty |  awk -F" " '{ print $2 }')
 
-bblk=$(grep color8: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bred=$(grep color9: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bgrn=$(grep color10: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bylw=$(grep color11: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bblu=$(grep color12: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bmag=$(grep color13: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bcyn=$(grep color14: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
-bwht=$(grep color15: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
+bblk=$(grep color8 $kitty |  awk -F" " '{ print $2 }')
+bred=$(grep color9 $kitty |  awk -F" " '{ print $2 }')
+bgrn=$(grep color10 $kitty |  awk -F" " '{ print $2 }')
+bylw=$(grep color11 $kitty |  awk -F" " '{ print $2 }')
+bblu=$(grep color12 $kitty |  awk -F" " '{ print $2 }')
+bmag=$(grep color13 $kitty |  awk -F" " '{ print $2 }')
+bcyn=$(grep color14 $kitty |  awk -F" " '{ print $2 }')
+bwht=$(grep color15 $kitty |  awk -F" " '{ print $2 }')
 
-acc=$(grep color6: clrs | sed 's/: /:/g' | awk -F: '{ print $2 }')
+acc=$(grep color6 $kitty |  awk -F" " '{ print $2 }')
 "
