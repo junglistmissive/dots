@@ -26,7 +26,7 @@ Plug 'google/vim-colorscheme-primary'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'mxw/vim-jsx'
-Plug 'Valloric/YouCompleteMe',
+Plug 'Valloric/YouCompleteMe'
 Plug 'fenetikm/falcon'
 Plug 'evturn/vim-hardaway'
 call plug#end()
@@ -134,10 +134,10 @@ set wildignore+=*.swp,.lock,.DS_Store,._*
 set termguicolors
 
 syntax enable
-colorscheme vim-hardaway
-let g:colors_name = 'vim-hardaway'
-hi Pmenu guibg=Grey3 guifg=MediumSpringGreen
-hi PmenuSel guibg=MediumSpringGreen guifg=Grey3
+colorscheme panic
+"let g:colors_name = 'vim-hardaway'
+""hi Pmenu guibg=Grey3 guifg=MediumSpringGreen
+""hi PmenuSel guibg=MediumSpringGreen guifg=Grey3
 let g:limelight_conceal_ctermfg = 1
 let g:startify_padding_left = 10
 let g:startify_bookmarks = [ '~/dots/neovim/.config/nvim/init.vim','~/.config/', '~/dots/zsh/.zshrc', '~/dots/xconfs/.Xresources', '~/dots/termite/.config/termite/config', '~/dots/bspwm/.config/bspwm/bspwmrc', '~/dots/sxhkd/.config/sxhkd/sxhkdrc'  ]
@@ -155,18 +155,18 @@ set smarttab
 " statusline {{{
 
 let g:currentmode={
-    \ 'n'  : 'normal ',
+    \ 'n'  : 'N ',
     \ 'no' : 'n·operator pending ',
-    \ 'v'  : 'visual ',
-    \ 'V'  : 'v·line ',
-    \ '' : 'v·block ',
+    \ 'v'  : 'V ',
+    \ 'V'  : 'VL ',
+    \ '' : 'VB ',
     \ 's'  : 'select ',
     \ 'S'  : 's·line ',
     \ '' : 's·block ',
-    \ 'i'  : 'insert ',
+    \ 'i'  : 'I ',
     \ 'R'  : 'replace ',
     \ 'Rv' : 'v·replace ',
-    \ 'c'  : 'command ',
+    \ 'c'  : 'CMD ',
     \ 'cv' : 'vim ex ',
     \ 'ce' : 'ex ',
     \ 'r'  : 'prompt ',
@@ -176,25 +176,32 @@ let g:currentmode={
     \ 't'  : 'terminal '}
 
 
-set statusline=%1*
-set statusline+=%1*\ %#PrimaryBlock#
-set statusline+=%1*\%{g:currentmode[mode()]}
+set statusline=%3*
+set statusline+=%3*\ %#PrimaryBlock#
+set statusline+=%3*\%{g:currentmode[mode()]}
 set statusline+=%1*\%#SecondaryBlock#
 "set statusline+=%{StatuslineGit()}
 set statusline+=%1*\%#TeritaryBlock#
-set statusline+=%3*\ %f\ 
-set statusline+=%2*\%M\ 
+set statusline+=%2*\ %f\ 
+set statusline+=%4*\%M\ 
 set statusline+=%1*\%#TeritaryBlock#
-set statusline+=%2*\%=
+set statusline+=%1*\%=
 set statusline+=%1*\%#SecondaryBlock#
-set statusline+=%1*\ %Y\ 
+"set statusline+=%4*\ %P\ 
 set statusline+=%1*\%#PrimaryBlock#
-set statusline+=%3*\ %P\ 
+set statusline+=%4*\ %P\ 
 
-hi User1 guibg=MediumSpringGreen guifg=Black
-hi User2 guibg=Black guifg=Grey
-hi User3 guibg=grey3 guifg=SteelBlue1
-hi StatusLine guibg=Grey15 guifg=MediumSpringGreen
+hi User1 guibg=#1a3860 guifg=#f82939
+hi User2 guibg=#1a3860 guifg=#fcc146
+hi User3 guibg=#6f4ebc guifg=#3beb29 gui=bold
+hi User4 guibg=#1a3860 guifg=#3beb29
+hi StatusLine guibg=#6f4ebc guifg=#3beb2a
+hi StartifyHeader guifg=#fcc146
+hi StartifyPath guifg=#63cce3
+hi StartifyFile guifg=#6f4ebc
+hi StartifyBracket guifg=#6f4ebc
+hi StartifyNumber guifg=#fcc146
+hi StartifySection guifg=#fcc146
 
 function! GitBranch()
 	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
@@ -328,16 +335,16 @@ let g:NERDTreeDirArrowCollapsible = ''
     let g:startify_session_persistence = 1
     let g:startify_custom_header = 'startify#fortune#boxed()'
     let g:startify_custom_header = [
-            \ '         @@@  @@@  @@@  @@@  @@@  @@@@@@@@@@ ',
-            \ '         @@@@ @@@  @@@  @@@  @@@  @@@@@@@@@@@',
-            \ '         @@!@!@@@  @@!  @@@  @@!  @@! @@! @@!',
-            \ '         !@!!@!@!  !@!  @!@  !@!  !@! !@! !@!',
-            \ '         @!@ !!@!  @!@  !@!  !!@  @!! !!@ @!@',
-            \ '         !@!  !!!  !@!  !!!  !!!  !@!   ! !@!',
-            \ '         !!:  !!!  :!:  !!:  !!:  !!:     !!:',
-	    \ '         :!:  !:!   ::!!:!   :!:  :!:     :!:',
-	    \ '          ::   ::    ::::     ::  :::     :: ',
-	    \ '          ::    :      :      :     :      : ',
+            \ '         ██▒   █▓ ██▓ ███▄ ▄███▓',
+            \ '         ██░   █▒▓██▒▓██▒▀█▀ ██▒',
+            \ '         ▓██  █▒░▒██▒▓██    ▓██░',
+            \ '          ▒██ █░░░██░▒██    ▒██ ',
+            \ '           ▒▀█░  ░██░▒██▒   ░██▒',
+            \ '           ░ ▐░  ░▓  ░ ▒░   ░  ░',
+            \ '           ░ ░░   ▒ ░░  ░      ░',
+	        \ '             ░░   ▒ ░░      ░   ',
+	        \ '              ░   ░         ░   ',
+	        \ '             ░                  ',
 	    \ ]
 
 let g:webdevicons_enable = 1
