@@ -29,6 +29,7 @@ Plug 'mxw/vim-jsx'
 Plug 'Valloric/YouCompleteMe'
 Plug 'fenetikm/falcon'
 Plug 'evturn/vim-hardaway'
+Plug 'jdsimcoe/panic.vim'
 call plug#end()
 
 " }}}
