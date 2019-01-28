@@ -7,3 +7,6 @@
 [submodule "antigen/.antigen/bundles/oh-my-zsh"]
 	path = antigen/.antigen/bundles/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "local/.local/share/nvim/plugged/panic.vim"]
+	path = local/.local/share/nvim/plugged/panic.vim
+	url = https://github.com/jdsimcoe/panic.vim.git
