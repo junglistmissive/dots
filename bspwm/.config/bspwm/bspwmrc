@@ -1,6 +1,6 @@
 #!/bin/sh
-inactive=$(xrq 'color8')
-active=$(xrq 'color1')
+inactive=$(xrq 'color0')
+active=$(xrq 'color5')
 if ! pgrep -x "sxhkd" > /dev/null; then
   sxhkd &
 fi
@@ -23,7 +23,7 @@ fi
 urxvtd &
 xfsettingsd &
 
-bspc monitor eDP-1 -d  I II III IV
+bspc monitor eDP1 -d  I II III IV
 
 bspc config border_width            4
 bspc config window_gap              4

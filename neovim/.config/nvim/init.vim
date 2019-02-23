@@ -26,7 +26,6 @@ Plug 'google/vim-colorscheme-primary'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'mxw/vim-jsx'
-Plug 'Valloric/YouCompleteMe'
 Plug 'fenetikm/falcon'
 Plug 'evturn/vim-hardaway'
 Plug 'jdsimcoe/panic.vim'
@@ -192,34 +191,21 @@ set statusline+=%1*\%#SecondaryBlock#
 set statusline+=%1*\%#PrimaryBlock#
 set statusline+=%4*\ %P\ 
 
-hi User1 guibg=#1a3860 guifg=#f82939
-hi User2 guibg=#1a3860 guifg=#fcc146
-hi User3 guibg=#6f4ebc guifg=#3beb29 gui=bold
-hi User4 guibg=#1a3860 guifg=#3beb29
-hi StatusLine guibg=#6f4ebc guifg=#3beb2a
-hi StartifyHeader guifg=#fcc146
-hi StartifyPath guifg=#63cce3
-hi StartifyFile guifg=#6f4ebc
+hi User1           guifg=#f82939 guibg=#1a3860
+hi User2           guifg=#fcc146 guibg=#1a3860
+hi User3           guifg=#3beb29 guibg=#6f4ebc gui=bold
+hi User4           guifg=#3beb29 guibg=#1a3860
+hi StatusLine      guifg=#3beb2a guibg=#6f4ebc
+hi StartifyHeader  guifg=#fcc146
+hi StartifyPath    guifg=#63cce3
+hi StartifyFile    guifg=#6f4ebc
 hi StartifyBracket guifg=#6f4ebc
-hi StartifyNumber guifg=#fcc146
+hi StartifyNumber  guifg=#fcc146
 hi StartifySection guifg=#fcc146
 
-function! GitBranch()
-	return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-endfunction
-
-function! StatuslineGit()
-	let l:branchname = GitBranch()
-	return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
-endfunction
-" }}}
 
 " functions {{{
 
-function! GetTabber()  " a lil function that integrates well with Tabular.vim
-	let c = nr2char(getchar())
-	:execute 'Tabularize /' . c
-endfunction
 
 let g:help_in_tabs = 1
 
@@ -252,13 +238,10 @@ nnoremap <Leader>l : Lines<cr>
 nnoremap <Leader>f : NERDTreeFind ~/.<cr>
 nnoremap <Leader>z : tabnew<cr>
 nnoremap <Leader>w : MtaJumpToOtherTag<cr>
-nnoremap <Leader>t : call GetTabber()<cr>
 nnoremap <Leader>n : tabnext<cr>
 nnoremap <Leader>N : tabprevious<cr>
 nnoremap <F2>      : NERDTreeToggle<cr>
-nnoremap <Leader>N : tabprevious<cr>
 nnoremap <Leader><ESC> : nohlsearch<cr>
-nnoremap <C-l> :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 nnoremap H H:exec 'norm! '. &scrolloff . 'k'<cr>
 nnoremap L L:exec 'norm! '. &scrolloff . 'j'<cr>
 
@@ -296,10 +279,11 @@ xnoremap - g<C-x>
 " abbreviations
 iab #i #include
 iab #d #define
+iab #r require(
+
 cab dst put =strftime('%d %a, %b %Y')<cr>
 cab vg vimgrep
 " }}}
-
 " plugin settings {{{
 
 " git gutter settings {{{
@@ -311,10 +295,6 @@ let g:gitgutter_sign_removed_first_line        = '^'
 let g:gitgutter_sign_modified_removed          = '#'
 " }}}
 
-" emmet {{{
-let g:user_emmet_mode='a'
-let g:user_emmet_leader_key='<C-X>'
-" }}}
 
 " nerdtree {{{
 let g:NERDTreeMinimalUI  = 1
@@ -325,7 +305,7 @@ let g:NERDTreeDirArrowCollapsible = ''
 " }}}
 
 
-  autocmd User Startified setlocal cursorline
+autocmd User Startified setlocal cursorline
 
     let g:startify_enable_special      = 0
     let g:startify_files_number        = 8
@@ -351,7 +331,7 @@ let g:NERDTreeDirArrowCollapsible = ''
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
 let g:WebDevIconsUnicodeDecorateFileNodes = 1
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:webdevicons_conceal_nerdtree_brackets = 1
 let g:WebDevIconsNerdTreeBeforeGlyphPadding = ' '
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '

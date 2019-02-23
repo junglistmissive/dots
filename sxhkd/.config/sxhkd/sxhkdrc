@@ -8,11 +8,6 @@
 super + t
 	kitty
 
-
-## termite ##
-super + Return
-        termite
-
 ## b&w tile pattern wall ##
 super + i
     /home/daniel/bin/ptbw
@@ -27,7 +22,7 @@ super + p
 
 ## program launcher ##
 super + d
-	rofi -show run
+	rofi -show run -font "CtrlD 10"
 
 ## show windows ##
 alt + Tab
@@ -41,15 +36,11 @@ super + Escape
 
 ## chrome ##
 super + w
-	google-chrome-stable
-
-## gmrun ##
-super + z
-	gmrun
+    chromium
 
 ## thunar ##
 super + l
-	thunar	
+	thunar
 
 ## xrdb merge ##
 super + a

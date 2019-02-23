@@ -2,9 +2,9 @@
 #
 
 bg=#111c2a
-fg=#f6f7ee
+fg=#ffffff
 
-blk=#111c2a
+blk=#0c151e
 red=#f82939
 grn=#3beb2a
 ylw=#fcc146
@@ -20,6 +20,6 @@ bylw=#fcc146
 bblu=#2d4562
 bmag=#6f4ebc
 bcyn=#63cce3
-bwht=#838c95
+bwht=#ffffff
 
-acc=$red
+acc=$mag
