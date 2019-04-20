@@ -1,4 +1,4 @@
-PATH=$PATH:$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:
+PATH=$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/composer/vendor/bin:$PATH
 export PATH
 EDITOR=/usr/bin/nvim
 export EDITOR
@@ -29,8 +29,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 
 # Load (and configure) the theme.
-
-source $HOME/.spaceship
 antigen theme denysdovhan/spaceship-prompt
 
 # Apply antigen config
@@ -44,11 +42,15 @@ alias ptbw='feh --bg-tile $(shuf -n 1 ~/bin/patternsbw.txt)'
 alias ls='ls --color=auto'
 alias pip='pip3'
 alias python='python3'
+alias dmenu_run='~/.config/dmenu/dmenu-bind.sh'
 # Source fzf script
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 
 # Start X after logging in
 if ! pgrep -x "bspwm" > /dev/null ;
 then
     [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 fi
+
+

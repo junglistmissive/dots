@@ -9,4 +9,4 @@ rofi.separator-style:       none
 rofi.hide-scrollbar:        true
 rofi.line-margin:           0
 rofi.font:                  t cherry 10
-rofi.theme: /home/daniel/.config/rofi/nord.rasi
+rofi.theme: /home/daniel/.config/rofi/colors-rofi-dark.rasi

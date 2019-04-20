@@ -29,6 +29,8 @@ Plug 'mxw/vim-jsx'
 Plug 'fenetikm/falcon'
 Plug 'evturn/vim-hardaway'
 Plug 'jdsimcoe/panic.vim'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 " }}}
@@ -131,24 +133,23 @@ set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*.kgb
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
-set termguicolors
+"set termguicolors
 
 syntax enable
-colorscheme panic
-"let g:colors_name = 'vim-hardaway'
-""hi Pmenu guibg=Grey3 guifg=MediumSpringGreen
-""hi PmenuSel guibg=MediumSpringGreen guifg=Grey3
+colorscheme wal
+
 let g:limelight_conceal_ctermfg = 1
+
 let g:startify_padding_left = 10
 let g:startify_bookmarks = [ '~/dots/neovim/.config/nvim/init.vim','~/.config/', '~/dots/zsh/.zshrc', '~/dots/xconfs/.Xresources', '~/dots/termite/.config/termite/config', '~/dots/bspwm/.config/bspwm/bspwmrc', '~/dots/sxhkd/.config/sxhkd/sxhkdrc'  ]
 let g:startify_lists = [
     \ { 'type': 'files',        'header': [ '  Recent']        },
     \ { 'type': 'bookmarks',    'header': [ '  Bookmarks']     },
     \]
-set shiftwidth=2     " indent = 4 spaces
+set shiftwidth=2   " indent = 4 spaces
 set expandtab      " tabs are tabs
-set tabstop=4        " tab = 4 spaces
-set softtabstop=0    " backspace through spaces
+set tabstop=4      " tab = 4 spaces
+set softtabstop=0  " backspace through spaces
 set smarttab
 " }}}
 
@@ -286,15 +287,6 @@ cab vg vimgrep
 " }}}
 " plugin settings {{{
 
-" git gutter settings {{{
-let g:gitgutter_override_sign_column_highlight = 0
-let g:gitgutter_sign_added                     = '+'
-let g:gitgutter_sign_modified                  = '±'
-let g:gitgutter_sign_removed                   = '-'
-let g:gitgutter_sign_removed_first_line        = '^'
-let g:gitgutter_sign_modified_removed          = '#'
-" }}}
-
 
 " nerdtree {{{
 let g:NERDTreeMinimalUI  = 1
@@ -316,16 +308,16 @@ autocmd User Startified setlocal cursorline
     let g:startify_session_persistence = 1
     let g:startify_custom_header = 'startify#fortune#boxed()'
     let g:startify_custom_header = [
-            \ '         ██▒   █▓ ██▓ ███▄ ▄███▓',
-            \ '         ██░   █▒▓██▒▓██▒▀█▀ ██▒',
-            \ '         ▓██  █▒░▒██▒▓██    ▓██░',
-            \ '          ▒██ █░░░██░▒██    ▒██ ',
-            \ '           ▒▀█░  ░██░▒██▒   ░██▒',
-            \ '           ░ ▐░  ░▓  ░ ▒░   ░  ░',
-            \ '           ░ ░░   ▒ ░░  ░      ░',
-	        \ '             ░░   ▒ ░░      ░   ',
-	        \ '              ░   ░         ░   ',
-	        \ '             ░                  ',
+          \'             \__    __/          ',
+          \'             /_/ /\ \_\          ',
+          \'            __ \ \/ / __         ',
+          \'            \_\_\/\/_/_/         ',
+          \'        __/\___\_\/_/___/\__     ',
+          \'          \/ __/_/\_\__ \/       ',
+          \'            /_/ /\/\ \_\         ',
+          \'             __/ /\ \__          ',
+          \'             \_\ \/ /_/          ',
+          \'             /        \          '
 	    \ ]
 
 let g:webdevicons_enable = 1

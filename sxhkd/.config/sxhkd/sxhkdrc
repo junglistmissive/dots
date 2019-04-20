@@ -36,7 +36,7 @@ super + Escape
 
 ## chrome ##
 super + w
-    chromium
+   google-chrome-stable
 
 ## thunar ##
 super + l
@@ -92,7 +92,7 @@ super + shift +s
 
 ## set absurdly inefficient vanity window gap  ##
 super + shift + g
-	bspc config -d focused window_gap 18
+	bspc config -d focused window_gap {3,6,9,12,15}
 
 ## rotate windows 90 degrees ##
 super + shift + r

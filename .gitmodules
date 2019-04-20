@@ -10,3 +10,6 @@
 [submodule "local/.local/share/nvim/plugged/panic.vim"]
 	path = local/.local/share/nvim/plugged/panic.vim
 	url = https://github.com/jdsimcoe/panic.vim.git
+[submodule "local/.local/share/nvim/plugged/coc.nvim"]
+	path = local/.local/share/nvim/plugged/coc.nvim
+	url = https://github.com/neoclide/coc.nvim

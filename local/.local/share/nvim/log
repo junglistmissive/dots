@@ -1,1 +1,9 @@
 2018/05/17 16:01:18 ERROR 25643 do_put:2738: Failed to save undo information
+ERROR 2019-04-14T23:47:28.467 14320 call_set_error:612: RPC: ch 3 sent an invalid message, closed.
+ERROR 2019-04-14T23:47:28.469 14320 buf_updates_send_changes:183: Disabling buffer updates for dead channel 3
+ERROR 2019-04-14T23:48:09.421 14920 call_set_error:612: RPC: ch 3 sent an invalid message, closed.
+ERROR 2019-04-14T23:48:09.422 14920 buf_updates_send_changes:183: Disabling buffer updates for dead channel 3
+ERROR 2019-04-15T14:04:09.718 28631 call_set_error:612: RPC: ch 3 sent an invalid message, closed.
+ERROR 2019-04-15T14:04:19.662 28631 buf_updates_send_changes:183: Disabling buffer updates for dead channel 3
+ERROR 2019-04-19T00:34:10.396 22674 call_set_error:612: RPC: ch 3 sent an invalid message, closed.
+ERROR 2019-04-19T00:34:10.398 22674 buf_updates_send_changes:183: Disabling buffer updates for dead channel 3
