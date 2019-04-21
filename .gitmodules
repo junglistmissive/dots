@@ -13,3 +13,6 @@
 [submodule "local/.local/share/nvim/plugged/coc.nvim"]
 	path = local/.local/share/nvim/plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "local/share/fonts"]
+	path = local/share/fonts
+	url = https://github.com/addy-dclxvi/bitmap-font-collections
