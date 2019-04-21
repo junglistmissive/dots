@@ -29,7 +29,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 
 # Load (and configure) the theme.
-antigen theme denysdovhan/spaceship-prompt
+antigen theme geometry-zsh/geometry
 
 # Apply antigen config
 
@@ -43,6 +43,7 @@ alias ls='ls --color=auto'
 alias pip='pip3'
 alias python='python3'
 alias dmenu_run='~/.config/dmenu/dmenu-bind.sh'
+alias ans='python2 ~/bin/AnsRender.py $@'
 # Source fzf script
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
