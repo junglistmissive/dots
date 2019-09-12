@@ -3,7 +3,7 @@
 . /home/daniel/.cache/wal/colors.sh
 
 inactive=$color0
-active=$color6
+active=$color5
 
 if ! pgrep -x "sxhkd" > /dev/null; then
   sxhkd &
@@ -19,14 +19,16 @@ xset fp+ ~/dots/local/.local/share/fonts &
 xset fp+ ~/.local/share/fonts/bitmap-font-collections &
 xset fp rehash &
 
+
 pkill -x lemonbar &
-lpanel &
+black &
 
 . ~/.fehbg &
 
+
 bspc monitor eDP-1 -d  I II III IV
 
-bspc config border_width            4
+bspc config border_width            2
 bspc config window_gap              4
 
 bspc config split_ratio             0.50

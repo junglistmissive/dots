@@ -15,8 +15,7 @@ xinput set-prop 11 273 1 &
 xset fp+ ~/.local/share/fonts &
 xset fp rehash &
 fc-cache &
-sxhkd &
 xrdb ~/.Xresources
 #exec openbox
 exec bspwm
-#exec berry
+#exec herbstluftwm

@@ -22,7 +22,7 @@ super + p
 
 ## program launcher ##
 super + d
-	rofi -show run -font "canelle 10"
+	rofi -show run -font "CtrlD 10"
 
 ## show windows ##
 alt + Tab
@@ -36,7 +36,7 @@ super + Escape
 
 ## chrome ##
 super + w
-   chromium
+   google-chrome-stable
 
 ## thunar ##
 super + l
@@ -97,10 +97,6 @@ super + shift + g
 ## rotate windows 90 degrees ##
 super + shift + r
 	bspc node @/ -R 90
-
-## restart bspwm ##
-super + r
-    bspc wm -r
 
 ## focus next/previous node in the current desktop ##
 super + {_,shift + }c

@@ -1,6 +1,6 @@
-PATH=$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:/home/daniel/go/bin:$PATH
+PATH=$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/composer/vendor/bin:$PATH
 export PATH
-EDITOR=nvim
+EDITOR=/usr/bin/nvim
 export EDITOR
 export CLICOLOR=1
 export LS_COLORS='di=1;36:ln=1;35:so=1;32:pi=1;33:ex=1;31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=34;43'
@@ -37,8 +37,13 @@ antigen apply
 
 # Aliases
 
+alias fresh='freshcoat'
+alias ptbw='feh --bg-tile $(shuf -n 1 ~/bin/patternsbw.txt)'
 alias ls='ls --color=auto'
-
+alias pip='pip3'
+alias python='python3'
+alias dmenu_run='~/.config/dmenu/dmenu-bind.sh'
+alias ans='python2 ~/bin/AnsRender.py $@'
 # Source fzf script
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
