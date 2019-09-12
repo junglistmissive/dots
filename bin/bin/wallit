@@ -1,1 +1,39 @@
-/home/daniel/bin/wallit
+#!/usr/bin/env bash
+image="/tmp/tmp.jpg"
+backdrop="$(cat $HOME/bin/*.txt | shuf -n1)"
+touch /tmp/tmp.jpg
+
+fetch_image() {
+  wget $backdrop -O /tmp/tmp.jpg 2>/dev/null & PID=$!
+
+  printf "\nFetching image from $(echo $backdrop | awk -F/ '{print $3}') "
+  # While process is running...
+  while kill -0 $PID 2> /dev/null; do 
+    printf  "▪"
+    sleep .5
+  done
+  
+  printf " \n\n"
+}
+
+set_wall() {
+  wal -c && wal -q -i $image --backend haishoku 
+}
+
+
+reload_bspwm() {
+  bspc wm -r
+}
+
+show_wall() {
+  neofetch --clean && neofetch --kitty $image
+}
+
+{
+  fetch_image 
+  if [ $? -eq 0 ]; then
+    set_wall
+    reload_bspwm
+  fi
+  show_wall
+} 

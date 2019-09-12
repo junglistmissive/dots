@@ -1,0 +1,924 @@
+[  8358.322] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[  8358.324] 
+X.Org X Server 1.20.5
+X Protocol Version 11, Revision 0
+[  8358.330] Build Operating System: Linux Arch Linux
+[  8358.332] Current Operating System: Linux xxx 5.1.16-arch1-1-ARCH #1 SMP PREEMPT Wed Jul 3 20:23:07 UTC 2019 x86_64
+[  8358.332] Kernel command line: \\boot\vmlinuz-linux ro root=UUID=1ad9c024-10dc-420c-803f-fbaa3381045c initrd=\boot\intel-ucode.img initrd=\boot\initramfs-linux.img
+[  8358.335] Build Date: 30 June 2019  09:52:01AM
+[  8358.337]  
+[  8358.338] Current version of pixman: 0.38.4
+[  8358.342] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  8358.342] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  8358.349] (==) Log file: "/home/daniel/.local/share/xorg/Xorg.1.log", Time: Wed Jul 10 21:54:36 2019
+[  8358.351] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  8358.351] (==) No Layout section.  Using the first Screen section.
+[  8358.351] (==) No screen section available. Using defaults.
+[  8358.351] (**) |-->Screen "Default Screen Section" (0)
+[  8358.351] (**) |   |-->Monitor "<default monitor>"
+[  8358.351] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  8358.351] (==) Automatically adding devices
+[  8358.351] (==) Automatically enabling devices
+[  8358.351] (==) Automatically adding GPU devices
+[  8358.351] (==) Automatically binding GPU devices
+[  8358.351] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  8358.351] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/misc".
+[  8358.351] 	Entry deleted from font path.
+[  8358.351] 	(Run 'mkfontdir' on "/usr/share/fonts/misc").
+[  8358.351] (WW) The directory "/usr/share/fonts/TTF" does not exist.
+[  8358.351] 	Entry deleted from font path.
+[  8358.351] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[  8358.351] 	Entry deleted from font path.
+[  8358.351] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[  8358.351] 	Entry deleted from font path.
+[  8358.351] (==) FontPath set to:
+	/usr/share/fonts/100dpi,
+	/usr/share/fonts/75dpi
+[  8358.351] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  8358.351] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  8358.351] (II) Module ABI versions:
+[  8358.351] 	X.Org ANSI C Emulation: 0.4
+[  8358.351] 	X.Org Video Driver: 24.0
+[  8358.351] 	X.Org XInput driver : 24.1
+[  8358.351] 	X.Org Server Extension : 10.0
+[  8358.352] (++) using VT number 2
+
+[  8358.354] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_33
+[  8358.355] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  8358.356] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[  8358.358] (--) PCI:*(0@0:2:0) 8086:1616:1028:062a rev 9, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[  8358.358] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[  8358.358] (II) LoadModule: "glx"
+[  8358.358] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  8358.360] (II) Module glx: vendor="X.Org Foundation"
+[  8358.360] 	compiled for 1.20.5, module version = 1.0.0
+[  8358.360] 	ABI class: X.Org Server Extension, version 10.0
+[  8358.360] (==) Matched intel as autoconfigured driver 0
+[  8358.360] (==) Matched modesetting as autoconfigured driver 1
+[  8358.360] (==) Matched fbdev as autoconfigured driver 2
+[  8358.360] (==) Matched vesa as autoconfigured driver 3
+[  8358.360] (==) Assigned the driver to the xf86ConfigLayout
+[  8358.360] (II) LoadModule: "intel"
+[  8358.360] (WW) Warning, couldn't open module intel
+[  8358.360] (EE) Failed to load module "intel" (module does not exist, 0)
+[  8358.360] (II) LoadModule: "modesetting"
+[  8358.361] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  8358.361] (II) Module modesetting: vendor="X.Org Foundation"
+[  8358.361] 	compiled for 1.20.5, module version = 1.20.5
+[  8358.361] 	Module class: X.Org Video Driver
+[  8358.361] 	ABI class: X.Org Video Driver, version 24.0
+[  8358.361] (II) LoadModule: "fbdev"
+[  8358.361] (WW) Warning, couldn't open module fbdev
+[  8358.361] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[  8358.361] (II) LoadModule: "vesa"
+[  8358.361] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[  8358.362] (II) Module vesa: vendor="X.Org Foundation"
+[  8358.362] 	compiled for 1.20.0, module version = 2.4.0
+[  8358.362] 	Module class: X.Org Video Driver
+[  8358.362] 	ABI class: X.Org Video Driver, version 24.0
+[  8358.362] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  8358.362] (II) VESA: driver for VESA chipsets: vesa
+[  8358.362] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[  8358.362] (II) modeset(0): using drv /dev/dri/card0
+[  8358.362] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  8358.362] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  8358.362] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[  8358.362] (==) modeset(0): RGB weight 888
+[  8358.362] (==) modeset(0): Default visual is TrueColor
+[  8358.362] (II) Loading sub module "glamoregl"
+[  8358.362] (II) LoadModule: "glamoregl"
+[  8358.362] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[  8358.366] (II) Module glamoregl: vendor="X.Org Foundation"
+[  8358.366] 	compiled for 1.20.5, module version = 1.0.1
+[  8358.366] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  8358.384] (II) modeset(0): glamor X acceleration enabled on Mesa DRI Intel(R) HD Graphics 5500 (Broadwell GT2) 
+[  8358.384] (II) modeset(0): glamor initialized
+[  8358.386] (II) modeset(0): Output eDP-1 has no monitor section
+[  8358.386] (II) modeset(0): Output DP-1 has no monitor section
+[  8358.387] (II) modeset(0): Output HDMI-1 has no monitor section
+[  8358.387] (II) modeset(0): Output DP-2 has no monitor section
+[  8358.389] (II) modeset(0): Output HDMI-2 has no monitor section
+[  8358.390] (II) modeset(0): EDID for output eDP-1
+[  8358.390] (II) modeset(0): Manufacturer: LGD  Model: 450  Serial#: 0
+[  8358.390] (II) modeset(0): Year: 2014  Week: 0
+[  8358.390] (II) modeset(0): EDID Version: 1.4
+[  8358.390] (II) modeset(0): Digital Display Input
+[  8358.390] (II) modeset(0): 6 bits per channel
+[  8358.391] (II) modeset(0): Digital interface is DisplayPort
+[  8358.391] (II) modeset(0): Max Image Size [cm]: horiz.: 28  vert.: 16
+[  8358.391] (II) modeset(0): Gamma: 2.20
+[  8358.391] (II) modeset(0): No DPMS capabilities specified
+[  8358.391] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[  8358.391] (II) modeset(0): First detailed timing is preferred mode
+[  8358.391] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[  8358.391] (II) modeset(0): redX: 0.580 redY: 0.345   greenX: 0.335 greenY: 0.565
+[  8358.391] (II) modeset(0): blueX: 0.160 blueY: 0.110   whiteX: 0.313 whiteY: 0.329
+[  8358.391] (II) modeset(0): Manufacturer's mask: 0
+[  8358.391] (II) modeset(0): Supported detailed timing:
+[  8358.391] (II) modeset(0): clock: 72.5 MHz   Image Size:  277 x 156 mm
+[  8358.391] (II) modeset(0): h_active: 1366  h_sync: 1398  h_sync_end 1430 h_blank_end 1526 h_border: 0
+[  8358.391] (II) modeset(0): v_active: 768  v_sync: 770  v_sync_end 774 v_blanking: 792 v_border: 0
+[  8358.391] (II) modeset(0): Supported detailed timing:
+[  8358.391] (II) modeset(0): clock: 58.0 MHz   Image Size:  277 x 156 mm
+[  8358.391] (II) modeset(0): h_active: 1366  h_sync: 1398  h_sync_end 1430 h_blank_end 1526 h_border: 0
+[  8358.391] (II) modeset(0): v_active: 768  v_sync: 770  v_sync_end 774 v_blanking: 792 v_border: 0
+[  8358.391] (II) modeset(0):  T6T7K€125WH2
+[  8358.391] (II) modeset(0): Unknown vendor-specific block 0
+[  8358.391] (II) modeset(0): EDID (in hex):
+[  8358.391] (II) modeset(0): 	00ffffffffffff0030e4500400000000
+[  8358.391] (II) modeset(0): 	00180104951c10780a9f159458559029
+[  8358.391] (II) modeset(0): 	1c505400000001010101010101010101
+[  8358.391] (II) modeset(0): 	010101010101521c56a0500018302020
+[  8358.391] (II) modeset(0): 	2400159c1000001aa81656a050001830
+[  8358.391] (II) modeset(0): 	20202400159c1000001a000000fe0054
+[  8358.391] (II) modeset(0): 	3654374b803132355748320a00000000
+[  8358.391] (II) modeset(0): 	00004131940000000009010a2020004f
+[  8358.391] (II) modeset(0): Printing probed modes for output eDP-1
+[  8358.391] (II) modeset(0): Modeline "1366x768"x60.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8358.391] (II) modeset(0): Modeline "1366x768"x48.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8358.391] (II) modeset(0): Modeline "1280x720"x120.0  156.12  1280 1376 1512 1744  720 721 724 746 doublescan -hsync +vsync (89.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1280x720"x120.0  120.75  1280 1304 1320 1360  720 721 724 740 doublescan +hsync -vsync (88.8 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1280x720"x59.9   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.8 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1280x720"x59.7   63.75  1280 1328 1360 1440  720 723 728 741 +hsync -vsync (44.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1024x768"x120.1  133.47  1024 1100 1212 1400  768 768 770 794 doublescan -hsync +vsync (95.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x720"x120.0  117.00  960 1024 1128 1300  720 720 722 750 doublescan -hsync +vsync (90.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "928x696"x120.1  109.15  928 976 1088 1264  696 696 698 719 doublescan -hsync +vsync (86.4 kHz d)
+[  8358.391] (II) modeset(0): Modeline "896x672"x120.0  102.40  896 960 1060 1224  672 672 674 697 doublescan -hsync +vsync (83.7 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1024x576"x119.9   98.50  1024 1092 1200 1376  576 577 580 597 doublescan -hsync +vsync (71.6 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1024x576"x119.9   78.38  1024 1048 1064 1104  576 577 580 592 doublescan +hsync -vsync (71.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1024x576"x59.9   46.50  1024 1064 1160 1296  576 579 584 599 -hsync +vsync (35.9 kHz d)
+[  8358.391] (II) modeset(0): Modeline "1024x576"x59.8   42.00  1024 1072 1104 1184  576 579 584 593 +hsync -vsync (35.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x600"x119.9   96.62  960 1028 1128 1296  600 601 604 622 doublescan -hsync +vsync (74.6 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x600"x120.0   77.00  960 984 1000 1040  600 601 604 617 doublescan +hsync -vsync (74.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x540"x119.9   86.50  960 1024 1124 1288  540 541 544 560 doublescan -hsync +vsync (67.2 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x540"x120.0   69.25  960 984 1000 1040  540 541 544 555 doublescan +hsync -vsync (66.6 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x540"x59.6   40.75  960 992 1088 1216  540 543 548 562 -hsync +vsync (33.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "960x540"x59.8   37.25  960 1008 1040 1120  540 543 548 556 +hsync -vsync (33.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "800x600"x120.0   81.00  800 832 928 1080  600 600 602 625 doublescan +hsync +vsync (75.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz d)
+[  8358.391] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[  8358.391] (II) modeset(0): Modeline "840x525"x120.0   73.12  840 892 980 1120  525 526 529 544 doublescan -hsync +vsync (65.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "840x525"x119.8   59.50  840 864 880 920  525 526 529 540 doublescan +hsync -vsync (64.7 kHz d)
+[  8358.391] (II) modeset(0): Modeline "864x486"x59.9   32.50  864 888 968 1072  486 489 494 506 -hsync +vsync (30.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "864x486"x59.6   30.50  864 912 944 1024  486 489 494 500 +hsync -vsync (29.8 kHz d)
+[  8358.391] (II) modeset(0): Modeline "700x525"x120.0   61.00  700 744 820 940  525 526 532 541 doublescan +hsync +vsync (64.9 kHz d)
+[  8358.391] (II) modeset(0): Modeline "800x450"x119.9   59.12  800 848 928 1056  450 451 454 467 doublescan -hsync +vsync (56.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "800x450"x119.6   48.75  800 824 840 880  450 451 454 463 doublescan +hsync -vsync (55.4 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x512"x120.0   54.00  640 664 720 844  512 512 514 533 doublescan +hsync +vsync (64.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "700x450"x119.9   51.75  700 740 812 924  450 451 456 467 doublescan -hsync +vsync (56.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "700x450"x119.8   43.25  700 724 740 780  450 451 456 463 doublescan +hsync -vsync (55.4 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x480"x120.0   54.00  640 688 744 900  480 480 482 500 doublescan +hsync +vsync (60.0 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "720x405"x59.5   22.50  720 744 808 896  405 408 413 422 -hsync +vsync (25.1 kHz d)
+[  8358.391] (II) modeset(0): Modeline "720x405"x59.0   21.75  720 768 800 880  405 408 413 419 +hsync -vsync (24.7 kHz d)
+[  8358.391] (II) modeset(0): Modeline "684x384"x119.8   42.62  684 720 788 892  384 385 390 399 doublescan -hsync +vsync (47.8 kHz d)
+[  8358.391] (II) modeset(0): Modeline "684x384"x119.7   36.12  684 708 724 764  384 385 390 395 doublescan +hsync -vsync (47.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x400"x119.8   41.75  640 676 740 840  400 401 404 415 doublescan -hsync +vsync (49.7 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x400"x120.0   35.50  640 664 680 720  400 401 404 411 doublescan +hsync -vsync (49.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x360"x119.7   37.25  640 672 736 832  360 361 364 374 doublescan -hsync +vsync (44.8 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x360"x119.7   31.88  640 664 680 720  360 361 364 370 doublescan +hsync -vsync (44.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x360"x59.8   18.00  640 664 720 800  360 363 368 376 -hsync +vsync (22.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "640x360"x59.3   17.75  640 688 720 800  360 363 368 374 +hsync -vsync (22.2 kHz d)
+[  8358.391] (II) modeset(0): Modeline "512x384"x120.0   32.50  512 524 592 672  384 385 388 403 doublescan -hsync -vsync (48.4 kHz d)
+[  8358.391] (II) modeset(0): Modeline "512x288"x120.0   23.25  512 532 580 648  288 289 292 299 doublescan -hsync +vsync (35.9 kHz d)
+[  8358.391] (II) modeset(0): Modeline "512x288"x119.8   21.00  512 536 552 592  288 289 292 296 doublescan +hsync -vsync (35.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "480x270"x119.3   20.38  480 496 544 608  270 271 274 281 doublescan -hsync +vsync (33.5 kHz d)
+[  8358.391] (II) modeset(0): Modeline "480x270"x119.6   18.62  480 504 520 560  270 271 274 278 doublescan +hsync -vsync (33.3 kHz d)
+[  8358.391] (II) modeset(0): Modeline "400x300"x120.6   20.00  400 420 484 528  300 300 302 314 doublescan +hsync +vsync (37.9 kHz d)
+[  8358.391] (II) modeset(0): Modeline "400x300"x112.7   18.00  400 412 448 512  300 300 301 312 doublescan +hsync +vsync (35.2 kHz d)
+[  8358.391] (II) modeset(0): Modeline "432x243"x119.8   16.25  432 444 484 536  243 244 247 253 doublescan -hsync +vsync (30.3 kHz d)
+[  8358.392] (II) modeset(0): Modeline "432x243"x119.1   15.25  432 456 472 512  243 244 247 250 doublescan +hsync -vsync (29.8 kHz d)
+[  8358.392] (II) modeset(0): Modeline "320x240"x120.1   12.59  320 328 376 400  240 245 246 262 doublescan -hsync -vsync (31.5 kHz d)
+[  8358.392] (II) modeset(0): Modeline "360x202"x119.0   11.25  360 372 404 448  202 204 206 211 doublescan -hsync +vsync (25.1 kHz d)
+[  8358.392] (II) modeset(0): Modeline "360x202"x118.3   10.88  360 384 400 440  202 204 206 209 doublescan +hsync -vsync (24.7 kHz d)
+[  8358.392] (II) modeset(0): Modeline "320x180"x119.7    9.00  320 332 360 400  180 181 184 188 doublescan -hsync +vsync (22.5 kHz d)
+[  8358.392] (II) modeset(0): Modeline "320x180"x118.6    8.88  320 344 360 400  180 181 184 187 doublescan +hsync -vsync (22.2 kHz d)
+[  8358.392] (II) modeset(0): EDID for output DP-1
+[  8358.393] (II) modeset(0): EDID for output HDMI-1
+[  8358.393] (II) modeset(0): EDID for output DP-2
+[  8358.394] (II) modeset(0): EDID for output HDMI-2
+[  8358.394] (II) modeset(0): Output eDP-1 connected
+[  8358.394] (II) modeset(0): Output DP-1 disconnected
+[  8358.394] (II) modeset(0): Output HDMI-1 disconnected
+[  8358.394] (II) modeset(0): Output DP-2 disconnected
+[  8358.394] (II) modeset(0): Output HDMI-2 disconnected
+[  8358.394] (II) modeset(0): Using exact sizes for initial modes
+[  8358.394] (II) modeset(0): Output eDP-1 using initial mode 1366x768 +0+0
+[  8358.394] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[  8358.394] (==) modeset(0): DPI set to (96, 96)
+[  8358.394] (II) Loading sub module "fb"
+[  8358.394] (II) LoadModule: "fb"
+[  8358.394] (II) Loading /usr/lib/xorg/modules/libfb.so
+[  8358.395] (II) Module fb: vendor="X.Org Foundation"
+[  8358.395] 	compiled for 1.20.5, module version = 1.0.0
+[  8358.395] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  8358.395] (II) UnloadModule: "vesa"
+[  8358.395] (II) Unloading vesa
+[  8358.399] (==) modeset(0): Backing store enabled
+[  8358.399] (==) modeset(0): Silken mouse disabled
+[  8358.459] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[  8358.459] (==) modeset(0): DPMS enabled
+[  8358.460] (II) modeset(0): [DRI2] Setup complete
+[  8358.460] (II) modeset(0): [DRI2]   DRI driver: i965
+[  8358.460] (II) modeset(0): [DRI2]   VDPAU driver: i965
+[  8358.460] (II) Initializing extension Generic Event Extension
+[  8358.460] (II) Initializing extension SHAPE
+[  8358.460] (II) Initializing extension MIT-SHM
+[  8358.460] (II) Initializing extension XInputExtension
+[  8358.460] (II) Initializing extension XTEST
+[  8358.460] (II) Initializing extension BIG-REQUESTS
+[  8358.460] (II) Initializing extension SYNC
+[  8358.460] (II) Initializing extension XKEYBOARD
+[  8358.460] (II) Initializing extension XC-MISC
+[  8358.460] (II) Initializing extension SECURITY
+[  8358.460] (II) Initializing extension XFIXES
+[  8358.460] (II) Initializing extension RENDER
+[  8358.460] (II) Initializing extension RANDR
+[  8358.460] (II) Initializing extension COMPOSITE
+[  8358.460] (II) Initializing extension DAMAGE
+[  8358.460] (II) Initializing extension MIT-SCREEN-SAVER
+[  8358.460] (II) Initializing extension DOUBLE-BUFFER
+[  8358.460] (II) Initializing extension RECORD
+[  8358.460] (II) Initializing extension DPMS
+[  8358.460] (II) Initializing extension Present
+[  8358.460] (II) Initializing extension DRI3
+[  8358.460] (II) Initializing extension X-Resource
+[  8358.460] (II) Initializing extension XVideo
+[  8358.460] (II) Initializing extension XVideo-MotionCompensation
+[  8358.460] (II) Initializing extension GLX
+[  8358.470] (II) AIGLX: Loaded and initialized i965
+[  8358.470] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  8358.470] (II) Initializing extension XFree86-VidModeExtension
+[  8358.470] (II) Initializing extension XFree86-DGA
+[  8358.470] (II) Initializing extension XFree86-DRI
+[  8358.470] (II) Initializing extension DRI2
+[  8358.473] (II) modeset(0): Damage tracking initialized
+[  8358.473] (II) modeset(0): Setting screen physical size to 361 x 203
+[  8358.555] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[  8358.555] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  8358.555] (II) LoadModule: "libinput"
+[  8358.555] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  8358.557] (II) Module libinput: vendor="X.Org Foundation"
+[  8358.557] 	compiled for 1.20.3, module version = 0.28.2
+[  8358.557] 	Module class: X.Org XInput Driver
+[  8358.557] 	ABI class: X.Org XInput driver, version 24.1
+[  8358.557] (II) Using input driver 'libinput' for 'Power Button'
+[  8358.558] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 14 paused 0
+[  8358.558] (**) Power Button: always reports core events
+[  8358.558] (**) Option "Device" "/dev/input/event3"
+[  8358.558] (**) Option "_source" "server/udev"
+[  8358.559] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8358.559] (II) event3  - Power Button: device is a keyboard
+[  8358.559] (II) event3  - Power Button: device removed
+[  8358.559] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[  8358.559] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[  8358.560] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8358.560] (II) event3  - Power Button: device is a keyboard
+[  8358.561] (II) config/udev: Adding input device Video Bus (/dev/input/event14)
+[  8358.561] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[  8358.561] (II) Using input driver 'libinput' for 'Video Bus'
+[  8358.562] (II) systemd-logind: got fd for /dev/input/event14 13:78 fd 17 paused 0
+[  8358.562] (**) Video Bus: always reports core events
+[  8358.562] (**) Option "Device" "/dev/input/event14"
+[  8358.562] (**) Option "_source" "server/udev"
+[  8358.563] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8358.563] (II) event14 - Video Bus: device is a keyboard
+[  8358.563] (II) event14 - Video Bus: device removed
+[  8358.563] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input15/event14"
+[  8358.563] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[  8358.565] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8358.565] (II) event14 - Video Bus: device is a keyboard
+[  8358.565] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[  8358.566] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[  8358.566] (II) Using input driver 'libinput' for 'Power Button'
+[  8358.567] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 18 paused 0
+[  8358.567] (**) Power Button: always reports core events
+[  8358.567] (**) Option "Device" "/dev/input/event1"
+[  8358.567] (**) Option "_source" "server/udev"
+[  8358.568] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8358.568] (II) event1  - Power Button: device is a keyboard
+[  8358.568] (II) event1  - Power Button: device removed
+[  8358.568] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[  8358.568] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[  8358.569] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8358.569] (II) event1  - Power Button: device is a keyboard
+[  8358.570] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[  8358.570] (II) No input driver specified, ignoring this device.
+[  8358.570] (II) This device may have been added with another device file.
+[  8358.570] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[  8358.570] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[  8358.570] (II) Using input driver 'libinput' for 'Sleep Button'
+[  8358.571] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 19 paused 0
+[  8358.571] (**) Sleep Button: always reports core events
+[  8358.571] (**) Option "Device" "/dev/input/event2"
+[  8358.571] (**) Option "_source" "server/udev"
+[  8358.572] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8358.572] (II) event2  - Sleep Button: device is a keyboard
+[  8358.573] (II) event2  - Sleep Button: device removed
+[  8358.573] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[  8358.573] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[  8358.574] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8358.574] (II) event2  - Sleep Button: device is a keyboard
+[  8358.575] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=3 (/dev/input/event15)
+[  8358.575] (II) No input driver specified, ignoring this device.
+[  8358.575] (II) This device may have been added with another device file.
+[  8358.576] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=7 (/dev/input/event16)
+[  8358.576] (II) No input driver specified, ignoring this device.
+[  8358.576] (II) This device may have been added with another device file.
+[  8358.576] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=8 (/dev/input/event17)
+[  8358.576] (II) No input driver specified, ignoring this device.
+[  8358.576] (II) This device may have been added with another device file.
+[  8358.577] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=9 (/dev/input/event18)
+[  8358.577] (II) No input driver specified, ignoring this device.
+[  8358.577] (II) This device may have been added with another device file.
+[  8358.577] (II) config/udev: Adding input device HDA Intel HDMI HDMI/DP,pcm=10 (/dev/input/event19)
+[  8358.577] (II) No input driver specified, ignoring this device.
+[  8358.577] (II) This device may have been added with another device file.
+[  8358.578] (II) config/udev: Adding input device HDA Digital PCBeep (/dev/input/event9)
+[  8358.578] (II) No input driver specified, ignoring this device.
+[  8358.578] (II) This device may have been added with another device file.
+[  8358.578] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event10)
+[  8358.578] (II) No input driver specified, ignoring this device.
+[  8358.578] (II) This device may have been added with another device file.
+[  8358.579] (II) config/udev: Adding input device HDA Intel PCH Dock Mic (/dev/input/event11)
+[  8358.579] (II) No input driver specified, ignoring this device.
+[  8358.579] (II) This device may have been added with another device file.
+[  8358.579] (II) config/udev: Adding input device HDA Intel PCH Dock Line Out (/dev/input/event12)
+[  8358.579] (II) No input driver specified, ignoring this device.
+[  8358.579] (II) This device may have been added with another device file.
+[  8358.580] (II) config/udev: Adding input device Integrated_Webcam_HD: Integrate (/dev/input/event7)
+[  8358.580] (**) Integrated_Webcam_HD: Integrate: Applying InputClass "libinput keyboard catchall"
+[  8358.580] (II) Using input driver 'libinput' for 'Integrated_Webcam_HD: Integrate'
+[  8358.581] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 20 paused 0
+[  8358.581] (**) Integrated_Webcam_HD: Integrate: always reports core events
+[  8358.581] (**) Option "Device" "/dev/input/event7"
+[  8358.582] (**) Option "_source" "server/udev"
+[  8358.583] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8358.583] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8358.583] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8358.583] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.6/2-1.6:1.0/input/input9/event7"
+[  8358.583] (II) XINPUT: Adding extended input device "Integrated_Webcam_HD: Integrate" (type: KEYBOARD, id 10)
+[  8358.585] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8358.585] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8358.585] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event8)
+[  8358.585] (**) Dell WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[  8358.585] (II) Using input driver 'libinput' for 'Dell WMI hotkeys'
+[  8358.586] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 21 paused 0
+[  8358.586] (**) Dell WMI hotkeys: always reports core events
+[  8358.586] (**) Option "Device" "/dev/input/event8"
+[  8358.586] (**) Option "_source" "server/udev"
+[  8358.588] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8358.588] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8358.588] (II) event8  - Dell WMI hotkeys: device removed
+[  8358.588] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input10/event8"
+[  8358.588] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 11)
+[  8358.589] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8358.589] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8358.590] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[  8358.590] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[  8358.590] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[  8358.591] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 22 paused 0
+[  8358.591] (**) AT Translated Set 2 keyboard: always reports core events
+[  8358.591] (**) Option "Device" "/dev/input/event4"
+[  8358.591] (**) Option "_source" "server/udev"
+[  8358.592] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8358.592] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8358.593] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8358.593] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[  8358.593] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 12)
+[  8358.594] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8358.594] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8358.596] (II) config/udev: Adding input device AlpsPS/2 ALPS GlidePoint (/dev/input/event13)
+[  8358.596] (**) AlpsPS/2 ALPS GlidePoint: Applying InputClass "libinput touchpad catchall"
+[  8358.596] (II) Using input driver 'libinput' for 'AlpsPS/2 ALPS GlidePoint'
+[  8358.596] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 23 paused 0
+[  8358.596] (**) AlpsPS/2 ALPS GlidePoint: always reports core events
+[  8358.596] (**) Option "Device" "/dev/input/event13"
+[  8358.597] (**) Option "_source" "server/udev"
+[  8358.598] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8358.609] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8358.609] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8358.609] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input8/event13"
+[  8358.609] (II) XINPUT: Adding extended input device "AlpsPS/2 ALPS GlidePoint" (type: TOUCHPAD, id 13)
+[  8358.609] (**) Option "AccelerationScheme" "none"
+[  8358.609] (**) AlpsPS/2 ALPS GlidePoint: (accel) selected scheme none/0
+[  8358.609] (**) AlpsPS/2 ALPS GlidePoint: (accel) acceleration factor: 2.000
+[  8358.609] (**) AlpsPS/2 ALPS GlidePoint: (accel) acceleration threshold: 4
+[  8358.611] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8358.620] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8358.621] (II) config/udev: Adding input device AlpsPS/2 ALPS GlidePoint (/dev/input/mouse0)
+[  8358.621] (II) No input driver specified, ignoring this device.
+[  8358.621] (II) This device may have been added with another device file.
+[  8358.621] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[  8358.621] (II) No input driver specified, ignoring this device.
+[  8358.621] (II) This device may have been added with another device file.
+[  8358.622] (II) config/udev: Adding input device DELL Wireless hotkeys (/dev/input/event5)
+[  8358.622] (**) DELL Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[  8358.622] (II) Using input driver 'libinput' for 'DELL Wireless hotkeys'
+[  8358.623] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 24 paused 0
+[  8358.623] (**) DELL Wireless hotkeys: always reports core events
+[  8358.623] (**) Option "Device" "/dev/input/event5"
+[  8358.623] (**) Option "_source" "server/udev"
+[  8358.623] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8358.624] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8358.624] (II) event5  - DELL Wireless hotkeys: device removed
+[  8358.624] (**) Option "config_info" "udev:/sys/devices/virtual/input/input6/event5"
+[  8358.624] (II) XINPUT: Adding extended input device "DELL Wireless hotkeys" (type: KEYBOARD, id 14)
+[  8358.624] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8358.624] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8358.709] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8358.709] (II) modeset(0): Printing DDC gathered Modelines:
+[  8358.709] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8358.709] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8397.783] (**) Option "fd" "14"
+[  8397.784] (II) event3  - Power Button: device removed
+[  8397.784] (**) Option "fd" "17"
+[  8397.784] (II) event14 - Video Bus: device removed
+[  8397.784] (**) Option "fd" "18"
+[  8397.784] (II) event1  - Power Button: device removed
+[  8397.784] (**) Option "fd" "19"
+[  8397.784] (II) event2  - Sleep Button: device removed
+[  8397.784] (**) Option "fd" "20"
+[  8397.784] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8397.784] (**) Option "fd" "21"
+[  8397.784] (II) event8  - Dell WMI hotkeys: device removed
+[  8397.785] (**) Option "fd" "22"
+[  8397.785] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8397.785] (**) Option "fd" "23"
+[  8397.785] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8397.785] (**) Option "fd" "24"
+[  8397.785] (II) event5  - DELL Wireless hotkeys: device removed
+[  8397.785] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8397.842] (II) systemd-logind: got pause for 13:77
+[  8397.842] (II) systemd-logind: got pause for 13:69
+[  8397.842] (II) systemd-logind: got pause for 13:67
+[  8397.842] (II) systemd-logind: got pause for 226:0
+[  8397.842] (II) systemd-logind: got pause for 13:68
+[  8397.842] (II) systemd-logind: got pause for 13:72
+[  8397.842] (II) systemd-logind: got pause for 13:65
+[  8397.842] (II) systemd-logind: got pause for 13:78
+[  8397.842] (II) systemd-logind: got pause for 13:66
+[  8397.842] (II) systemd-logind: got pause for 13:71
+[  8438.719] (II) systemd-logind: got resume for 13:77
+[  8438.745] (II) systemd-logind: got resume for 13:69
+[  8438.772] (II) systemd-logind: got resume for 13:67
+[  8438.772] (II) systemd-logind: got resume for 226:0
+[  8438.772] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8438.812] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8438.812] (II) modeset(0): Printing DDC gathered Modelines:
+[  8438.812] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8438.812] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8438.829] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8438.829] (II) event3  - Power Button: device is a keyboard
+[  8438.832] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8438.845] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8438.845] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8438.845] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8438.846] (II) systemd-logind: got resume for 13:68
+[  8438.847] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8438.847] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8438.848] (II) systemd-logind: got resume for 13:72
+[  8438.849] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8438.849] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8438.879] (II) systemd-logind: got resume for 13:65
+[  8438.880] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8438.880] (II) event1  - Power Button: device is a keyboard
+[  8438.905] (II) systemd-logind: got resume for 13:78
+[  8438.908] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8438.908] (II) event14 - Video Bus: device is a keyboard
+[  8438.926] (II) systemd-logind: got resume for 13:66
+[  8438.928] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8438.928] (II) event2  - Sleep Button: device is a keyboard
+[  8438.972] (II) systemd-logind: got resume for 13:71
+[  8438.976] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8438.976] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8453.225] (**) Option "fd" "19"
+[  8453.225] (II) event3  - Power Button: device removed
+[  8453.226] (**) Option "fd" "24"
+[  8453.226] (II) event14 - Video Bus: device removed
+[  8453.226] (**) Option "fd" "23"
+[  8453.226] (II) event1  - Power Button: device removed
+[  8453.226] (**) Option "fd" "26"
+[  8453.226] (II) event2  - Sleep Button: device removed
+[  8453.226] (**) Option "fd" "28"
+[  8453.226] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8453.226] (**) Option "fd" "14"
+[  8453.226] (II) event8  - Dell WMI hotkeys: device removed
+[  8453.226] (**) Option "fd" "22"
+[  8453.226] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8453.227] (**) Option "fd" "17"
+[  8453.227] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8453.227] (**) Option "fd" "18"
+[  8453.227] (II) event5  - DELL Wireless hotkeys: device removed
+[  8453.227] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8453.269] (II) systemd-logind: got pause for 13:77
+[  8453.269] (II) systemd-logind: got pause for 13:69
+[  8453.269] (II) systemd-logind: got pause for 13:67
+[  8453.269] (II) systemd-logind: got pause for 226:0
+[  8453.269] (II) systemd-logind: got pause for 13:68
+[  8453.269] (II) systemd-logind: got pause for 13:72
+[  8453.269] (II) systemd-logind: got pause for 13:65
+[  8453.269] (II) systemd-logind: got pause for 13:78
+[  8453.269] (II) systemd-logind: got pause for 13:66
+[  8453.269] (II) systemd-logind: got pause for 13:71
+[  8568.319] (II) systemd-logind: got resume for 13:77
+[  8568.342] (II) systemd-logind: got resume for 13:69
+[  8568.359] (II) systemd-logind: got resume for 13:67
+[  8568.359] (II) systemd-logind: got resume for 226:0
+[  8568.359] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8568.406] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8568.406] (II) modeset(0): Printing DDC gathered Modelines:
+[  8568.406] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8568.406] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8568.423] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8568.423] (II) event3  - Power Button: device is a keyboard
+[  8568.426] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8568.440] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8568.441] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8568.441] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8568.441] (II) systemd-logind: got resume for 13:68
+[  8568.442] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8568.442] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8568.443] (II) systemd-logind: got resume for 13:72
+[  8568.444] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8568.444] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8568.444] (II) systemd-logind: got resume for 13:65
+[  8568.445] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8568.445] (II) event1  - Power Button: device is a keyboard
+[  8568.465] (II) systemd-logind: got resume for 13:78
+[  8568.466] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8568.466] (II) event14 - Video Bus: device is a keyboard
+[  8568.492] (II) systemd-logind: got resume for 13:66
+[  8568.493] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8568.493] (II) event2  - Sleep Button: device is a keyboard
+[  8568.515] (II) systemd-logind: got resume for 13:71
+[  8568.519] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8568.519] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8576.844] (**) Option "fd" "21"
+[  8576.844] (II) event3  - Power Button: device removed
+[  8576.844] (**) Option "fd" "26"
+[  8576.844] (II) event14 - Video Bus: device removed
+[  8576.844] (**) Option "fd" "22"
+[  8576.844] (II) event1  - Power Button: device removed
+[  8576.844] (**) Option "fd" "28"
+[  8576.844] (II) event2  - Sleep Button: device removed
+[  8576.844] (**) Option "fd" "29"
+[  8576.844] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8576.844] (**) Option "fd" "19"
+[  8576.844] (II) event8  - Dell WMI hotkeys: device removed
+[  8576.844] (**) Option "fd" "24"
+[  8576.844] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8576.844] (**) Option "fd" "17"
+[  8576.844] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8576.844] (**) Option "fd" "18"
+[  8576.844] (II) event5  - DELL Wireless hotkeys: device removed
+[  8576.844] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8576.896] (II) systemd-logind: got pause for 13:77
+[  8576.896] (II) systemd-logind: got pause for 13:69
+[  8576.896] (II) systemd-logind: got pause for 13:67
+[  8576.896] (II) systemd-logind: got pause for 226:0
+[  8576.896] (II) systemd-logind: got pause for 13:68
+[  8576.896] (II) systemd-logind: got pause for 13:72
+[  8576.896] (II) systemd-logind: got pause for 13:65
+[  8576.896] (II) systemd-logind: got pause for 13:78
+[  8576.896] (II) systemd-logind: got pause for 13:66
+[  8576.896] (II) systemd-logind: got pause for 13:71
+[  8699.519] (II) systemd-logind: got resume for 13:77
+[  8699.545] (II) systemd-logind: got resume for 13:69
+[  8699.572] (II) systemd-logind: got resume for 13:67
+[  8699.572] (II) systemd-logind: got resume for 226:0
+[  8699.572] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8699.618] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8699.618] (II) modeset(0): Printing DDC gathered Modelines:
+[  8699.618] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8699.618] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8699.635] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8699.635] (II) event3  - Power Button: device is a keyboard
+[  8699.638] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8699.651] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8699.652] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8699.652] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8699.652] (II) systemd-logind: got resume for 13:68
+[  8699.654] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8699.654] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8699.654] (II) systemd-logind: got resume for 13:72
+[  8699.655] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8699.655] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8699.656] (II) systemd-logind: got resume for 13:65
+[  8699.656] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8699.656] (II) event1  - Power Button: device is a keyboard
+[  8699.678] (II) systemd-logind: got resume for 13:78
+[  8699.680] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8699.680] (II) event14 - Video Bus: device is a keyboard
+[  8699.695] (II) systemd-logind: got resume for 13:66
+[  8699.697] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8699.697] (II) event2  - Sleep Button: device is a keyboard
+[  8699.732] (II) systemd-logind: got resume for 13:71
+[  8699.736] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8699.736] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8700.752] (**) Option "fd" "22"
+[  8700.752] (II) event3  - Power Button: device removed
+[  8700.752] (**) Option "fd" "28"
+[  8700.752] (II) event14 - Video Bus: device removed
+[  8700.752] (**) Option "fd" "23"
+[  8700.752] (II) event1  - Power Button: device removed
+[  8700.752] (**) Option "fd" "29"
+[  8700.752] (II) event2  - Sleep Button: device removed
+[  8700.752] (**) Option "fd" "30"
+[  8700.752] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8700.752] (**) Option "fd" "21"
+[  8700.752] (II) event8  - Dell WMI hotkeys: device removed
+[  8700.753] (**) Option "fd" "26"
+[  8700.753] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8700.753] (**) Option "fd" "18"
+[  8700.753] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8700.753] (**) Option "fd" "19"
+[  8700.753] (II) event5  - DELL Wireless hotkeys: device removed
+[  8700.753] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8700.805] (II) systemd-logind: got pause for 13:77
+[  8700.805] (II) systemd-logind: got pause for 13:69
+[  8700.805] (II) systemd-logind: got pause for 13:67
+[  8700.805] (II) systemd-logind: got pause for 226:0
+[  8700.805] (II) systemd-logind: got pause for 13:68
+[  8700.805] (II) systemd-logind: got pause for 13:72
+[  8700.805] (II) systemd-logind: got pause for 13:65
+[  8700.805] (II) systemd-logind: got pause for 13:78
+[  8700.805] (II) systemd-logind: got pause for 13:66
+[  8700.805] (II) systemd-logind: got pause for 13:71
+[  8726.838] (II) systemd-logind: got resume for 13:77
+[  8726.852] (II) systemd-logind: got resume for 13:69
+[  8726.868] (II) systemd-logind: got resume for 13:67
+[  8726.868] (II) systemd-logind: got resume for 226:0
+[  8726.868] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8726.907] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8726.907] (II) modeset(0): Printing DDC gathered Modelines:
+[  8726.907] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8726.907] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8726.922] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8726.922] (II) event3  - Power Button: device is a keyboard
+[  8726.924] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8726.935] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8726.936] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8726.936] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8726.936] (II) systemd-logind: got resume for 13:68
+[  8726.938] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8726.938] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8726.938] (II) systemd-logind: got resume for 13:72
+[  8726.940] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8726.940] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8726.940] (II) systemd-logind: got resume for 13:65
+[  8726.941] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8726.941] (II) event1  - Power Button: device is a keyboard
+[  8726.963] (II) systemd-logind: got resume for 13:78
+[  8726.965] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8726.965] (II) event14 - Video Bus: device is a keyboard
+[  8726.975] (II) systemd-logind: got resume for 13:66
+[  8726.977] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8726.977] (II) event2  - Sleep Button: device is a keyboard
+[  8727.025] (II) systemd-logind: got resume for 13:71
+[  8727.029] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8727.029] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8728.063] (**) Option "fd" "22"
+[  8728.064] (II) event3  - Power Button: device removed
+[  8728.064] (**) Option "fd" "29"
+[  8728.064] (II) event14 - Video Bus: device removed
+[  8728.064] (**) Option "fd" "24"
+[  8728.064] (II) event1  - Power Button: device removed
+[  8728.064] (**) Option "fd" "30"
+[  8728.064] (II) event2  - Sleep Button: device removed
+[  8728.064] (**) Option "fd" "31"
+[  8728.064] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8728.064] (**) Option "fd" "18"
+[  8728.064] (II) event8  - Dell WMI hotkeys: device removed
+[  8728.065] (**) Option "fd" "28"
+[  8728.065] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8728.065] (**) Option "fd" "19"
+[  8728.065] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8728.065] (**) Option "fd" "21"
+[  8728.065] (II) event5  - DELL Wireless hotkeys: device removed
+[  8728.065] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8728.110] (II) systemd-logind: got pause for 13:77
+[  8728.110] (II) systemd-logind: got pause for 13:69
+[  8728.110] (II) systemd-logind: got pause for 13:67
+[  8728.110] (II) systemd-logind: got pause for 226:0
+[  8728.110] (II) systemd-logind: got pause for 13:68
+[  8728.110] (II) systemd-logind: got pause for 13:72
+[  8728.110] (II) systemd-logind: got pause for 13:65
+[  8728.110] (II) systemd-logind: got pause for 13:78
+[  8728.110] (II) systemd-logind: got pause for 13:66
+[  8728.110] (II) systemd-logind: got pause for 13:71
+[  8764.902] (II) systemd-logind: got resume for 13:77
+[  8764.932] (II) systemd-logind: got resume for 13:69
+[  8764.955] (II) systemd-logind: got resume for 13:67
+[  8764.955] (II) systemd-logind: got resume for 226:0
+[  8764.955] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8764.998] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8764.999] (II) modeset(0): Printing DDC gathered Modelines:
+[  8764.999] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8764.999] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8765.015] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8765.015] (II) event3  - Power Button: device is a keyboard
+[  8765.017] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8765.031] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8765.032] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8765.032] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8765.033] (II) systemd-logind: got resume for 13:68
+[  8765.034] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8765.034] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8765.034] (II) systemd-logind: got resume for 13:72
+[  8765.036] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8765.036] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8765.056] (II) systemd-logind: got resume for 13:65
+[  8765.058] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8765.058] (II) event1  - Power Button: device is a keyboard
+[  8765.105] (II) systemd-logind: got resume for 13:78
+[  8765.107] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8765.108] (II) event14 - Video Bus: device is a keyboard
+[  8765.132] (II) systemd-logind: got resume for 13:66
+[  8765.134] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8765.134] (II) event2  - Sleep Button: device is a keyboard
+[  8765.159] (II) systemd-logind: got resume for 13:71
+[  8765.162] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8765.163] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8767.613] (**) Option "fd" "24"
+[  8767.613] (II) event3  - Power Button: device removed
+[  8767.613] (**) Option "fd" "30"
+[  8767.613] (II) event14 - Video Bus: device removed
+[  8767.614] (**) Option "fd" "29"
+[  8767.614] (II) event1  - Power Button: device removed
+[  8767.614] (**) Option "fd" "31"
+[  8767.614] (II) event2  - Sleep Button: device removed
+[  8767.614] (**) Option "fd" "32"
+[  8767.614] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8767.614] (**) Option "fd" "22"
+[  8767.614] (II) event8  - Dell WMI hotkeys: device removed
+[  8767.614] (**) Option "fd" "28"
+[  8767.614] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8767.615] (**) Option "fd" "19"
+[  8767.615] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8767.615] (**) Option "fd" "21"
+[  8767.615] (II) event5  - DELL Wireless hotkeys: device removed
+[  8767.615] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8767.671] (II) systemd-logind: got pause for 13:77
+[  8767.671] (II) systemd-logind: got pause for 13:69
+[  8767.671] (II) systemd-logind: got pause for 13:67
+[  8767.671] (II) systemd-logind: got pause for 226:0
+[  8767.671] (II) systemd-logind: got pause for 13:68
+[  8767.671] (II) systemd-logind: got pause for 13:72
+[  8767.671] (II) systemd-logind: got pause for 13:65
+[  8767.671] (II) systemd-logind: got pause for 13:78
+[  8767.671] (II) systemd-logind: got pause for 13:66
+[  8767.671] (II) systemd-logind: got pause for 13:71
+[  8813.478] (II) systemd-logind: got resume for 13:77
+[  8813.505] (II) systemd-logind: got resume for 13:69
+[  8813.529] (II) systemd-logind: got resume for 13:67
+[  8813.529] (II) systemd-logind: got resume for 226:0
+[  8813.529] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8813.576] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8813.576] (II) modeset(0): Printing DDC gathered Modelines:
+[  8813.576] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8813.576] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8813.592] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8813.592] (II) event3  - Power Button: device is a keyboard
+[  8813.594] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8813.609] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8813.610] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8813.610] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8813.610] (II) systemd-logind: got resume for 13:68
+[  8813.612] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8813.612] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8813.612] (II) systemd-logind: got resume for 13:72
+[  8813.613] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8813.613] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8813.638] (II) systemd-logind: got resume for 13:65
+[  8813.640] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8813.640] (II) event1  - Power Button: device is a keyboard
+[  8813.672] (II) systemd-logind: got resume for 13:78
+[  8813.674] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8813.674] (II) event14 - Video Bus: device is a keyboard
+[  8813.705] (II) systemd-logind: got resume for 13:66
+[  8813.707] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8813.707] (II) event2  - Sleep Button: device is a keyboard
+[  8813.732] (II) systemd-logind: got resume for 13:71
+[  8813.736] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8813.736] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8816.398] (**) Option "fd" "26"
+[  8816.398] (II) event3  - Power Button: device removed
+[  8816.398] (**) Option "fd" "31"
+[  8816.398] (II) event14 - Video Bus: device removed
+[  8816.398] (**) Option "fd" "30"
+[  8816.398] (II) event1  - Power Button: device removed
+[  8816.399] (**) Option "fd" "32"
+[  8816.399] (II) event2  - Sleep Button: device removed
+[  8816.399] (**) Option "fd" "33"
+[  8816.399] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8816.399] (**) Option "fd" "24"
+[  8816.399] (II) event8  - Dell WMI hotkeys: device removed
+[  8816.399] (**) Option "fd" "29"
+[  8816.399] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8816.399] (**) Option "fd" "21"
+[  8816.399] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8816.399] (**) Option "fd" "22"
+[  8816.399] (II) event5  - DELL Wireless hotkeys: device removed
+[  8816.399] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8816.400] (II) systemd-logind: got pause for 13:77
+[  8816.400] (II) systemd-logind: got pause for 13:69
+[  8816.401] (II) systemd-logind: got pause for 13:67
+[  8816.401] (II) systemd-logind: got pause for 226:0
+[  8816.401] (II) systemd-logind: got pause for 13:68
+[  8816.401] (II) systemd-logind: got pause for 13:72
+[  8816.402] (II) systemd-logind: got pause for 13:65
+[  8816.402] (II) systemd-logind: got pause for 13:78
+[  8816.402] (II) systemd-logind: got pause for 13:66
+[  8816.402] (II) systemd-logind: got pause for 13:71
+[  8851.892] (II) systemd-logind: got resume for 13:77
+[  8851.918] (II) systemd-logind: got resume for 13:69
+[  8851.942] (II) systemd-logind: got resume for 13:67
+[  8851.942] (II) systemd-logind: got resume for 226:0
+[  8851.942] (II) AIGLX: Resuming AIGLX clients after VT switch
+[  8851.984] (II) modeset(0): EDID vendor "LGD", prod id 1104
+[  8851.984] (II) modeset(0): Printing DDC gathered Modelines:
+[  8851.984] (II) modeset(0): Modeline "1366x768"x0.0   72.50  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (47.5 kHz eP)
+[  8851.984] (II) modeset(0): Modeline "1366x768"x0.0   58.00  1366 1398 1430 1526  768 770 774 792 +hsync -vsync (38.0 kHz e)
+[  8852.001] (II) event3  - Power Button: is tagged by udev as: Keyboard
+[  8852.001] (II) event3  - Power Button: device is a keyboard
+[  8852.004] (II) event13 - AlpsPS/2 ALPS GlidePoint: is tagged by udev as: Touchpad
+[  8852.018] (II) event13 - AlpsPS/2 ALPS GlidePoint: device is a touchpad
+[  8852.018] (II) event5  - DELL Wireless hotkeys: is tagged by udev as: Keyboard
+[  8852.019] (II) event5  - DELL Wireless hotkeys: device is a keyboard
+[  8852.019] (II) systemd-logind: got resume for 13:68
+[  8852.020] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[  8852.020] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[  8852.021] (II) systemd-logind: got resume for 13:72
+[  8852.022] (II) event8  - Dell WMI hotkeys: is tagged by udev as: Keyboard
+[  8852.022] (II) event8  - Dell WMI hotkeys: device is a keyboard
+[  8852.038] (II) systemd-logind: got resume for 13:65
+[  8852.040] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[  8852.040] (II) event1  - Power Button: device is a keyboard
+[  8852.065] (II) systemd-logind: got resume for 13:78
+[  8852.067] (II) event14 - Video Bus: is tagged by udev as: Keyboard
+[  8852.067] (II) event14 - Video Bus: device is a keyboard
+[  8852.092] (II) systemd-logind: got resume for 13:66
+[  8852.093] (II) event2  - Sleep Button: is tagged by udev as: Keyboard
+[  8852.093] (II) event2  - Sleep Button: device is a keyboard
+[  8852.119] (II) systemd-logind: got resume for 13:71
+[  8852.122] (II) event7  - Integrated_Webcam_HD: Integrate: is tagged by udev as: Keyboard
+[  8852.122] (II) event7  - Integrated_Webcam_HD: Integrate: device is a keyboard
+[  8856.399] (**) Option "fd" "26"
+[  8856.399] (II) event3  - Power Button: device removed
+[  8856.399] (**) Option "fd" "31"
+[  8856.399] (II) event14 - Video Bus: device removed
+[  8856.399] (**) Option "fd" "30"
+[  8856.399] (II) event1  - Power Button: device removed
+[  8856.399] (**) Option "fd" "32"
+[  8856.399] (II) event2  - Sleep Button: device removed
+[  8856.399] (**) Option "fd" "33"
+[  8856.399] (II) event7  - Integrated_Webcam_HD: Integrate: device removed
+[  8856.399] (**) Option "fd" "21"
+[  8856.399] (II) event8  - Dell WMI hotkeys: device removed
+[  8856.400] (**) Option "fd" "29"
+[  8856.400] (II) event4  - AT Translated Set 2 keyboard: device removed
+[  8856.400] (**) Option "fd" "22"
+[  8856.400] (II) event13 - AlpsPS/2 ALPS GlidePoint: device removed
+[  8856.400] (**) Option "fd" "24"
+[  8856.400] (II) event5  - DELL Wireless hotkeys: device removed
+[  8856.400] (II) AIGLX: Suspending AIGLX clients for VT switch
+[  8856.454] (II) systemd-logind: got pause for 13:77
+[  8856.454] (II) systemd-logind: got pause for 13:69
+[  8856.454] (II) systemd-logind: got pause for 13:67
+[  8856.454] (II) systemd-logind: got pause for 226:0
+[  8856.454] (II) systemd-logind: got pause for 13:68
+[  8856.454] (II) systemd-logind: got pause for 13:72
+[  8856.454] (II) systemd-logind: got pause for 13:65
+[  8856.454] (II) systemd-logind: got pause for 13:78
+[  8856.454] (II) systemd-logind: got pause for 13:66
+[  8856.454] (II) systemd-logind: got pause for 13:71
+[  8880.620] (II) UnloadModule: "libinput"
+[  8880.620] (II) systemd-logind: releasing fd for 13:69
+[  8880.685] (II) UnloadModule: "libinput"
+[  8880.685] (II) systemd-logind: releasing fd for 13:77
+[  8880.719] (II) UnloadModule: "libinput"
+[  8880.719] (II) systemd-logind: releasing fd for 13:68
+[  8880.755] (II) UnloadModule: "libinput"
+[  8880.755] (II) systemd-logind: releasing fd for 13:72
+[  8880.812] (II) UnloadModule: "libinput"
+[  8880.812] (II) systemd-logind: releasing fd for 13:71
+[  8880.835] (II) UnloadModule: "libinput"
+[  8880.835] (II) systemd-logind: releasing fd for 13:66
+[  8880.889] (II) UnloadModule: "libinput"
+[  8880.889] (II) systemd-logind: releasing fd for 13:65
+[  8880.946] (II) UnloadModule: "libinput"
+[  8880.946] (II) systemd-logind: releasing fd for 13:78
+[  8881.003] (II) UnloadModule: "libinput"
+[  8881.003] (II) systemd-logind: releasing fd for 13:67
+[  8881.059] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[  8881.059] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[  8881.059] (WW) xf86CloseConsole: VT_ACTIVATE failed: Input/output error
+[  8881.060] (II) Server terminated successfully (0). Closing log file.

@@ -9,27 +9,23 @@ mapclear
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'godlygeek/tabular'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 Plug 'bpstahlman/txtfmt'
 Plug 'thiagoalessio/rainbow_levels.vim'
-Plug 'mhartington/oceanic-next'
 Plug 'vim-scripts/SyntaxAttr.vim'
-Plug 'google/vim-colorscheme-primary'
+Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'mxw/vim-jsx'
-Plug 'fenetikm/falcon'
-Plug 'evturn/vim-hardaway'
-Plug 'jdsimcoe/panic.vim'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install'}
+Plug 'jparise/vim-graphql'
 Plug 'dylanaraps/wal.vim'
 call plug#end()
 
@@ -38,12 +34,12 @@ call plug#end()
 
 " augroups {{{
 
-augroup indents
-	autocmd!
-	autocmd FileType less,css,html setlocal ts=2 sts=2 sw=2 expandtab
-	autocmd FileType text,markdown setlocal expandtab
-	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
-augroup END
+"augroup indents
+"	autocmd!
+"	autocmd FileType less,css,html setlocal ts=2 sts=2 sw=2 expandtab
+"	autocmd FileType text,markdown setlocal expandtab
+"	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
+"augroup END
 
 augroup Limelight
 	autocmd! User GoyoEnter Limelight
@@ -97,16 +93,17 @@ set dir=/tmpset
 
 syntax on
 
+set mps+=<:> 
 set list
 filetype indent on
 set number
-set relativenumber
 set laststatus=2
 set nowrap
+set noshowcmd
 set noshowmode
 set nocursorline
 set listchars=tab:│\ ,nbsp:␣,trail:∙,extends:>,precedes:<
-set fillchars=vert:\│
+set fillchars+=vert:.
 set scrolloff=12
 set ignorecase
 set smartcase
@@ -121,7 +118,7 @@ set backspace=indent,eol,start
 set hidden
 set wildmenu
 set foldmethod=manual
-
+set splitbelow
 set wildignore+=.git,.hg,.svn
 set wildignore+=*.aux,*.out,*.toc
 set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest,*.rbc,*.class
@@ -146,10 +143,11 @@ let g:startify_lists = [
     \ { 'type': 'files',        'header': [ '  Recent']        },
     \ { 'type': 'bookmarks',    'header': [ '  Bookmarks']     },
     \]
+
 set shiftwidth=2   " indent = 4 spaces
 set expandtab      " tabs are tabs
-set tabstop=4      " tab = 4 spaces
-set softtabstop=0  " backspace through spaces
+"set tabstop=4      " tab = 4 spaces
+set softtabstop=2  " backspace through spaces
 set smarttab
 " }}}
 
@@ -181,28 +179,26 @@ set statusline=%3*
 set statusline+=%3*\ %#PrimaryBlock#
 set statusline+=%3*\%{g:currentmode[mode()]}
 set statusline+=%1*\%#SecondaryBlock#
-"set statusline+=%{StatuslineGit()}
 set statusline+=%1*\%#TeritaryBlock#
 set statusline+=%2*\ %f\ 
 set statusline+=%4*\%M\ 
 set statusline+=%1*\%#TeritaryBlock#
 set statusline+=%1*\%=
 set statusline+=%1*\%#SecondaryBlock#
-"set statusline+=%4*\ %P\ 
 set statusline+=%1*\%#PrimaryBlock#
 set statusline+=%4*\ %P\ 
 
-hi User1           guifg=#f82939 guibg=#1a3860
-hi User2           guifg=#fcc146 guibg=#1a3860
-hi User3           guifg=#3beb29 guibg=#6f4ebc gui=bold
-hi User4           guifg=#3beb29 guibg=#1a3860
-hi StatusLine      guifg=#3beb2a guibg=#6f4ebc
-hi StartifyHeader  guifg=#fcc146
-hi StartifyPath    guifg=#63cce3
-hi StartifyFile    guifg=#6f4ebc
-hi StartifyBracket guifg=#6f4ebc
-hi StartifyNumber  guifg=#fcc146
-hi StartifySection guifg=#fcc146
+hi User1           ctermfg=2 ctermbg=0
+hi User2           ctermfg=3 ctermbg=0
+hi User3           ctermfg=4 ctermbg=0 gui=bold
+hi User4           ctermfg=2 ctermbg=0
+hi StatusLine      ctermfg=0 ctermbg=1
+hi StartifyHeader  ctermfg=3
+hi StartifyPath    ctermfg=6
+hi StartifyFile    ctermfg=5
+hi StartifyBracket ctermfg=5
+hi StartifyNumber  ctermfg=3
+hi StartifySection ctermfg=3
 
 
 " functions {{{

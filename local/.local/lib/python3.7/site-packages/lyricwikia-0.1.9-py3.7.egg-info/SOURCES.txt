@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+lyricwikia/__init__.py
+lyricwikia/lyricwikia.py
+lyricwikia/version.py
+lyricwikia.egg-info/PKG-INFO
+lyricwikia.egg-info/SOURCES.txt
+lyricwikia.egg-info/dependency_links.txt
+lyricwikia.egg-info/requires.txt
+lyricwikia.egg-info/top_level.txt
+scripts/lyrics
